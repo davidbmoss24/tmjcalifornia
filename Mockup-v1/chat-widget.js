@@ -87,13 +87,15 @@
     .tmj-chat-header-meta { flex: 1; min-width: 0; }
     .tmj-chat-header-title { font: 600 1rem 'Cormorant Garamond', Georgia, serif; letter-spacing: -.01em; }
     .tmj-chat-header-sub { font-size: 0.78rem; opacity: 0.85; margin-top: 1px; }
-    .tmj-chat-close {
+    .tmj-chat-close, .tmj-chat-new {
       background: none; border: none; color: #fff; cursor: pointer;
       opacity: 0.85; padding: 6px; border-radius: 6px;
       display: flex; align-items: center; justify-content: center;
     }
-    .tmj-chat-close:hover { opacity: 1; background: rgba(255,255,255,0.08); }
-    .tmj-chat-close svg { width: 18px; height: 18px; }
+    .tmj-chat-close:hover, .tmj-chat-new:hover {
+      opacity: 1; background: rgba(255,255,255,0.08);
+    }
+    .tmj-chat-close svg, .tmj-chat-new svg { width: 18px; height: 18px; }
 
     .tmj-chat-body {
       flex: 1; min-height: 0; overflow-y: auto;
@@ -213,6 +215,11 @@
         <div class="tmj-chat-header-title">TMJ California assistant</div>
         <div class="tmj-chat-header-sub">AI-powered · informational only</div>
       </div>
+      <button class="tmj-chat-new" aria-label="Start new conversation" title="New conversation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 4 3 10 9 10"/>
+        </svg>
+      </button>
       <button class="tmj-chat-close" aria-label="Close chat">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
@@ -241,6 +248,7 @@
   const inputEl = panel.querySelector('.tmj-chat-input');
   const sendEl = panel.querySelector('.tmj-chat-send');
   const closeEl = panel.querySelector('.tmj-chat-close');
+  const newEl = panel.querySelector('.tmj-chat-new');
 
   // ----- Conversation state -----
   const messages = []; // {role: 'user'|'assistant', content: string}
@@ -447,6 +455,16 @@
 
   launcher.addEventListener('click', openPanel);
   closeEl.addEventListener('click', closePanel);
+
+  newEl.addEventListener('click', function () {
+    // If there's an active conversation, confirm before wiping.
+    if (messages.length > 0) {
+      if (!confirm('Start a new conversation? Your current chat will be cleared.')) return;
+    }
+    messages.length = 0;
+    renderGreeting();
+    inputEl.focus();
+  });
 
   formEl.addEventListener('submit', function (e) {
     e.preventDefault();
