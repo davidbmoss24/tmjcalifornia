@@ -150,7 +150,7 @@ a:hover { color: var(--accent-hover); }
   grid-template-columns: 1.05fr 0.95fr;
   gap: 4rem;
   align-items: center;
-  padding: 5rem 0 6rem;
+  padding: 1rem 0 5rem;
 }
 .hero-text h1 { margin-bottom: 1.5rem; }
 .hero-text h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
@@ -233,12 +233,12 @@ section { padding: 5rem 0; }
   border-color: var(--accent-soft);
 }
 .condition-icon {
-  width: 42px; height: 42px;
+  width: 44px; height: 44px;
   display: flex; align-items: center; justify-content: center;
   background: var(--accent-soft); color: var(--accent);
   border-radius: 8px; margin-bottom: 1.2rem;
-  font-family: var(--serif); font-size: 1.4rem; font-weight: 600;
 }
+.condition-icon svg { width: 22px; height: 22px; }
 .condition-card h3 { font-size: 1.35rem; margin-bottom: 0.7rem; }
 .condition-card p { font-size: 0.94rem; line-height: 1.6; flex: 1; }
 .condition-card-link {
@@ -466,16 +466,17 @@ section { padding: 5rem 0; }
 .featured-paper-content .btn { margin-top: 1.5rem; }
 
 .mechanism-explainer {
-  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 0; margin: 3rem 0;
   background: var(--card); border: 1px solid var(--border);
   border-radius: 4px; overflow: hidden;
 }
 .mechanism-step {
-  padding: 2rem 1.8rem; position: relative;
+  padding: 1.75rem 1.4rem; position: relative;
   border-right: 1px solid var(--border);
 }
 .mechanism-step:last-child { border-right: none; }
+.mechanism-step p { font-size: 0.88rem; }
 .mechanism-step .step-num {
   font-family: var(--serif); font-size: 2.2rem; color: var(--accent); line-height: 1;
 }
@@ -545,7 +546,7 @@ section { padding: 5rem 0; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 980px) {
-  .hero { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 0 4rem; }
+  .hero { grid-template-columns: 1fr; gap: 3rem; padding: 0.5rem 0 3rem; }
   .hero-quote { position: static; margin-top: 1.5rem; left: 0; max-width: none; }
   .conditions-grid { grid-template-columns: 1fr 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
@@ -555,9 +556,12 @@ section { padding: 5rem 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .conditions-detail { grid-template-columns: 1fr; }
   .featured-paper { grid-template-columns: 1fr; }
-  .mechanism-explainer { grid-template-columns: 1fr; }
+  .mechanism-explainer { grid-template-columns: 1fr 1fr; }
   .mechanism-step { border-right: none; border-bottom: 1px solid var(--border); }
-  .mechanism-step::after { right: 50%; top: auto; bottom: -0.8rem; transform: translateX(50%) rotate(90deg); }
+  .mechanism-step:nth-child(odd) { border-right: 1px solid var(--border); }
+  .mechanism-step:last-child { border-bottom: none; }
+  .mechanism-step:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+  .mechanism-step::after { display: none; }
   .about-hero, .about-section .container-narrow { grid-template-columns: 1fr; gap: 2rem; }
   .contact-grid { grid-template-columns: 1fr; }
   .nav-toggle { display: inline-flex; }
@@ -597,7 +601,7 @@ section { padding: 5rem 0; }
   .page-header { padding: 2.5rem 0 1.5rem; }
   h1 { font-size: 1.95rem; }
   h2 { font-size: 1.55rem; }
-  .hero { padding: 2rem 0 3rem; gap: 2rem; }
+  .hero { padding: 0.5rem 0 2.5rem; gap: 2rem; }
   .hero-actions { flex-direction: column; align-items: stretch; gap: 0.75rem; }
   .hero-actions .btn { justify-content: center; width: 100%; }
   .hero-quote { padding: 1.1rem 1.25rem; font-size: 1rem; }
@@ -704,37 +708,83 @@ section { padding: 5rem 0; }
       </div>
       <div class="conditions-grid">
         <div class="condition-card" data-page="conditions">
-          <div class="condition-icon">T</div>
+          <div class="condition-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 8c3-3 13-3 16 0"/>
+              <path d="M7 7v2M10 6.5v2.5M13 6.5v2.5M16 7v2"/>
+              <path d="M4 16c3 3 13 3 16 0"/>
+              <path d="M7 17v-2M10 17.5v-2.5M13 17.5v-2.5M16 17v-2"/>
+              <circle cx="4" cy="12" r="1.6" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
           <h3>TMJ pain & dysfunction</h3>
           <p>Jaw pain, clicking, locking, ear pressure, facial pain. The original specialty of the practice — and where most patients begin.</p>
           <span class="condition-card-link">Learn more</span>
         </div>
         <div class="condition-card" data-page="conditions">
-          <div class="condition-icon">H</div>
+          <div class="condition-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 4.5c0-1.5 1.4-2.5 3-2.5s3 1 3 2.5v.5"/>
+              <path d="M6 9c0-2.8 2.7-5 6-5s6 2.2 6 5"/>
+              <path d="M6 9v4c0 2 1.5 3.5 3.5 3.5"/>
+              <path d="M18 9v4c0 2-1.5 3.5-3.5 3.5"/>
+              <path d="M10 16.5V21h4v-4.5"/>
+              <path d="M20 6l1.5-1M20.5 9.5H22M20 13l1.5 1" opacity="0.55"/>
+              <path d="M4 6l-1.5-1M3.5 9.5H2M4 13l-1.5 1" opacity="0.55"/>
+            </svg>
+          </div>
           <h3>Chronic headaches & migraines</h3>
           <p>Bite alignment therapy is shown in multiple studies to be 85% effective at reversing chronic headaches — regardless of headache type.</p>
           <span class="condition-card-link">Learn more</span>
         </div>
         <div class="condition-card" data-page="conditions">
-          <div class="condition-icon">S</div>
+          <div class="condition-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 18h7c2 0 3.5-1.5 3.5-3.5 0-1.8-1.3-3-3-3-1 0-1.5-.5-1.5-1.2 0-.8.8-1.3 2-1.3"/>
+              <path d="M3 18c0-.5.3-1 .8-1"/>
+              <path d="M16 7h3l-3 4h3" opacity="0.7"/>
+              <path d="M18.5 4h2.5l-2.5 2.5h2.5" opacity="0.5"/>
+            </svg>
+          </div>
           <h3>Sleep apnea</h3>
           <p>Advanced obstructive sleep apnea treatment based on dental orthopedics — for patients who can't tolerate or aren't well-served by CPAP.</p>
           <span class="condition-card-link">Learn more</span>
         </div>
         <div class="condition-card" data-page="conditions">
-          <div class="condition-icon">M</div>
+          <div class="condition-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="13" cy="4" r="1.8"/>
+              <path d="M11 8l-3 4 4 3-1 4-2 3"/>
+              <path d="M12 15l3 2v5"/>
+              <path d="M11 8l4 2 4-1"/>
+            </svg>
+          </div>
           <h3>Movement disorders</h3>
           <p>Tourette's, Parkinson's, dystonia, torticollis, and gait disorders have been reversed in cases through craniomandibular alignment therapy.</p>
           <span class="condition-card-link">Learn more</span>
         </div>
         <div class="condition-card" data-page="conditions">
-          <div class="condition-icon">A</div>
+          <div class="condition-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
           <h3>Surgical alternative</h3>
           <p>Many cases recommended for orthognathic surgery or TMJ surgery can be treated nonsurgically with precision jaw orthopedics.</p>
           <span class="condition-card-link">Learn more</span>
         </div>
         <div class="condition-card" data-page="conditions">
-          <div class="condition-icon">C</div>
+          <div class="condition-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="4.5" r="1.8"/>
+              <path d="M7 9l2 5 2-5"/>
+              <path d="M9 14l-1 8"/>
+              <path d="M9 14l1 8"/>
+              <path d="M16 6.5c.2-1.2 2-1.4 2.5-.5.5 1-.6 1.7-.6 2.5"/>
+              <circle cx="17.9" cy="11" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
           <h3>Complex & undiagnosed</h3>
           <p>Fibromyalgia, IBS, autoimmune conditions, depression, ADD, autism, and the long list of conditions linked to substance P dysregulation.</p>
           <span class="condition-card-link">Learn more</span>
@@ -776,7 +826,7 @@ section { padding: 5rem 0; }
     <div class="container">
       <div class="doctor-preview">
         <div class="doctor-preview-img">
-          <img src="images/Headshot_1.png" alt="Dr. Dwight Jennings, DDS" />
+          <img src="images/Headshot_2.png" alt="Dr. Dwight Jennings, DDS" />
         </div>
         <div>
           <span class="eyebrow">Meet the doctor</span>
@@ -1014,7 +1064,7 @@ section { padding: 5rem 0; }
           <p style="font-size: 1.1rem; line-height: 1.75; color: var(--text);">It functions as a tertiary referral practice. A significant percentage of patients travel more than 50 miles, and many fly into Oakland International Airport — five minutes from the office — from across the country.</p>
         </div>
         <div class="about-hero-img">
-          <img src="images/Headshot_2.png" alt="Dr. Dwight Jennings, DDS" />
+          <img src="images/Headshot_1.png" alt="Dr. Dwight Jennings, DDS" />
         </div>
       </div>
     </div>
@@ -1182,13 +1232,10 @@ section { padding: 5rem 0; }
           <h4>Biochemical · Substance P at the cell</h4>
           <p>Substance P binds the NK-1 receptor, opens cell membranes, lowers cell voltage, and allows calcium influx. It is established as a primary driver of inflammatory disease in the respiratory, gastrointestinal, and musculoskeletal systems (<em>J Cell Physiol</em>, 2004).</p>
         </div>
-      </div>
-
-      <div class="mechanism-explainer" style="margin-top: 1.5rem;">
         <div class="mechanism-step">
           <span class="step-num">4</span>
           <h4>Systemic · Downstream dysfunction</h4>
-          <p>Sustained substance P elevation correlates clinically with the conditions Dr. Jennings sees most often: chronic headaches, fibromyalgia, IBS, autoimmune disorders, sleep apnea, movement disorders, mood and addiction syndromes, and a broad pattern of "complex chronic illness." Whether substance P is causal or only correlative in each of these is an active research question. The clinical observation — that bite alignment therapy reduces this constellation in patients who haven't responded to mainstream care — is what Dr. Jennings' practice was built on.</p>
+          <p>Sustained substance P elevation correlates clinically with the conditions Dr. Jennings sees most often: chronic headaches, fibromyalgia, IBS, autoimmune disorders, sleep apnea, movement disorders, mood and addiction syndromes, and a broader pattern of "complex chronic illness." Whether substance P is causal or only correlative in each is an active research question — but the clinical observation is what the practice was built on.</p>
         </div>
       </div>
     </div>
