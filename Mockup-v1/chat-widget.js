@@ -237,7 +237,8 @@
         </button>
       </form>
       <div class="tmj-chat-disclaimer">
-        Informational only — not a substitute for a consultation. Call (510) 522-6828 or use the <a href="#contact" data-page="contact">contact form</a> to talk to Dr. Jennings.
+        <div>Informational only — not a substitute for a consultation.</div>
+        <div>Call (510) 522-6828 or use the <a href="#contact" data-page="contact">contact form</a> to talk to Dr. Jennings.</div>
       </div>
     </div>
   `;
