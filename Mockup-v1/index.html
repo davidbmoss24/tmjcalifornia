@@ -94,7 +94,23 @@ a:hover { color: var(--accent-hover); }
   padding: 0.4rem 0; border-bottom: 2px solid transparent;
   transition: border-color .2s, color .2s;
 }
+.nav-toggle {
+  display: none;
+  background: transparent; border: 1px solid var(--border);
+  width: 44px; height: 44px; border-radius: 6px;
+  padding: 0; cursor: pointer;
+  align-items: center; justify-content: center;
+  flex-direction: column; gap: 4px;
+}
+.nav-toggle-bar { display: block; width: 20px; height: 2px; background: var(--text); border-radius: 1px; transition: transform .2s, opacity .2s; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); border-color: var(--accent); }
+.nav-links a.btn,
+.nav-links a.btn:hover,
+.nav-links a.btn.active { color: #FFFFFF; border-color: var(--accent-bright); }
+.nav-links a.btn:hover { border-color: var(--accent-bright-hover); }
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
   background: var(--accent-bright); color: #FFFFFF;
@@ -530,7 +546,7 @@ section { padding: 5rem 0; }
 /* ============ RESPONSIVE ============ */
 @media (max-width: 980px) {
   .hero { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 0 4rem; }
-  .hero-quote { position: static; margin-top: 1.5rem; left: 0; }
+  .hero-quote { position: static; margin-top: 1.5rem; left: 0; max-width: none; }
   .conditions-grid { grid-template-columns: 1fr 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
   .doctor-preview { grid-template-columns: 1fr; }
@@ -544,8 +560,27 @@ section { padding: 5rem 0; }
   .mechanism-step::after { right: 50%; top: auto; bottom: -0.8rem; transform: translateX(50%) rotate(90deg); }
   .about-hero, .about-section .container-narrow { grid-template-columns: 1fr; gap: 2rem; }
   .contact-grid { grid-template-columns: 1fr; }
+  .nav-toggle { display: inline-flex; }
   .nav-links { display: none; }
-  .nav-links.mobile-menu-visible { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+  .nav-links.mobile-menu-visible {
+    display: flex; flex-direction: column;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--bg); padding: 1rem 1.25rem 1.5rem;
+    gap: 0; border-bottom: 1px solid var(--border);
+    box-shadow: 0 12px 24px rgba(10,14,19,0.06);
+  }
+  .nav-links.mobile-menu-visible a {
+    padding: 0.95rem 0;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 1rem;
+  }
+  .nav-links.mobile-menu-visible a:last-child { border-bottom: none; }
+  .nav-links.mobile-menu-visible a.btn {
+    margin-top: 1rem;
+    justify-content: center;
+    padding: 0.95rem 1.6rem;
+    border-bottom: 1px solid var(--accent-bright);
+  }
 }
 @media (max-width: 640px) {
   .conditions-grid { grid-template-columns: 1fr; }
@@ -554,6 +589,23 @@ section { padding: 5rem 0; }
   .case-story { padding: 2rem 1.5rem; }
   .featured-paper { padding: 2rem; }
   h1 { font-size: 2.2rem; }
+}
+@media (max-width: 480px) {
+  .container, .container-narrow { padding: 0 1.25rem; }
+  .nav-inner { padding: 0.9rem 1.25rem; }
+  section { padding: 3rem 0; }
+  .page-header { padding: 2.5rem 0 1.5rem; }
+  h1 { font-size: 1.95rem; }
+  h2 { font-size: 1.55rem; }
+  .hero { padding: 2rem 0 3rem; gap: 2rem; }
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+  .hero-actions .btn { justify-content: center; width: 100%; }
+  .hero-quote { padding: 1.1rem 1.25rem; font-size: 1rem; }
+  .cta-banner { padding: 2.25rem 1.25rem; }
+  .case-story { padding: 1.5rem 1.25rem; }
+  .featured-paper { padding: 1.5rem 1.25rem; }
+  .btn { padding: 0.85rem 1.4rem; font-size: 0.95rem; }
+  img, svg { max-width: 100%; height: auto; }
 }
 
 /* ============ MOCKUP NOTICE ============ */
@@ -574,7 +626,12 @@ section { padding: 5rem 0; }
       <span class="brand-name">TMJ California</span>
       <span class="brand-tag">Dwight Jennings, DDS, MICCMO</span>
     </a>
-    <div class="nav-links">
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="nav-links" id="primary-nav">
       <a data-page="home">Home</a>
       <a data-page="conditions">Conditions</a>
       <a data-page="about">About Dr. Jennings</a>
@@ -1614,12 +1671,37 @@ section { padding: 5rem 0; }
     window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
   }
 
+  // Mobile menu toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  function closeMobileMenu() {
+    if (!navLinks || !navToggle) return;
+    navLinks.classList.remove('mobile-menu-visible');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
+  }
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navLinks.classList.toggle('mobile-menu-visible');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+    // Close when tapping outside
+    document.addEventListener('click', (e) => {
+      if (!navLinks.classList.contains('mobile-menu-visible')) return;
+      if (e.target.closest('.nav-inner')) return;
+      closeMobileMenu();
+    });
+  }
+
   // Wire up every element with a data-page attribute
   document.addEventListener('click', (e) => {
     const target = e.target.closest('[data-page]');
     if (target) {
       e.preventDefault();
       showPage(target.dataset.page);
+      closeMobileMenu();
     }
   });
 
