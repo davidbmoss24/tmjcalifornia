@@ -1,0 +1,71 @@
+# PubMed 9009726 — Polymodal C fibers
+
+Full text links
+Cite
+Display options
+Display options
+Format
+Abstract
+PubMed
+PMID
+Abstract
+The cutaneous sensory units labeled C-fiber polymodal nociceptors have a broadly coherent set of responsive characteristics. These include; (a) elevated thresholds to mechanical stimulation and to heat; (b) excitation by irritant and algesic chemicals; and (c) sensitization by injury or algesic substances. These characteristics and the match between the signals produced by C-polymodal nociceptors to pain-causing stimuli and human reports of pain indicate a probable causal connection. Nevertheless, there are indications that this population of sensory units may contain functionally-distinct subtypes. Some human C-polymodal nociceptors have been reported to be excited by histamine at low concentrations, whereas much of the population lacks such responsiveness. Further, in vitro studies of the effects of non-steroidal anti-inflammatory agents and low pH on sensitization suggest distinctions in the responsiveness of different elements whose general characteristics place them into the C-polymodal category. The enhanced responsiveness of C-polymodal nociceptors after heat stimulation or exposure to acidity has a probable relationship to the primary hyperalgesia produced after injury to hairy skin or in the presence of inflammation. Furthermore, the alterations of C-polymodal nociceptor characteristics after partial nerve injury and sympathectomy imply a change in phenotype of neurons spared by denervation and are suggestive of a possible relationship to sympathetically related pain and post-sympathetic neuralgias. These evidences of plasticity in responsiveness of a set of sense organs putatively associated with cutaneous pain represent lessons in the adaptability of biological mechanisms, and clues to the pathophysiology of pain.
+PubMed Disclaimer
+Publication types
+Research Support, U.S. Gov't, P.H.S.
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Review
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+MeSH terms
+Animals
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Ganglia, Spinal / cytology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Ganglia, Spinal / physiology*
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Humans
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Mechanoreceptors / physiology*
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Neuronal Plasticity / physiology*
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Nociceptors / physiology*
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Skin / innervation*
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Grants and funding
+NS10321/NS/NINDS NIH HHS/United States
+NS14899/NS/NINDS NIH HHS/United States
+LinkOut - more resources
+Full Text Sources
+Elsevier Science

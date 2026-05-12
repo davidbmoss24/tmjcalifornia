@@ -1,0 +1,446 @@
+# NCBI Books NBK10065 — Neural Crest
+
+The .gov means it's official.
+Federal government websites often end in .gov or .mil. Before
+							sharing sensitive information, make sure you're on a federal
+							government site.
+The site is secure.
+The
+https://
+ensures that you are connecting to the
+							official website and that any information you provide is encrypted
+							and transmitted securely.
+Access keys
+NCBI Homepage
+MyNCBI Homepage
+Main Content
+Main Navigation
+Bookshelf
+Browse Titles
+Advanced
+Help
+Disclaimer
+NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health.
+Gilbert SF. Developmental Biology. 6th edition. Sunderland (MA): Sinauer Associates; 2000.
+By agreement with the publisher, this book is accessible by the search feature, but cannot be browsed.
+Developmental Biology. 6th edition.
+Show details
+Gilbert SF.
+Sunderland (MA):
+Sinauer Associates
+; 2000.
+The Neural Crest
+Although derived from the ectoderm, the neural crest has sometimes been called the fourth germ layer because of its importance. It has even been said, perhaps hyperbolically, that “the only interesting thing about vertebrates is the neural crest” (quoted in
+Thorogood 1989
+). The neural crest cells originate at the dorsalmost region of the neural tube. Transplantation experiments wherein a quail neural plate is grafted into a chick non-neural ectoderm have shown that juxtaposing these tissues induces the formation of neural crest cells, and that both the prospective neural plate and the prospective epidermis contribute to the neural crest (
+Selleck and Bronner-Fraser 1995
+; see also
+Mancilla and Mayor 1996
+).
+The neural crest cells migrate extensively to generate a prodigious number of differentiated cell types. These cell types include (1) the neurons and glial cells of the sensory, sympathetic, and parasympathetic nervous systems, (2) the epinephrine-producing (medulla) cells of the adrenal gland, (3) the pigment-containing cells of the epidermis, and (4) many of the skeletal and connective tissue components of the head. The fate of the neural crest cells depends, to a large degree, on where they migrate to and settle.
+Table 13.1
+is a summary of some of the cell types derived from the neural crest.
+Table 13.1
+Some derivatives of the neural crest.
+The neural crest can be divided into four main functional (but overlapping) domains (
+Figure 13.1
+):
+Figure 13.1
+Regions of the neural crest. The cranial neural crest migrates into the branchial arches and the face to form the bones and cartilage of the face and neck. It also produces pigment and cranial nerves. The vagal neural crest (near somites 1–7)
+(more...)
+The
+cranial (cephalic) neural crest
+, whose cells migrate dorsolaterally to produce the craniofacial mesenchyme that differentiates into the cartilage, bone, cranial neurons, glia, and connective tissues of the face. These cells enter the pharyngeal arches and pouches to give rise to thymic cells, odontoblasts of the tooth primordia, and the bones of middle ear and jaw.
+The
+trunk neural crest
+, whose cells take one of two major pathways. Neural crest cells that become the pigment-synthesizing
+melanocytes
+migrate dorsolaterally into the ectoderm and continue on their way toward the ventral midline of the belly. The second migratory pathway takes the trunk neural crest cells ventrolaterally through the anterior half of each sclerotome. (
+Sclerotomes
+are blocks of mesodermal cells, derived from somites, that will differentiate into the vertebral cartilage of the spine.) Those trunk neural crest cells that remain in the sclerotome form the
+dorsal root ganglia
+containing the sensory neurons. Those cells that continue more ventrally form the sympathetic ganglia, the adrenal medulla, and the nerve clusters surrounding the aorta.
+The
+vagal
+and
+sacral neural crest
+, whose cells generate the
+parasympathetic
+(
+enteric
+)
+ganglia
+of the gut (
+Le Douarin and Teillet 1973
+;
+Pomeranz et al. 1991
+). The vagal (neck) neural crest lies opposite chick somites 1–7, while the sacral neural crest lies posterior to somite 28. Failure of neural crest cell migration from these regions to the colon results in the absence of enteric ganglia and thus to the absence of peristaltic movement in the bowels.
+The
+cardiac neural crest
+is located between the cranial and trunk neural crests. In chick embryos, this neural crest region extends from the first to the third somites, overlapping the anterior portion of the vagal neural crest. (
+Kirby 1987
+;
+Kirby and Waldo 1990
+). The cardiac neural crest cells can develop into melanocytes, neurons, cartilage, and connective tissue (of the third, fourth, and sixth pharyngeal arches). In addition, this region of the neural crest produces the entire musculoconnective tissue wall of the large arteries as they arise from the heart, as well as contributing to the septum that separates the pulmonary circulation from the aorta (
+Le Lièvre and Le Douarin 1975
+).
+The Trunk Neural Crest
+Migration pathways of trunk neural crest cells
+The trunk neural crest is a transient structure, its cells dispersing soon after the neural tube closes. There are two major pathways taken by the migrating trunk neural crest cells (
+Figure 13.2A
+). Those cells migrating along the
+dorsolateral pathway
+become melanocytes, the melanin-forming pigment cells. They travel through the dermis, entering the ectoderm through minute holes in the basal lamina (which they may make). Here they colonize the skin and hair follicles (
+Mayer 1973
+;
+Erickson et al. 1992
+). This pathway was demonstrated in a series of classic experiments by
+Mary Rawles and others (1948)
+, who transplanted the neural tube and crest from a pigmented strain of chickens into the neural tube of an albino chick embryo (see Figure 1.11).
+Figure 13.2
+Neural crest cell migration in the trunk of the chick embryo. (A) Schematic diagram of neural crest cell migration. In Path 1 (the ventral pathway), cells travel ventrally through the anterior of the sclerotome (that portion of the somite that generates
+(more...)
+Fate mapping of the neural crest cells has also shown that there is a
+ventral pathway
+wherein trunk neural crest cells become sensory (dorsal root) and sympathetic neurons, adrenomedullary cells, and Schwann cells (
+Weston 1963
+;
+Le Douarin and Teillet 1974
+). In birds and mammals (but not fishes and frogs), these cells migrate ventrally through the
+anterior
+but not through the
+posterior
+section of the sclerotomes (
+Figure 13.2B
+,
+C
+;
+Rickmann et al. 1985
+;
+Bronner-Fraser 1986
+;
+Loring and Erickson 1987
+;
+Teillet et al. 1987
+). By transplanting quail neural tubes into chick embryos, Teillet and co-workers were able to mark neural crest cells both genetically and immunologically. The antibody marker recognized and labeled neural crest cells of both species; the genetic marker enabled the investigators to distinguish between quail and chick cells. These studies showed that neural crest cells initially located opposite the posterior regions of the somites migrate anteriorly or posteriorly along the neural tube and then enter the
+anterior
+region of their own or adjacent somites. These neural crest cells join with the neural crest cells that were initially opposite the anterior portion of the somite, and they form the same structures. Thus, each dorsal root ganglion is composed of three neural crest populations: one from the neural crest opposite the anterior portion of the somite and one from each of the adjacent neural crest regions opposite the posterior portions of the somites.
+The mechanisms of trunk neural crest migration
+Emigration from the neural tube
+Any analysis of migration (be it of birds, butterflies, or neural crest cells) has to ask four questions:
+1.
+How is migration initiated?
+2.
+How do the migratory agents know the route on which to travel?
+3.
+What signals indicate that the destination has been reached and that migration should end?
+4.
+When does the migrating agent become competent to respond to these signals?
+Neural crest cells originate from the neural folds through interactions of the neural plate with the presumptive epidermis. In cultures of embryonic chick ectoderm, presumptive epidermis can induce neural crest formation in the neural plate to which it is connected (
+Dickinson et al. 1995
+). These changes can be mimicked by culturing neural plate cells with
+bone morphogenetic proteins 4
+and
+7
+, two proteins that are known to be secreted by the presumptive epidermis (
+Liem et al. 1997
+; see Chapter 12). BMP4 and BMP7 induce the expression of the
+Slug protein
+and the
+RhoB protein
+in the cells destined to become neural crest (
+Figure 13.3
+;
+Nieto et al. 1994
+;
+Mancilla and Mayor 1996
+;
+Liu and Jessell 1998
+). If either of these proteins is inactivated or inhibited from forming, the neural crest cells fail to emigrate from the neural tube.
+*
+Figure 13.3
+All migrating neural crest cells express HNK-1 (red stain), as in Figure 13.2. The RhoB protein (green stain) is expressed in cells as they leave the neural crest. Cells expressing both HNK-1 and RhoB appear yellow. (After Liu and Jessell 1998; photograph
+(more...)
+For cells to leave the neural crest, there must be pushes as well as pulls. The RhoB protein may be involved in establishing the cytoskeletal conditions that promote migration (
+Hall 1998
+). However, the cells cannot leave the neural tube as long as they are tightly connected to one another. One of the functions of the Slug protein is to activate the factors that dissociate the tight junctions between the cells (
+Savagne et al. 1997
+). Another factor in the initiation of neural crest cell migration is the loss of the N-cadherin that had linked them together. Originally found on the surface of the neural crest cells, this cell adhesion protein is downregulated at the time of cell migration. Migrating trunk neural crest cells have no N-cadherin on their surfaces, but they begin to express it again as they aggregate to form the dorsal root and sympathetic ganglia (
+Takeichi 1988
+;
+Akitaya and Bronner-Fraser 1992
+).
+Recognition of surrounding extracellular matrices
+The path taken by the migrating trunk neural crest cells is controlled by the extracellular matrices surrounding the neural tube (
+Newgreen and Gooday 1985
+;
+Newgreen et al. 1986
+). But what are the extracellular matrix molecules that enable or forbid migration? One set of proteins promotes migration. These proteins include fibronectin, laminin, tenascin, various collagen molecules, and proteoglycans, and they are seen throughout the matrix encountered by the neural crest cells. Another set of proteins impedes migration and provides the specificity for cellular movements. The main proteins involved in this restriction of neural crest cell migration are the
+ephrin proteins
+. These proteins are expressed in the posterior section of each sclerotome, and wherever they are, neural crest cells do not go (
+Figure 13.4
+). If neural crest cells are plated into a culture dish that contains alternate rows of extracellular matrix with or without ephrins, these cells will leave the ephrin-containing matrix and move along the matrix stripes that lack ephrin (
+Figure 13.4B
+;
+Krull et al. 1997
+;
+Wang and Anderson 1997
+). The neural crest cells recognize the ephrin proteins through their cell surface
+Eph receptors
+. Thus, the neural crest cells contain an Eph receptor in their plasma membranes, while the posterior portions of the trunk sclerotomes contain an Eph ligand in their membranes. Binding to the ephrins activates the tyrosine kinase domains of the Eph receptors in the neural crest cells, and these kinases probably phosphorylate proteins that interfere with the actin cytoskeleton that is critical for cell migration. In addition to ephrins, there are other proteins in the posterior portion of each sclerotome that also appear to contribute to the inhospitable nature of these regions (
+Krull et al. 1995
+). This patterning of neural crest cell migration generates the overall segmental character of the peripheral nervous system, reflected in the positioning of the dorsal root ganglia and other neural crest-derived structures.
+Figure 13.4
+Segmental restriction of neural crest cells and motor neurons by the ephrin proteins of the sclerotome. (A) Negative correlation between regions of ephrin in the sclerotome (dark blue stain, left) and neural crest cell migration (green HNK-1 stain, right).
+(more...)
+Chemotactic and maintenance factors are also important in neural crest cell migration. Stem cell factor (mentioned in Chapter 6) is critical in allowing the continued proliferation of those neural crest cells that enter the skin, and it may also serve as an anti-apoptosis factor and a chemotactic factor. If stem cell factor is secreted from cells that do not usually synthesize this protein (such as the cheek epithelium or footpads), neural crest cells will enter those regions and become melanocytes (
+Kunisada et al. 1998
+). Therefore, the migration of neural crest cells appears to be regulated both by the extracellular matrix and by soluble factors secreted by potential destinations. As we will see later in this chapter, the movement of axonal growth cones can also be regulated by similar (and sometimes identical) cues.
+WEBSITE
+13.1 The specificity of the extracellular matrix
+. The importance of the extracellular matrix for neural crest cell migration was first shown in a series of creative experiments using mutant salamanders.
+http://www.devbio.com/chap13/link1301.shtml
+WEBSITE
+13.2 Mouse neural crest cell mutants
+. Some of the most important insights into neural crest cell development and migration have come from studies of mutant mice. These mice can be recognized by their altered pigmentation, resulting from abnormalities of proliferation, migration, or differentiation.
+http://www.devbio.com/chap13/link1302.shtml
+Trunk neural crest cell differentiation
+The pluripotency of trunk neural crest cells
+One of the most exciting features of neural crest cells is their pluripotency. A single neural crest cell can differentiate into any of several different cell types, depending on its location within the embryo. For example, the parasympathetic neurons formed by the vagal (neck) neural crest cells produce acetylcholine as their neurotransmitter; they are therefore cholinergic neurons. The sympathetic neurons formed by the thoracic (chest) neural crest cells produce norepinephrine; they are adrenergic neurons. But when chick vagal and thoracic neural crests are reciprocally transplanted, the former thoracic crest produces the
+cholinergic
+neurons of the parasympathetic ganglia, and the former vagal crest forms
+adrenergic
+neurons in the sympathetic ganglia (
+Le Douarin et al. 1975
+).
+Kahn and co-workers (1980)
+found that premigratory neural crest cells from both the thoracic and the vagal regions have the enzymes for synthesizing both acetylcholine and norepinephrine. Thus, the thoracic neural crest cells are capable of developing into cholinergic neurons when they are placed into the neck, and the vagal neural crest cells are capable of becoming adrenergic neurons when they are placed in the trunk.
+The pluripotency of some neural crest cells is such that even regions of the neural crest that never produce nerves in normal embryos can be made to do so under certain conditions. Cranial neural crest cells from the midbrain region normally migrate into the eye and interact with the pigmented retina to become scleral cartilage cells (
+Noden 1978
+). However, if this region of the neural crest is transplanted into the trunk region, it can form sensory ganglion neurons, adrenomedullary cells, glia, and Schwann cells (
+Schweizer et al. 1983
+).
+The research we have just described studied the potential of
+populations
+of cells. It is still uncertain whether most of the individual cells that leave the neural crest are pluripotent or whether most have already become restricted to certain fates.
+Bronner-Fraser and Fraser (1988,
+1989
+) provided evidence that some, if not most, of the individual neural crest cells are pluripotent as they leave the crest. They injected fluorescent dextran molecules into individual neural crest cells while the cells were still above the neural tube, and then looked to see what types of cells their descendants became after migration. The progeny of a single neural crest cell could become sensory neurons, pigment cells, adrenomedullary cells, and glia (
+Figure 13.5
+). In mammals, the neural crest cell is similarly seen as a stem cell that can generate further multipotent neural crest cells.
+Figure 13.5
+Pluripotency of trunk neural crest cells. (A) A single neural crest cell is injected with highly fluorescent dextran shortly before migration of the neural crest cells is initiated. The progeny of this cell will each receive some of these fluorescent
+(more...)
+However, D. J. Anderson's laboratory (
+Lo et al. 1997
+;
+Ma et al. 1998
+;
+Perez et al. 1999
+) found evidence that some populations of neural crest cells are committed very soon after leaving the neural tube. They have shown that the sensory neurons from the neural crest are specified by the transcription factor
+neurogenin
+, whereas the sympathetic and parasympathetic neurons from the neural crest are specified by the related transcription factor
+Mash-1
+. The expression of neurogenin (which would prevent a neural crest cell from becoming anything but a sensory neuron) is seen almost immediately after the neural crest cells emigrate from the neural tube. It is not yet known how committed these cells are to retaining these original biases. It appears, then, that some neural crest cells retain the ability to differentiate into a large number of different cell types, while other neural crest cell populations are specified early in development.
+WEBSITE
+13.3 Committed neural crest cells
+. Not all neural crest cells are pluripotent. The neural crest cells leaving the dorsal neural tube are a population of heterogeneous cells, some of which have a restricted potency.
+http://www.devbio.com/chap13/link1303.shtml
+Final differentiation of the trunk neural crest cells
+The final differentiation of neural crest cells is determined in large part by the environment to which they migrate. It does not involve the selective death of those cells already committed to secreting a type of neurotransmitter other than the one called for (
+Coulombe and Bronner-Fraser 1987
+). Heart cells, for example, secrete a protein, leukemia inhibition factor (LIF), that can convert adrenergic sympathetic neurons into cholinergic neurons without affecting their survival or growth (
+Chun and Patterson 1977
+;
+Fukada 1980
+;
+Yamamori et al. 1989
+). Similarly, bone morphogenetic protein 2 (BMP2), a protein secreted by the heart, lung, and dorsal aorta, influences rat neural crest cells to differentiate into cholinergic neurons. Such neurons form the sympathetic ganglia in the region of these organs (
+Shah et al. 1996
+). While BMP2 may induce neural crest cells to become neurons, glial growth factor (GGF; neuregulin) suppresses neuronal differentiation and directs development toward glial fates (
+Shah et al. 1994
+). Another paracrine factor, endothelin-3, appears to stimulate neural crest cells to become melanocytes in the skin and adrenergic neurons in the gut (
+Baynash et al. 1994
+;
+Lahav et al. 1996
+). To distinguish between these two fates, the neural crest cells entering the skin also encounter Wnt proteins that inhibit neural development and promote melanocyte differentiation (
+Dorsky et al. 1998
+). Similarly, the chick trunk neural crest cells that migrate into the region destined to become the adrenal medulla can differentiate in two directions. The presence of certain paracrine factors induces these cells to become sympathetic neurons (
+Varley et al. 1995
+), while those cells that also encounter glucocorticoids like those made by the cortical cells of the adrenal gland differentiate into adrenomedullary cells (
+Figure 13.6
+;
+Anderson and Axel 1986
+;
+Vogel and Weston 1990
+). Thus, the fate of a neural crest cell can be directed by the milieu of the tissue environment in which it settles.
+Figure 13.6
+Final differentiation of a trunk neural crest cell committed to become either an adrenomedullary (chromaffin) cell or a sympathetic neuron. Glucocorticoids appear to act at two places in this pathway: first, they inhibit the actions of those factors that
+(more...)
+The Cranial Neural Crest
+Cranial neural crest cells have a different repertoire of fates from the trunk neural crest cells. While both types of neural crest cells can form melanocytes, neurons, and glia, only the cells of the cranial neural crest are able to produce cartilage and bone. Moreover, if transplanted into the trunk region, the cranial neural crest participates in forming trunk cartilage that normally does not arise from neural crest components.
+The “face” is largely the product of the cranial neural crest, and the evolution of the jaws, teeth, and facial cartilage occurs through changes in the placement of these cells (see Chapter 22). As mentioned in Chapter 12, the hindbrain is segmented along the anterior-posterior axis into compartments called rhombomeres. The chick cranial neural crest cells migrate from those regions anterior to rhombomere 6, taking one of three major pathways (
+Figure 13.7
+;
+Lumsden and Guthrie 1991
+). First, cells from rhombomeres 1 and 2 migrate to the first pharyngeal (mandibular) arch, forming the jawbones as well as the incus and malleus bones of the ear. They are also pulled by the expanding epidermis to form the
+frontonasal process
+. The neural crest cells of the frontonasal process generate the bones of the face. Second, cells from rhombomere 4 populate the second pharyngeal arch (forming the hyoid cartilage of the neck). Third, cells from rhombomere 6 migrate into the third and fourth pharyngeal arches and pouches
+†
+to form the thymus, parathyroid, and thyroid glands. If the neural crest is removed from those regions including rhombomere 6, the thymus, parathyroid glands, and thyroid fail to form (
+Bockman and Kirby 1984
+).
+Figure 13.7
+Cranial neural crest cell migration in the mammalian head. (A) Scanning electron micrograph of a rat embryo with part of the lateral ectoderm removed from the surface. Neural crest cell migration can be seen over the midbrain, and the column of neural
+(more...)
+Neural crest cells from rhombomeres 3 and 5 do not migrate through the mesoderm surrounding them, but enter into the migrating streams of neural crest cells on either side of them. Those that do not enter these streams of cells will die (
+Graham et al. 1993
+,
+1994
+;
+Sechrist et al. 1993
+). There is evidence in frog embryos that the separate streams are kept apart by ephrins. Blocking the activity of the Eph receptors causes the cells from the different streams to mix together (
+Smith et al. 1997
+;
+Helbling et al. 1998
+).
+In mammalian embryos, cranial neural crest cells migrate before the neural tube is closed (
+Tan and Morriss-Kay 1985
+) and give rise to the facial mesenchyme (
+Johnston et al. 1985
+). The neural crest cells originating in the forebrain and midbrain contribute to the frontonasal process, palate, and mesenchyme of the first pharyngeal arch. This structure becomes part of the gill apparatus in fishes; in humans, it gives rise to the jawbones and to the incus and malleus bones of the middle ear. The neural crest cells originating in the anterior hindbrain region generate the mesenchyme of the second pharyngeal arch, which generates the human stapes bone as well as much of the facial cartilage (see
+Figure 13.7C
+;
+Table 13.2
+). The cranial neural crest cells also give rise to the mesenchyme of the third, fourth, and sixth pharyngeal arches (the fifth degenerates in humans), which produce the neck bones and muscles.
+Table 13.2
+Some derivatives of the pharyngeal arches.
+In at least some cases, these cranial neural crest cells are instructed quite early as to what tissues they can form.
+Noden (1983)
+removed regions of chick neural crest that would normally seed the second pharyngeal arch and replaced them with cells that would migrate into the first pharyngeal arch. The host embryos developed two sets of lower jaw structures, since the graft-derived cells also produced a mandible.
+It appears that the combinations of Hox genes expressed in the various regions of neural crest cells specify their fates. When
+Hoxa-2
+is knocked out from mouse embryos, the neural crest cells of the second pharyngeal arch are transformed into those structures of the first pharyngeal arch (
+Gendron-Maguire et al. 1993
+;
+Rijli et al. 1993
+). As we discussed in Chapter 11,
+Chisaka and Capecchi (1991)
+knocked out the
+Hoxa-3
+gene from inbred mice and found that these mutant mice had severely deficient or absent thymuses, thyroids, and parathyroid glands, shortened neck vertebrae, and malformed major heart vessels (see Figure 11.38). It appears that the
+Hoxa-3
+genes are responsible for specifying the cranial neural crest cells that give rise to the neck cartilage and pharyngeal arch derivatives.
+Hoxa-1
+and
+Hoxb-1
+are both required for the migration of rhombomere 4 neural crest cells into the second pharyngeal pouch. If both genes are knocked out from mice, no migration occurs from r4, and the second pouch-derived middle ear structures are absent (
+Gavalas et al. 1998
+;
+Studer et al. 1998
+). Moreover, retinoic acid induces the anterior expression of Hox genes that are usually expressed only more posteriorly, and they cause rhombomeres 2 and 3 to assume the identity of rhombomeres 4 and 5 (
+Figure 13.8
+;
+Marshall et al. 1992
+;
+Kessel 1993
+). In these circumstances, the trigeminal nerve (which arises from r2) is transformed into another facial nerve (characteristic of r4), and abnormalities of the first pharyngeal arch indicate that the neural crest cells of the second and third rhombomeres have been transformed into more posterior phenotypes.
+Figure 13.8
+Altering Hox gene expression patterns alters neural crest cell specification. (A) Retinoic acid alters
+Hoxb-1
+expression patterns and mediates the homeotic transformation of hindbrain regions. (A) In untreated mouse embryos (left) on day 8.5,
+Hoxb-1
+expression
+(more...)
+Once in the pharyngeal arches and pouches, the neural crest cells have to continue proliferating and then differentiate. Mice that are deficient in the gene for endothelin-1 have specific abnormalities of pharyngeal arches 3 and 4 (as well as the heart); the neural crest cells enter the arches but are not stimulated to divide (
+Thomas et al. 1998
+). As a result, these mice have a spectrum of defects that resemble a human condition called
+CATCH-22
+—an acronym for
+c
+ardiac defects,
+a
+bnormal face,
+t
+hymic hypoplasia,
+c
+left palate,
+h
+ypocalcemia, and deletions of chromosome
+22.
+The Cardiac Neural Crest
+As we will see in Chapter 15, the heart originally forms in the neck region, directly beneath the pharyngeal arches, so it should not be surprising that it acquires cells from the neural crest. However, the contributions of the neural crest to the heart have only recently been appreciated. The caudal region of the cranial neural crest is sometimes called the cardiac neural crest, since its cells (and only these particular neural crest cells) can generate the endothelium of the aortic arch arteries and the septum between the aorta and the pulmonary artery (
+Waldo et al. 1998
+; see
+Figure 13.10
+). In the chick, the cardiac neural crest lies above the neural tube region from rhombomere 7 through the portion of the spinal cord apposing the third somite, and its cells migrate into pharyngeal arches 3, 4, and 6. The cardiac neural crest is unique in that if it is removed and replaced by anterior cranial or trunk neural crest, cardiac abnormalities (notably the failure of the truncus arteriosus to separate into the aorticand pulmonary arteries) occur. Thus, the cardiac neural crest is already determined to generate cardiac cells, and the other regions of the neural crest cannot substitute for it (
+Kirby 1989
+;
+Kuratani and Kirby 1991
+).
+Figure 13.10
+Separation of the truncus arteriosus into the pulmonary artery and aorta. The truncoconal septa (between the aorta and the pulmonary trunk) forms from the cells of the cardiac neural crest. (A) Human cardiac neural crest cells migrate to pharyngeal arches
+(more...)
+In mice, the cardiac neural crest cells are peculiar in that they express the transcription factor Pax3. Mutations of Pax3 result in persistent truncus arteriosus (the failure of the aorta and pulmonary artery to separate), as well as defects in the thymus, thyroid, and parathyroid glands (
+Conway et al. 1997
+). Congenital heart defects in humans and mice often occur with defects in the parathyroid, thyroid, or thymus glands. It would not be surprising if all of these were linked to defects in the migration of cells from the neural crest.
+WEBSITE
+13.4 Communication between migrating neural crest cells.
+Recent research has shown that neural crest cells might cooperate with one another as they migrate. There may be subtle communication between these cells through their gap junctional complexes, and this communication may be important for heart development.
+http://www.devbio.com/chap13/link1304.shtml
+Box
+Tooth Development.
+Footnotes
+*
+The BMP signal may be amplified by other signals coming from the presumptive ectoderm. Fibroblast growth factors and Wnt proteins may be essential for maintaining the BMP-initiated events (see
+Mayor et al. 1997
+;
+LaBonne and Bronner-Fraser 1998
+).
+†
+The pharyngeal. or branchial, arches are outpocketings of the head and neck region into which neural crest cells migrate (see
+Figure 13.1
+). The pharyngeal pouches form between these arches and become the thyroid, parathyroid, and thymus.
+By agreement with the publisher, this book is accessible by the search feature, but cannot be browsed.
+Copyright
+© 2000, Sinauer
+Associates.
+Bookshelf ID: NBK10065
+Views
+Cite this Page
+Gilbert SF. Developmental Biology. 6th edition. Sunderland (MA): Sinauer Associates; 2000.  The Neural Crest.
+In this Page
+The Trunk Neural Crest
+The Cranial Neural Crest
+The Cardiac Neural Crest
+Related Items in Bookshelf
+All Textbooks
+Recent Activity
+Clear
+Turn Off
+Turn On
+The Neural Crest - Developmental Biology
+The Neural Crest - Developmental Biology
+Your browsing activity is empty.
+Activity recording is turned off.
+Turn recording back on
+See more...
+Follow NCBI
+Twitter
+Facebook
+LinkedIn
+GitHub
+NCBI Insights Blog
+Connect with NLM
+Twitter
+Facebook
+Youtube
+National Library of Medicine
+8600 Rockville Pike
+Bethesda, MD 20894
+Web Policies
+FOIA
+HHS Vulnerability Disclosure
+Help
+Accessibility
+Careers

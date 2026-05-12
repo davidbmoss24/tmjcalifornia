@@ -1,0 +1,92 @@
+# PubMed 15334652 — Substance P in inflammatory disease
+
+Full text links
+Cite
+Display options
+Display options
+Format
+Abstract
+PubMed
+PMID
+Abstract
+The diffuse neuroendocrine system consists of specialised endocrine cells and peptidergic nerves and is present in all organs of the body. Substance P (SP) is secreted by nerves and inflammatory cells such as macrophages, eosinophils, lymphocytes, and dendritic cells and acts by binding to the neurokinin-1 receptor (NK-1R). SP has proinflammatory effects in immune and epithelial cells and participates in inflammatory diseases of the respiratory, gastrointestinal, and musculoskeletal systems. Many substances induce neuropeptide release from sensory nerves in the lung, including allergen, histamine, prostaglandins, and leukotrienes. Patients with asthma are hyperresponsive to SP and NK-1R expression is increased in their bronchi. Neurogenic inflammation also participates in virus-associated respiratory infection, non-productive cough, allergic rhinitis, and sarcoidosis. SP regulates smooth muscle contractility, epithelial ion transport, vascular permeability, and immune function in the gastrointestinal tract. Elevated levels of SP and upregulated NK-1R expression have been reported in the rectum and colon of patients with inflammatory bowel disease (IBD), and correlate with disease activity. Increased levels of SP are found in the synovial fluid and serum of patients with rheumatoid arthritis (RA) and NK-1R mRNA is upregulated in RA synoviocytes. Glucocorticoids may attenuate neurogenic inflammation by decreasing NK-1R expression in epithelial and inflammatory cells and increasing production of neutral endopeptidase (NEP), an enzyme that degrades SP. Preventing the proinflammatory effects of SP using tachykinin receptor antagonists may have therapeutic potential in inflammatory diseases such as asthma, sarcoidosis, chronic bronchitis, IBD, and RA. In this paper, we review the role that SP plays in inflammatory disease.
+Copyright 2004 Wiley-Liss, Inc.
+PubMed Disclaimer
+Publication types
+Research Support, Non-U.S. Gov't
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Review
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+MeSH terms
+Animals
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Digestive System / immunology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Digestive System / pathology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Humans
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Inflammation* / immunology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Inflammation* / pathology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Inflammation* / physiopathology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Pneumonia / immunology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Receptors, Tachykinin / immunology
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Substance P / immunology*
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Substances
+Receptors, Tachykinin
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+Substance P
+Actions
+Search in PubMed
+Search in MeSH
+Add to Search
+LinkOut - more resources
+Full Text Sources
+Wiley
+Other Literature Sources
+The Lens - Patent Citations Database

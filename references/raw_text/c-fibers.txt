@@ -1,0 +1,1290 @@
+# Wikipedia — Group C nerve fiber
+
+From Wikipedia, the free encyclopedia
+One of three classes of nerve fiber in the nervous system
+Group C nerve fiber
+C fiber not labeled, but substantia gelatinosa of Rolando is
+Rexed lamina
+II, labeled at upper left.
+Details
+Location
+Central nervous system
+and
+peripheral nervous system
+Function
+nerve fiber
+Anatomical terms of neuroanatomy
+[
+edit on Wikidata
+]
+Group C nerve fibers
+are one of three classes of
+nerve fiber
+in the
+central nervous system
+(CNS) and
+peripheral nervous system
+(PNS). The Group C fibers are
+unmyelinated
+and have a small diameter and low conduction velocity, whereas
+Groups A
+and
+B
+are myelinated. Group C fibers include
+postganglionic fibers
+in the
+autonomic nervous system
+(ANS), and nerve fibers at the
+dorsal roots
+(IV fiber). These fibers carry sensory information.
+Damage or injury to nerve fibers causes
+neuropathic pain
+.
+Capsaicin
+activates C fibre
+vanilloid receptors
+, providing the burning sensation associated with
+chili peppers
+.
+Structure and anatomy
+[
+edit
+]
+Location
+[
+edit
+]
+C fibers are one class of
+nerve fiber
+found in the
+nerves
+of the
+somatic sensory system
+.
+[
+1
+]
+They are
+afferent fibers
+, conveying input signals from the
+periphery
+to the central nervous system.
+[
+2
+]
+Structure
+[
+edit
+]
+C fibers are
+unmyelinated
+unlike most other
+fibers
+in the nervous system.
+[
+1
+]
+This lack of myelination is the cause of their slow
+conduction velocity
+, which is on the order of no more than
+2
+m/s
+.
+[
+1
+]
+C fibers are on average 0.2–1.5
+μm
+in diameter.
+Remak bundles
+[
+edit
+]
+C fiber axons are grouped together into what is known as Remak bundles.
+[
+3
+]
+These occur when a non-myelinating
+Schwann cell
+bundles the axons close together by surrounding them.
+[
+4
+]
+The Schwann cell keeps them from touching each other by squeezing its
+cytoplasm
+between the axons.
+[
+4
+]
+The condition of Remak bundles varies with age.
+[
+4
+]
+The number of C fiber axons in each Remak bundle varies with location.
+[
+3
+]
+For example, in a rat model, large bundles of greater than 20 axons are found exiting the L5
+dorsal root ganglion
+, while smaller bundles of average 3 axons are found in distal nerve segments.
+[
+3
+]
+Multiple neurons contribute axons to the Remak bundle with an average ratio of about 2 axons contributed per bundle.
+[
+3
+]
+The cross sectional area of a Remak bundle is proportional to the number of axons found inside it.
+[
+3
+]
+Remak bundles in the distal peripheral nerve are clustered with other Remak bundles.
+[
+3
+]
+The Remak Schwann cells have been shown to be electrochemically responsive to
+action potentials
+of the axons contained within them.
+[
+3
+]
+In experiments where nerve injury is caused but nearby C fibers remain intact, increased spontaneous activity in the C fibers is observed.
+[
+3
+]
+This phenomenon supports the theory that damaged nerve fibers may release factors that alter the function of neighboring undamaged fibers.
+[
+3
+]
+Study of Remak bundles has important implications in nerve regeneration after sustaining injury.
+[
+3
+]
+Currently, recovery of distal C fiber function takes months and may still only regain incomplete function.
+[
+3
+]
+This may result in abnormal sensory function or
+neuropathic pain
+.
+[
+3
+]
+Remak bundles are thought to release certain trophic factors that promote the regeneration of the damaged axons.
+[
+3
+]
+Pathway
+[
+edit
+]
+C fibers synapse to second-order projection neurons in the spinal cord at the upper laminae of the
+dorsal horn
+in the
+substantia gelatinosa
+.
+[
+5
+]
+The second-order projection neurons are of the wide dynamic range (WDR) type, which receive input from both nociceptive terminals as well as myelinated A-type fibers.
+[
+5
+]
+There are three types of second order projection neurons in the
+spinothalamic tract
+: wide dynamic range (WDR), high threshold (HT), and low threshold (LT).
+[
+6
+]
+These classifications are based on their responses to mechanical stimuli.
+[
+6
+]
+The second-order neurons ascend to the
+brain stem
+and
+thalamus
+in the
+ventrolateral
+, or
+anterolateral
+, quadrant of the
+contralateral
+half of the
+spinal cord
+, forming the spinothalamic tract.
+[
+1
+]
+The spinothalamic tract is the main pathway associated with pain and temperature perception, which immediately crosses the spinal cord laterally.
+[
+1
+]
+This crossover feature is clinically important because it allows for identification of the location of injury.
+Function
+[
+edit
+]
+Because of their higher conduction velocity owing to strong myelination and different activation conditions, Aδ fibers are broadly responsible for the sensation of a quick shallow pain that is specific on one area, termed as first
+pain
+.
+[
+1
+]
+They respond to a weaker intensity of stimulus.
+[
+1
+]
+C fibers respond to stimuli which have stronger intensities and are the ones to account for the slow, lasting and spread out second pain.
+[
+1
+]
+These fibers are virtually unmyelinated and their conduction velocity is, as a result, much slower which is why they presumably conduct a slower sensation of pain.
+[
+7
+]
+C fibers are considered polymodal because they can react to various stimuli. They react to stimuli that are thermal, or mechanical, or chemical in nature.
+[
+1
+]
+C fibers respond to all kinds of physiological changes in the body.
+[
+8
+]
+For example, they can respond to
+hypoxia
+,
+hypoglycemia
+, hypo-osmolarity, the presence of muscle metabolic products, and even light or sensitive touch.
+[
+8
+]
+C fiber receptors include:
+C fiber nociceptors
+responsible for the second, burning pain
+C fiber warming specific receptors
+responsible for warmth
+ultra-slow histamine-selective C fibers
+responsible for itch
+tactile C fibers
+sensual touch
+includes CT fibres, also known as C low-threshold mechanoreceptors (CLTM), which are
+unmyelinated
+afferents found in human hairy skin, and have a low mechanical threshold < 5 milliNewtons. They have moderate adaptation and may exhibit fatigue on repetitive stimulation and "afterdischarges" for several seconds after a stimulus.
+[
+9
+]
+C mechano- and metabo- receptors in muscles or joints
+responsible for muscle exercise, burn and cramp
+[
+8
+]
+This variation of input signals calls for a variety of cells of the
+cortex
+in lamina 1 to have different modality-selectiveness and morphologies.
+[
+8
+]
+These varying neurons are responsible for the different feelings we perceive in our body and can be classified by their responses to ranges of stimuli.
+[
+8
+]
+The brain uses the integration of these signals to maintain
+homeostasis
+in the body whether it is temperature related or pain related.
+[
+8
+]
+Vanilloid receptor
+[
+edit
+]
+The
+vanilloid receptor
+(VR-1, TRPV1) is a
+receptor
+that is found on the free nerve endings of both C and Aδ fibers that responds to elevated levels of heat (>43 °C) and the chemical
+capsaicin
+.
+[
+10
+]
+Capsaicin activates C fibers by opening a
+ligand
+-gated
+ion channel
+and causing an action potential to occur.
+[
+10
+]
+Because this receptor responds to both capsaicin and heat, chili peppers are sensed as hot.
+[
+10
+]
+VR-1 is also able to respond to
+extracellular
+acidification and can integrate simultaneous exposure to all three sensory stimuli.
+[
+11
+]
+VR1 is essential for the inflammatory sensitization to noxious thermal stimuli.
+[
+11
+]
+A second type of receptor, a
+vanilloid-like receptor
+(TRPV2,VRL-1), has a higher threshold of activation regarding heat of about 52 °C and also responds to capsaicin and low pH.
+[
+1
+]
+Both types of receptors are
+transmembrane receptors
+that are closed during resting conditions.
+[
+1
+]
+When open, these receptors allow for an influx of
+sodium
+and
+calcium
+which initiates an action potential across the fibers.
+[
+1
+]
+Both receptors are part of a larger family of receptors called
+transient receptor potential
+(TRP) receptors.
+[
+1
+]
+If damage to these heat transducer receptors occurs, the result can be chronic neuropathic pain caused by lowering the heat pain threshold for their
+phosphorylation
+.
+[
+9
+]
+[
+12
+]
+Role in neuropathic pain
+[
+edit
+]
+Activation of nociceptors is not necessary to cause the sensation of pain.
+[
+12
+]
+Damage or injury to nerve fibers that normally respond to innocuous stimuli like light touch may lower their activation threshold needed to respond; this change causes the organism to feel intense pain from the lightest of touch.
+[
+12
+]
+Neuropathic pain syndromes are caused by lesions or diseases of the parts of the nervous system that normally signal pain.
+[
+13
+]
+There are four main classes:
+peripheral focal and multifocal nerve lesions
+traumatic,
+ischemic
+or
+inflammatory
+peripheral generalized
+polyneuropathies
+toxic,
+metabolic
+,
+hereditary
+or inflammatory
+CNS
+lesions
+stroke
+,
+multiple sclerosis
+, spinal cord injury
+complex neuropathic disorders
+complex regional pain syndromes
+[CRPSs]
+[
+5
+]
+After a nerve lesion of either C fibers or Aδ fibers, they become abnormally sensitive and cause
+pathological
+spontaneous activity.
+[
+5
+]
+This alteration of normal activity is explained by molecular and cellular changes of the primary
+afferent
+nociceptors in response to the nerve damage.
+[
+5
+]
+The abnormal activity of the damaged nerves is associated with the increased presence of
+mRNA
+for voltage-gated
+sodium channels
+.
+[
+14
+]
+Irregular grouping of these channels in sites of the abnormal activity may be responsible for lowering the activation threshold, thus leading to
+hyperactivity
+.
+[
+14
+]
+Central sensitization
+[
+edit
+]
+After nerve damage or repeated stimulation, WDR (wide dynamic range) neurons experience a general increase in excitability.
+[
+5
+]
+This hyper-excitability can be caused by an increased neuronal response to a noxious stimulus (
+hyperalgesia
+), a larger neuronal
+receptive field
+, or spread of the hyper-excitability to other segments.
+[
+5
+]
+This condition is maintained by C fibers.
+[
+5
+]
+C fibers cause central sensitization of the dorsal horn in the spinal cord in response to their hyperactivity.
+[
+5
+]
+The mechanism underlying this phenomenon involves the release of
+glutamate
+by these pathologically sensitized C fibers.
+[
+5
+]
+The glutamate interacts with the
+postsynaptic
+NMDA receptors
+, which aids the sensitization of the dorsal horn.
+[
+5
+]
+Presynaptic
+neuronal voltage-gated N-calcium channels are largely responsible for the release of this glutamate as well as the
+neuropeptide
+,
+substance P
+.
+[
+5
+]
+The expression of
+presynaptic
+neuronal voltage-gated N-calcium channels increases after a nerve lesion or repeated stimulation.
+[
+5
+]
+NMDA receptor
+activation (by glutamate) enhances postsynaptic
+nitric oxide synthase
+. Nitric oxide is thought to migrate back to the presynaptic membrane to enhance the expression of the voltage-gated N-calcium channels resulting in a
+pain wind-up
+phenomenon.  This abnormal central sensitization cycle results in increased pain (hyperalgesia) and pain responses from previously non-noxious stimuli (
+allodynia
+).
+[
+5
+]
+Central sensitization of the dorsal horn neurons that is evoked from C fiber activity is responsible for
+temporal
+summation of "second pain" (TSSP).
+[
+15
+]
+This event is called 'windup' and relies on a
+frequency
+greater or equal to 0.33
+Hz
+of the stimulus.
+[
+15
+]
+Windup is associated with
+chronic pain
+and central sensitization.
+[
+15
+]
+This minimum frequency was determined experimentally by comparing healthy patient
+fMRI's
+when subjected to varying frequencies of heat pulses.
+[
+15
+]
+The fMRI maps show common areas activated by the TSSP responses which include contralateral thalamus (THAL), S1, bilateral S2, anterior and posterior insula (INS), mid-anterior
+cingulate cortex
+(ACC), and supplemental motor areas (SMA).
+[
+15
+]
+TSSP events are also associated with other regions of the brain that process functions such as somatosensory processing, pain perception and modulation,
+cognition
+, pre-motor activity in the cortex.
+[
+15
+]
+Treatment
+[
+edit
+]
+Currently, the availability of drugs proven to treat neuropathic pain is limited and varies widely from patient to patient.
+[
+12
+]
+Many developed drugs have either been discovered by accident or by observation.
+[
+12
+]
+Some past treatments include
+opiates
+like
+poppy
+extract, non-steroidal anti-inflammatory drugs like
+salicylic acid
+, and local anesthetics like
+cocaine
+.
+[
+12
+]
+Other recent treatments consist of
+antidepressants
+and
+anticonvulsants
+, although no substantial research on the actual mechanism of these treatments has been performed.
+[
+12
+]
+However, patients respond to these treatments differently, possibly because of gender differences or
+genetic
+backgrounds.
+[
+12
+]
+Therefore, researchers have come to realize that no one drug or one class of drugs will reduce all pain.
+[
+12
+]
+Research is now focusing on the underlying mechanisms involved in pain perception and how it can go wrong in order to develop an appropriate drug for patients afflicted with neuropathic pain.
+[
+12
+]
+Microneurography
+[
+edit
+]
+Microneurography
+is a technique using metal
+electrodes
+to observe neural traffic of both myelinated and unmyelinated axons in
+efferent
+and afferent neurons of the skin and muscle.
+[
+16
+]
+This technique is particularly important in research involving C fibers.
+[
+16
+]
+Single action potentials from unmyelinated axons can be observed.
+[
+16
+]
+Recordings from efferent
+postganglionic
+sympathetic C fibers of the muscles and skin yield insights into the neural control of
+autonomic
+effector organs like
+blood vessels
+and
+sweat glands
+.
+[
+16
+]
+Readings of afferent discharges from C nociceptors identified by marking method have also proved helpful in revealing the mechanisms underlying sensations such as
+itch
+.
+[
+16
+]
+Unfortunately, interpretation of the microneurographic readings can be difficult because axonal membrane potential can not be determined from this method.
+[
+17
+]
+A supplemental method used to better understand these readings involves examining recordings of
+post-spike
+excitability and shifts in latency; these features are associated with changes in membrane potential of unmyelinated axons like C fibers.
+[
+17
+]
+Moalem-Taylor et al. experimentally used chemical modulators with known effects on membrane potential to study the post-spike super-excitability of C fibers.
+[
+17
+]
+The researchers found three resulting events.
+[
+17
+]
+Chemical modulators can produce a combination of loss of super-excitability along with increased axonal excitability, indicating membrane
+depolarization
+.
+[
+17
+]
+Secondly, membrane
+hyperpolarization
+can result from a blockade of axonal hyperpolarization-activated current.
+[
+17
+]
+Lastly, a non-specific increase in surface charge and a change in the voltage-dependent activation of sodium channels results from the application of calcium.
+[
+17
+]
+Philosophical relevance
+[
+edit
+]
+C fibers have repeatedly
+[
+18
+]
+appeared in
+philosophical
+discussions on
+theory of mind
+:
+István Aranyosi
+refers to their usage as "philosophers' favourite piece of folk neuroscience".
+[
+19
+]
+Some 20th century arguments for
+materialism
+have customarily
+identified
+pain
+as a physical event in the nervous system, such as "C fibers firing".
+[
+20
+]
+[
+21
+]
+While most responses in the field have challenged
+[
+22
+]
+this identity on philosophical grounds, others have objected by calling it scientifically unjustified.
+[
+19
+]
+See also
+[
+edit
+]
+A nerve fibers
+B nerve fibers
+Free nerve ending
+Nociceptor
+Pain and nociception
+Sensory neuron
+Thermoreceptor
+References
+[
+edit
+]
+^
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+Purves, Dale; et al. (2004).
+Neuroscience
+. Massachusetts: Sinauer Associates, Inc.
+ISBN
+978-0-87893-725-7
+.
+^
+Craig, AD (August 2002). "How do you feel? Interoception: the sense of the physiological condition of the body".
+Nature Reviews Neuroscience
+.
+3
+(8):
+655–
+66.
+doi
+:
+10.1038/nrn894
+.
+PMID
+12154366
+.
+S2CID
+17829407
+.
+^
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+Murinson, BB; JW Griffin (2004).
+"C-fiber structure varies with location in peripheral nerve"
+.
+Journal of Neuropathology and Experimental Neurology
+.
+63
+(3):
+246–
+254.
+doi
+:
+10.1093/jnen/63.3.246
+.
+PMID
+15055448
+.
+^
+a
+b
+c
+Fagan, Tom (2003). "Glial Cells Critical for Peripheral Nervous System Health".
+News from Harvard Medical, Dental and Public Health Schools
+.
+^
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+Baron, Ralf (2006). "Mechanisms of Disease: neuropathic pain—a clinical perspective".
+Nature Clinical Practice Neurology
+.
+2
+(2):
+95–
+106.
+doi
+:
+10.1038/ncpneuro0113
+.
+ISSN
+1745-834X
+.
+PMID
+16932531
+.
+S2CID
+12925061
+.
+^
+a
+b
+Chung, J.M.; et al. (1979). "Excitation of primate spinothalamic neurons by cutaneous C-fiber volleys".
+Journal of Neurophysiology
+.
+42
+(5):
+1354–
+1369.
+doi
+:
+10.1152/jn.1979.42.5.1354
+.
+PMID
+114611
+.
+^
+Yam, Mun Fei; Loh, Yean Chun; Tan, Chu Shan; Khadijah Adam, Siti; Abdul Manan, Nizar; Basir, Rusliza (July 24, 2018).
+"General Pathways of Pain Sensation and the Major Neurotransmitters Involved in Pain Regulation"
+.
+International Journal of Molecular Sciences
+.
+19
+(8): 2164.
+doi
+:
+10.3390/ijms19082164
+.
+ISSN
+1422-0067
+.
+PMC
+6121522
+.
+PMID
+30042373
+.
+^
+a
+b
+c
+d
+e
+f
+Craig, AD (2003). "Interoception: the sense of the physiological condition of the body".
+Current Opinion in Neurobiology
+.
+13
+(4):
+500–
+505.
+doi
+:
+10.1016/S0959-4388(03)00090-4
+.
+PMID
+12965300
+.
+S2CID
+16369323
+.
+^
+a
+b
+Loken, L (2009). "Coding of pleasant touch by unmyelinated afferents in humans".
+Nature Neuroscience
+.
+12
+(5):
+548–
+549.
+doi
+:
+10.1038/nn.2312
+.
+PMID
+19363489
+.
+S2CID
+4311541
+.
+^
+a
+b
+c
+Purves, Dale (2011).
+Neuroscience
+(5. ed.). Sunderland, Mass.: Sinauer. pp.
+211–
+212.
+ISBN
+978-0-87893-695-3
+.
+^
+a
+b
+Davis, JB; et al. (2000). "Vanilloid receptor-1 is essential for inflammatory thermal hyperalgesia".
+Nature
+.
+405
+(6783):
+183–
+7.
+Bibcode
+:
+2000Natur.405..183D
+.
+doi
+:
+10.1038/35012076
+.
+PMID
+10821274
+.
+S2CID
+4337894
+.
+^
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+Scholz, Joachim; Clifford Woolf (2002). "Can we conquer pain?".
+Nature Neuroscience
+.
+5
+:
+1062–
+1067.
+doi
+:
+10.1038/nn942
+.
+PMID
+12403987
+.
+S2CID
+15781811
+.
+^
+Baron, Ralph; Ogawa, Setsuro; Katz, Joel; Nagai, Hitoshi; Kashiwazaki, Miho; Saeki, Shigeru; Suzuki, Hajime (2000). "Peripheral neuropathic pain: from mechanisms to symptoms".
+Clinical Journal of Pain
+.
+16
+(2 Suppl): S12–20.
+doi
+:
+10.1097/00002508-200003000-00003
+.
+PMID
+10870735
+.
+^
+a
+b
+Lai, J; Hunter, John C; Porreca, Frank (2003). "The role of voltage-gated sodium channels in neuropathic pain".
+Current Opinion in Neurobiology
+.
+13
+(3):
+291–
+297.
+doi
+:
+10.1016/S0959-4388(03)00074-6
+.
+PMID
+12850213
+.
+S2CID
+24745129
+.
+^
+a
+b
+c
+d
+e
+f
+Staud, Roland; et al. (2007).
+"Brain activity related to temporal summation of C-fiber evoked pain"
+.
+Pain
+.
+129
+(
+1–
+2) (1-2 ed.):
+130–
+142.
+doi
+:
+10.1016/j.pain.2006.10.010
+.
+PMC
+1997296
+.
+PMID
+17156923
+.
+^
+a
+b
+c
+d
+e
+Mano, Tadaaki; et al. (2006). "Microneurography as a tool in clinical neurophysiology to investigate peripheral neural traffic in humans".
+Clinical Neurophysiology
+.
+117
+(11):
+2357–
+2384.
+doi
+:
+10.1016/j.clinph.2006.06.002
+.
+PMID
+16904937
+.
+S2CID
+22258173
+.
+^
+a
+b
+c
+d
+e
+f
+g
+Moalem-Taylor, Gila; et al. (2007).
+"Post-spike excitability indicates changes in membrane potential of isolated c-fibers"
+.
+Muscle and Nerve
+.
+36
+(2):
+172–
+182.
+doi
+:
+10.1002/mus.20793
+.
+PMID
+17487863
+.
+S2CID
+36126632
+.
+^
+Puccetti, Roland (1977).
+"The Great C-Fiber Myth: A Critical Note"
+.
+Philosophy of Science
+.
+44
+(2):
+303–
+305.
+doi
+:
+10.1086/288746
+.
+ISSN
+0031-8248
+.
+JSTOR
+187355
+.
+^
+a
+b
+Aranyosi, István (April 23, 2024).
+"The Peripheral Mind: Philosophy of Mind and the Peripheral Nervous System | Return of the C Fibers; or, Philosophers' Lack of Nerve"
+.
+academic.oup.com
+. OUP. pp.
+34–
+57
+. Retrieved
+April 23,
+2024
+.
+^
+"David Lewis | Internet Encyclopedia of Philosophy"
+. Retrieved
+April 23,
+2024
+.
+^
+Puccetti, Roland (1977).
+"The Great C-Fiber Myth: A Critical Note"
+.
+Philosophy of Science
+.
+44
+(2):
+303–
+305.
+doi
+:
+10.1086/288746
+.
+ISSN
+0031-8248
+.
+JSTOR
+187355
+.
+^
+"Identity Theory | Internet Encyclopedia of Philosophy"
+. Retrieved
+April 23,
+2024
+.
+v
+t
+e
+Nervous tissue
+CNS
+Tissue Types
+Grey matter
+White matter
+Projection fibers
+Association fiber
+Commissural fiber
+Lemniscus
+Nerve tract
+Decussation
+Neuropil
+Meninges
+Cell Types
+Neuronal
+Pyramidal
+Purkinje
+Granule
+Von Economo
+Medium spiny
+Interneuron
+Glial
+Astrocyte
+Ependymal cells
+Tanycyte
+Oligodendrocyte progenitor cell
+Oligodendrocyte
+Microglia
+PNS
+General
+Dorsal
+Root
+Ganglion
+Ramus
+Ventral
+Root
+Ramus
+Ramus communicans
+Gray
+White
+Autonomic ganglion
+(
+Preganglionic nerve fibers
+Postganglionic nerve fibers
+)
+Nerve fascicle
+Funiculus
+Connective tissues
+Epineurium
+Perineurium
+Endoneurium
+Neuroglia
+Myelination
+:
+Schwann cell
+Neurilemma
+Myelin incisure
+Node of Ranvier
+Internodal segment
+Satellite glial cell
+Neurons
+/
+nerve fibers
+Parts
+Soma
+Axon hillock
+Axon
+Telodendron
+Axon terminals
+Axoplasm
+Axolemma
+Neurofibril/neurofilament
+Dendrite
+Nissl body
+Dendritic spine
+Apical dendrite
+/
+Basal dendrite
+Types
+Bipolar
+Unipolar
+Pseudounipolar
+Multipolar
+Interneuron
+Renshaw
+Afferent nerve fiber
+/
+Sensory neuron
+GSA
+GVA
+SSA
+SVA
+fibers
+Ia or Aα
+Ib or Golgi or Aα
+II or Aβ and Aγ
+III or Aδ or fast pain
+IV or C or slow pain
+Efferent nerve fiber
+/
+Motor neuron
+GSE
+GVE
+SVE
+Upper motor neuron
+Lower motor neuron
+α motorneuron
+β motorneuron
+γ motorneuron
+Termination
+Synapse
+Electrical synapse
+/
+Gap junction
+Chemical synapse
+Synaptic vesicle
+Active zone
+Postsynaptic density
+Autapse
+Ribbon synapse
+Neuromuscular junction
+Sensory receptors
+Meissner's corpuscle
+Merkel nerve ending
+Pacinian corpuscle
+Ruffini ending
+Muscle spindle
+Free nerve ending
+Nociceptor
+Olfactory receptor neuron
+Photoreceptor cell
+Hair cell
+Taste receptor
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Group_C_nerve_fiber&oldid=1292091465
+"
+Categories
+:
+Neurohistology
+Sensory systems
+Hidden categories:
+Articles with short description
+Short description is different from Wikidata
+Use American English from March 2021
+All Wikipedia articles written in American English
+Use mdy dates from March 2021

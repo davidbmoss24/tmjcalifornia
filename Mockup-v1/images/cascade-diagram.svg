@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="The cascade from jaw misalignment to systemic illness: structural to neural to biochemical to systemic.">
+  <!-- ============ STYLES ============ -->
+  <defs>
+    <style>
+      .bg { fill: #F5F2ED; }
+      .panel-bg { fill: #FFFFFF; }
+      .border { stroke: #E8E4DC; fill: none; }
+      .text-heading { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; letter-spacing: -0.01em; }
+      .text-eyebrow { font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: 0.16em; }
+      .text-body { font-family: 'Inter', sans-serif; font-weight: 400; }
+      .text-data { font-family: 'Inter', sans-serif; font-weight: 600; }
+      .accent { fill: #0E8987; }
+      .accent-deep { fill: #1F4E4D; }
+      .accent-soft { fill: #E5EDEC; }
+      .text-primary { fill: #1A2233; }
+      .text-secondary { fill: #5C6371; }
+      .text-soft { fill: #8A8F9C; }
+      .stroke-accent { stroke: #0E8987; }
+      .stroke-deep { stroke: #1F4E4D; }
+      .stroke-soft { stroke: #C7CDD5; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0E8987"/>
+    </marker>
+    <marker id="arrow-fade" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4E4D" opacity="0.5"/>
+    </marker>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0E8987" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#0E8987" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0E8987" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ============ BACKGROUND ============ -->
+  <rect class="bg" width="1200" height="540"/>
+
+  <!-- ============ TITLE BAND ============ -->
+  <text x="600" y="44" text-anchor="middle" class="text-eyebrow accent" font-size="13" text-transform="uppercase">THE CASCADE</text>
+  <text x="600" y="82" text-anchor="middle" class="text-heading text-primary" font-size="30">How a misaligned jaw becomes a systemic problem</text>
+
+  <!-- ============ CONNECTOR LINE (background flow) ============ -->
+  <line x1="170" y1="280" x2="1030" y2="280" stroke="#C7CDD5" stroke-width="1" stroke-dasharray="2,4"/>
+
+  <!-- ============ STAGE 1: STRUCTURAL ============ -->
+  <g transform="translate(60,130)">
+    <!-- Panel -->
+    <rect class="panel-bg" width="240" height="380" rx="4"/>
+    <rect class="border" width="240" height="380" rx="4" stroke-width="1"/>
+    <!-- Top accent bar -->
+    <rect class="accent" x="0" y="0" width="240" height="3" rx="0"/>
+    <!-- Stage label -->
+    <text x="20" y="30" class="text-eyebrow accent" font-size="10">STAGE 01 · STRUCTURAL</text>
+    <text x="20" y="62" class="text-heading text-primary" font-size="22">Misalignment</text>
+
+    <!-- ============ ICON: skull profile with jaw retruded ============ -->
+    <g transform="translate(120,170)">
+      <!-- Pulse background -->
+      <circle cx="0" cy="0" r="55" fill="url(#pulse)"/>
+
+      <!-- Cranium upper outline -->
+      <path d="M -40 -25 Q -45 -50 -10 -55 Q 30 -52 38 -25 L 38 -5 L 30 5 L -38 5 Z"
+            fill="none" stroke="#1F4E4D" stroke-width="1.4"/>
+      <!-- Upper teeth -->
+      <line x1="-30" y1="5" x2="-30" y2="13" stroke="#1F4E4D" stroke-width="1.4"/>
+      <line x1="-20" y1="5" x2="-20" y2="13" stroke="#1F4E4D" stroke-width="1.4"/>
+      <line x1="-10" y1="5" x2="-10" y2="13" stroke="#1F4E4D" stroke-width="1.4"/>
+      <line x1="0" y1="5" x2="0" y2="13" stroke="#1F4E4D" stroke-width="1.4"/>
+      <line x1="10" y1="5" x2="10" y2="13" stroke="#1F4E4D" stroke-width="1.4"/>
+      <line x1="20" y1="5" x2="20" y2="13" stroke="#1F4E4D" stroke-width="1.4"/>
+      <line x1="30" y1="5" x2="30" y2="13" stroke="#1F4E4D" stroke-width="1.4"/>
+
+      <!-- Ideal mandible (dashed, faded — tip-to-tip position) -->
+      <path d="M -36 25 Q -32 18 -28 16 L 32 16 Q 38 18 38 25 L 38 38 Q 0 44 -36 38 Z"
+            fill="none" stroke="#8A8F9C" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.7"/>
+
+      <!-- Retruded mandible (solid, current position) -->
+      <path d="M -28 25 Q -22 18 -18 16 L 42 16 Q 48 18 48 25 L 48 38 Q 10 44 -28 38 Z"
+            fill="#FFFFFF" stroke="#0E8987" stroke-width="1.5"/>
+      <!-- Lower teeth -->
+      <line x1="-20" y1="16" x2="-20" y2="9" stroke="#0E8987" stroke-width="1.4"/>
+      <line x1="-10" y1="16" x2="-10" y2="9" stroke="#0E8987" stroke-width="1.4"/>
+      <line x1="0" y1="16" x2="0" y2="9" stroke="#0E8987" stroke-width="1.4"/>
+      <line x1="10" y1="16" x2="10" y2="9" stroke="#0E8987" stroke-width="1.4"/>
+      <line x1="20" y1="16" x2="20" y2="9" stroke="#0E8987" stroke-width="1.4"/>
+      <line x1="30" y1="16" x2="30" y2="9" stroke="#0E8987" stroke-width="1.4"/>
+      <line x1="40" y1="16" x2="40" y2="9" stroke="#0E8987" stroke-width="1.4"/>
+
+      <!-- Retrusion arrow -->
+      <line x1="-44" y1="50" x2="-30" y2="50" stroke="#0E8987" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- Description -->
+    <text x="20" y="290" class="text-body text-secondary" font-size="12">
+      <tspan x="20" dy="0">A vertical-height deficiency — often</tspan>
+      <tspan x="20" dy="16">inherited, often worsened by</tspan>
+      <tspan x="20" dy="16">extraction-based orthodontics —</tspan>
+      <tspan x="20" dy="16">forces the lower jaw to retrude.</tspan>
+      <tspan x="20" dy="16">The TMJ is compressed.</tspan>
+    </text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="310" y1="280" x2="365" y2="280" stroke="#0E8987" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ STAGE 2: NEURAL ============ -->
+  <g transform="translate(370,130)">
+    <rect class="panel-bg" width="240" height="380" rx="4"/>
+    <rect class="border" width="240" height="380" rx="4" stroke-width="1"/>
+    <rect class="accent" x="0" y="0" width="240" height="3"/>
+    <text x="20" y="30" class="text-eyebrow accent" font-size="10">STAGE 02 · NEURAL</text>
+    <text x="20" y="62" class="text-heading text-primary" font-size="22">Trigeminal firing</text>
+
+    <!-- ICON: Trigeminal nerve branching -->
+    <g transform="translate(120,180)">
+      <!-- Pulse background -->
+      <circle cx="0" cy="0" r="60" fill="url(#pulse)"/>
+      <!-- Trigeminal ganglion (central node) -->
+      <circle cx="0" cy="0" r="6" fill="#0E8987"/>
+      <!-- V1 — ophthalmic -->
+      <path d="M 0 0 L -45 -28 L -55 -38" stroke="#1F4E4D" stroke-width="1.5" fill="none"/>
+      <circle cx="-55" cy="-38" r="3" fill="#1F4E4D"/>
+      <!-- V2 — maxillary -->
+      <path d="M 0 0 L -45 5 L -55 12" stroke="#1F4E4D" stroke-width="1.5" fill="none"/>
+      <circle cx="-55" cy="12" r="3" fill="#1F4E4D"/>
+      <!-- V3 — mandibular (highlighted — primary excitation) -->
+      <path d="M 0 0 L -40 32 L -50 45" stroke="#0E8987" stroke-width="2" fill="none"/>
+      <circle cx="-50" cy="45" r="4" fill="#0E8987"/>
+      <!-- Ascending fiber into brain (to right) -->
+      <path d="M 0 0 L 50 -25" stroke="#1F4E4D" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+      <circle cx="50" cy="-25" r="3" fill="#1F4E4D"/>
+      <!-- Tiny pulse dots along the V3 branch -->
+      <circle cx="-20" cy="16" r="2" fill="#0E8987" opacity="0.7"/>
+      <circle cx="-35" cy="28" r="2" fill="#0E8987" opacity="0.5"/>
+
+      <!-- Labels -->
+      <text x="-58" y="-46" text-anchor="end" class="text-body text-soft" font-size="9">V1</text>
+      <text x="-58" y="4" text-anchor="end" class="text-body text-soft" font-size="9">V2</text>
+      <text x="-58" y="58" text-anchor="end" class="text-data accent" font-size="9">V3</text>
+      <text x="58" y="-22" class="text-body text-soft" font-size="9">to brain</text>
+    </g>
+
+    <!-- Data callout -->
+    <g transform="translate(20,260)">
+      <rect class="accent-soft" width="200" height="30" rx="3"/>
+      <text x="100" y="20" text-anchor="middle" class="text-data accent-deep" font-size="11">~100× nociceptive fiber density</text>
+    </g>
+
+    <!-- Description -->
+    <text x="20" y="310" class="text-body text-secondary" font-size="12">
+      <tspan x="20" dy="0">Chronic muscle and joint irritation</tspan>
+      <tspan x="20" dy="16">activates the trigeminal — the body's</tspan>
+      <tspan x="20" dy="16">densest source of C-fiber pain</tspan>
+      <tspan x="20" dy="16">afferents. They release substance P.</tspan>
+    </text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="620" y1="280" x2="675" y2="280" stroke="#0E8987" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ STAGE 3: BIOCHEMICAL ============ -->
+  <g transform="translate(680,130)">
+    <rect class="panel-bg" width="240" height="380" rx="4"/>
+    <rect class="border" width="240" height="380" rx="4" stroke-width="1"/>
+    <rect class="accent" x="0" y="0" width="240" height="3"/>
+    <text x="20" y="30" class="text-eyebrow accent" font-size="10">STAGE 03 · BIOCHEMICAL</text>
+    <text x="20" y="62" class="text-heading text-primary" font-size="22">Substance P at the cell</text>
+
+    <!-- ICON: Cell membrane bilayer with substance P depolarizing it -->
+    <g transform="translate(20,140)">
+      <!-- Outer membrane upper layer -->
+      <line x1="0" y1="40" x2="200" y2="40" stroke="#1F4E4D" stroke-width="1.5"/>
+      <!-- Phospholipid head circles -->
+      <g fill="#1F4E4D">
+        <circle cx="10" cy="40" r="4"/><circle cx="30" cy="40" r="4"/>
+        <circle cx="50" cy="40" r="4"/><circle cx="70" cy="40" r="4"/>
+        <circle cx="130" cy="40" r="4"/><circle cx="150" cy="40" r="4"/>
+        <circle cx="170" cy="40" r="4"/><circle cx="190" cy="40" r="4"/>
+      </g>
+      <!-- Channel opening (gap in upper layer) -->
+      <line x1="80" y1="40" x2="92" y2="36" stroke="#0E8987" stroke-width="1.5"/>
+      <line x1="108" y1="36" x2="120" y2="40" stroke="#0E8987" stroke-width="1.5"/>
+
+      <!-- Inner membrane lower layer -->
+      <line x1="0" y1="80" x2="200" y2="80" stroke="#1F4E4D" stroke-width="1.5"/>
+      <g fill="#1F4E4D">
+        <circle cx="10" cy="80" r="4"/><circle cx="30" cy="80" r="4"/>
+        <circle cx="50" cy="80" r="4"/><circle cx="70" cy="80" r="4"/>
+        <circle cx="130" cy="80" r="4"/><circle cx="150" cy="80" r="4"/>
+        <circle cx="170" cy="80" r="4"/><circle cx="190" cy="80" r="4"/>
+      </g>
+      <line x1="80" y1="80" x2="92" y2="84" stroke="#0E8987" stroke-width="1.5"/>
+      <line x1="108" y1="84" x2="120" y2="80" stroke="#0E8987" stroke-width="1.5"/>
+
+      <!-- Substance P molecule above -->
+      <g transform="translate(95,15)">
+        <circle cx="0" cy="0" r="6" fill="#0E8987"/>
+        <text x="0" y="3" text-anchor="middle" class="text-data" font-size="8" fill="#fff">SP</text>
+      </g>
+      <!-- Arrow downward (substance P binding) -->
+      <line x1="100" y1="25" x2="100" y2="33" stroke="#0E8987" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Ca++ ions entering -->
+      <g class="accent">
+        <circle cx="98" cy="55" r="3"/><text x="98" y="58" text-anchor="middle" font-size="7" fill="#fff" class="text-data">Ca</text>
+        <circle cx="105" cy="65" r="3"/><text x="105" y="68" text-anchor="middle" font-size="7" fill="#fff" class="text-data">Ca</text>
+      </g>
+      <!-- Arrow downward through channel -->
+      <line x1="100" y1="44" x2="100" y2="76" stroke="#0E8987" stroke-width="1.5" stroke-dasharray="2,2"/>
+
+      <!-- Labels -->
+      <text x="0" y="20" class="text-body text-soft" font-size="9">extracellular</text>
+      <text x="0" y="100" class="text-body text-soft" font-size="9">intracellular</text>
+    </g>
+
+    <!-- Description -->
+    <text x="20" y="290" class="text-body text-secondary" font-size="12">
+      <tspan x="20" dy="0">Substance P has no reuptake — it</tspan>
+      <tspan x="20" dy="16">accumulates. Binds NK-1 receptors,</tspan>
+      <tspan x="20" dy="16">opens cell membranes to calcium</tspan>
+      <tspan x="20" dy="16">influx. Inflammation follows.</tspan>
+    </text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="930" y1="280" x2="985" y2="280" stroke="#0E8987" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ STAGE 4: SYSTEMIC ============ -->
+  <g transform="translate(990,130)">
+    <rect class="panel-bg" width="150" height="380" rx="4"/>
+    <rect class="border" width="150" height="380" rx="4" stroke-width="1"/>
+    <rect class="accent" x="0" y="0" width="150" height="3"/>
+    <text x="20" y="30" class="text-eyebrow accent" font-size="10">STAGE 04</text>
+    <text x="20" y="46" class="text-eyebrow accent" font-size="10">SYSTEMIC</text>
+    <text x="20" y="78" class="text-heading text-primary" font-size="22">Downstream</text>
+
+    <!-- ICON: Body silhouette with affected systems as dots -->
+    <g transform="translate(75,180)">
+      <!-- Pulse background -->
+      <circle cx="0" cy="0" r="62" fill="url(#pulse)"/>
+      <!-- Head -->
+      <circle cx="0" cy="-50" r="12" fill="none" stroke="#1F4E4D" stroke-width="1.3"/>
+      <!-- Torso -->
+      <path d="M -16 -32 Q -18 -10 -20 30 L 20 30 Q 18 -10 16 -32 Z" fill="none" stroke="#1F4E4D" stroke-width="1.3"/>
+      <!-- Arms -->
+      <path d="M -16 -28 Q -28 -10 -30 20" fill="none" stroke="#1F4E4D" stroke-width="1.3"/>
+      <path d="M 16 -28 Q 28 -10 30 20" fill="none" stroke="#1F4E4D" stroke-width="1.3"/>
+      <!-- Legs -->
+      <path d="M -10 30 L -14 60" fill="none" stroke="#1F4E4D" stroke-width="1.3"/>
+      <path d="M 10 30 L 14 60" fill="none" stroke="#1F4E4D" stroke-width="1.3"/>
+
+      <!-- Affected-system dots -->
+      <circle cx="0" cy="-55" r="3" fill="#0E8987"/>     <!-- head/migraines -->
+      <circle cx="-3" cy="-48" r="2.5" fill="#0E8987"/>   <!-- face/sinus -->
+      <circle cx="0" cy="-26" r="2.5" fill="#0E8987"/>    <!-- neck -->
+      <circle cx="0" cy="0" r="3" fill="#0E8987"/>        <!-- gut -->
+      <circle cx="-7" cy="-12" r="2" fill="#0E8987"/>     <!-- chest -->
+      <circle cx="-22" cy="10" r="2" fill="#0E8987"/>     <!-- arm -->
+      <circle cx="22" cy="10" r="2" fill="#0E8987"/>      <!-- arm -->
+      <circle cx="-12" cy="50" r="2" fill="#0E8987"/>     <!-- leg -->
+    </g>
+
+    <!-- Affected systems list -->
+    <text x="20" y="290" class="text-body text-secondary" font-size="11">
+      <tspan x="20" dy="0">· Migraines · TMJ pain</tspan>
+      <tspan x="20" dy="15">· Fibromyalgia · IBS</tspan>
+      <tspan x="20" dy="15">· Sleep apnea</tspan>
+      <tspan x="20" dy="15">· Movement disorders</tspan>
+      <tspan x="20" dy="15">· Autoimmune · Mood</tspan>
+    </text>
+  </g>
+
+  <!-- ============ FOOTER ============ -->
+  <text x="600" y="525" text-anchor="middle" class="text-body text-soft" font-size="11" font-style="italic">
+    Stages 1–3 are established neuroscience. Stage 4 maps to Dr. Jennings' four decades of clinical observation.
+  </text>
+</svg>

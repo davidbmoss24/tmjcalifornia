@@ -1,0 +1,335 @@
+# Wikipedia — Trigeminovascular system
+
+From Wikipedia, the free encyclopedia
+The
+trigeminovascular system
+(TVS) refers to
+neurons and their axonal projections
+within the
+trigeminal nerve
+that project to the cranial meninges and meningeal blood vessels
+[
+1
+]
+[
+2
+]
+residing on the brain's surface.
+[
+3
+]
+The term, introduced in 1983
+[
+4
+]
+denotes also the neuropeptides contained within axons that are released into the meninges
+[
+5
+]
+[
+6
+]
+to target vessels and surrounding cells (e.g.,
+mast cells
+, macrophages, Schwann cells).
+The major drugs used to treat migraine in the 19th and 20th century (ergot alkaloids, triptans) were found by Moskowitz and colleagues
+[
+7
+]
+[
+6
+]
+to inhibit
+neuropeptide
+release from trigeminovascular axons as their major
+mechanism of action
+. Because drugs that block the release of neuropeptides from trigeminovascular fibres are therapeutically relevant for relieving migraine headaches (especially CGRP to date), hence, it has been hypothesized that the trigeminovascular system may be involved in migraine
+headaches
+.
+[
+3
+]
+[
+8
+]
+[
+9
+]
+Studies of the TVS have helped to identify therapeutic targets for migraine including onabotulinum toxin, 5-HT1F receptor agonist (
+lasmiditan
+),5-HT1B,D
+[
+10
+]
+as well as CGRP and its receptor system
+[
+11
+]
+including both
+small molecule
+drugs and biologicals. Numerous experimental studies have established that cortical spreading
+depolarization
+, the biological substrate for migraine aura, can discharge trigeminovascular afferents as a cause of head pain and by extension unilateral headache overlying the dysfunctional hemisphere in migraineurs with aura.
+[
+12
+]
+Hence, the TVS has provided a template for migraine pathophysiology and target for
+drug discovery
+.
+The history of some discoveries regarding the TV System are summarised in Ashina, et al.
+[
+13
+]
+The
+Brain Prize
+for 2021 was awarded to 4 investigators studying the trigeminovascular system and its implications for migraine pathophysiology and treatments.
+See also
+[
+edit
+]
+Umbellulone
+References
+[
+edit
+]
+^
+Moskowitz, MichaelA.; Romero, Jorge; Reinhard, JohnF.; Melamed, Eldad; Pettibone, DouglasJ. (October 1979).
+"Neurotransmitters and the Fifth Cranial Nerve: Is There a Relation to the Headache Phase of Migraine?"
+.
+The Lancet
+.
+314
+(8148):
+883–
+885.
+doi
+:
+10.1016/s0140-6736(79)92692-8
+.
+ISSN
+0140-6736
+.
+^
+Moskowitz, Michael A. (August 1984).
+"The neurobiology of vascular head pain"
+.
+Annals of Neurology
+.
+16
+(2):
+157–
+168.
+doi
+:
+10.1002/ana.410160202
+.
+ISSN
+0364-5134
+.
+^
+a
+b
+May, A.; Goadsby, P. J. (1999).
+"The Trigeminovascular System in Humans: Pathophysiologic Implications for Primary Headache Syndromes of the Neural Influences on the Cerebral Circulation"
+.
+Journal of Cerebral Blood Flow & Metabolism
+.
+19
+(2):
+115–
+127.
+doi
+:
+10.1097/00004647-199902000-00001
+.
+^
+Liu-Chen, Lee-Yuan; Mayberg, Marc R.; Moskowitz, Michael A. (May 1983).
+"Immunohistochemical evidence for a substance P-containing trigeminovascular pathway to pial arteries in cats"
+.
+Brain Research
+.
+268
+(1):
+162–
+166.
+doi
+:
+10.1016/0006-8993(83)90402-x
+.
+ISSN
+0006-8993
+.
+^
+Moskowitz, M.A.; Brody, M.; Liu-Chen, L.-Y. (August 1983).
+"In vitro release of immunoreactive substance P from putative afferent nerve endings in bovine pia arachnoid"
+.
+Neuroscience
+.
+9
+(4):
+809–
+814.
+doi
+:
+10.1016/0306-4522(83)90269-5
+.
+ISSN
+0306-4522
+.
+^
+a
+b
+Buzzi, M (November 1991).
+"Dihydroergotamine and sumatriptan attenuate levels of CGRP in plasma in rat superior sagittal sinus during electrical stimulation of the trigeminal ganglion"
+.
+Neuropharmacology
+.
+30
+(11):
+1193–
+1200.
+doi
+:
+10.1016/0028-3908(91)90165-8
+.
+ISSN
+0028-3908
+.
+^
+Buzzi, M. Gabriella; Moskowitz, Midiael A. (January 1990).
+"The antimigraine drug, sumatriptan (GR43175), selectively blocks neurogenic plasma extravasation from blood vessels in dura mater"
+.
+British Journal of Pharmacology
+.
+99
+(1):
+202–
+206.
+doi
+:
+10.1111/j.1476-5381.1990.tb14679.x
+.
+ISSN
+0007-1188
+.
+PMC
+1917483
+.
+PMID
+2158835
+.
+^
+Fanciullacci, M.; Alessandri, M.; Sicuteri, R.; Marabini, S. (1997). "Responsiveness of the trigeminovascular system to nitroglycerine in cluster headache patients".
+Brain
+.
+120
+(2): 283.
+doi
+:
+10.1093/brain/120.2.283
+.
+^
+Noseda, R.; Jakubowski, M.; Kainz, V.; Borsook, D.; Burstein, R. (2011).
+"Cortical Projections of Functionally Identified Thalamic Trigeminovascular Neurons: Implications for Migraine Headache and Its Associated Symptoms"
+.
+Journal of Neuroscience
+.
+31
+(40):
+14204–
+14217.
+doi
+:
+10.1523/JNEUROSCI.3285-11.2011
+.
+PMC
+3501387
+.
+PMID
+21976505
+.
+^
+Moskowitz, MA; et al. (November 2022). "Migraine research comes of age in the 21st century".
+Lancet Neurology
+.
+21
+(11):
+955–
+958.
+doi
+:
+10.1016/S1474-4422(22)00398-2
+.
+^
+Warfvinge, Karin; Edvinsson, Lars (2013-05-13).
+"Pearls and pitfalls in neural CGRP immunohistochemistry"
+.
+Cephalalgia
+.
+33
+(8):
+593–
+603.
+doi
+:
+10.1177/0333102412472072
+.
+ISSN
+0333-1024
+.
+^
+Bolay, Hayrunnisa; Reuter, Uwe; Dunn, Andrew K.; Huang, Zhihong; Boas, David A.; Moskowitz, Michael A. (February 2002).
+"Intrinsic brain activity triggers trigeminal meningeal afferents in a migraine model"
+.
+Nature Medicine
+.
+8
+(2):
+136–
+142.
+doi
+:
+10.1038/nm0202-136
+.
+ISSN
+1078-8956
+.
+^
+Ashina, Messoud; Hansen, Jakob Møller; Do, Thien Phu; Melo-Carrillo, Agustin; Burstein, Rami; Moskowitz, Michael A (August 2019).
+"Migraine and the trigeminovascular system—40 years and counting"
+.
+Lancet Neurology
+.
+18
+(8):
+795–
+804.
+doi
+:
+10.1016/s1474-4422(19)30185-1
+.
+ISSN
+1474-4422
+.
+PMC
+7164539
+.
+PMID
+31160203
+.
+External links
+[
+edit
+]
+Pain: Current Understanding, Emerging Therapies, and Novel Approaches to Drug Discovery, Second Edition
+by Rajesh Munglani, William K. Schmidt and Chas Bountra, page 321
+Functional MRI
+by Chrit T. W. Moonen, P. A. Bandettini, page 21
+Craniofacial dysfunction and pain: manual therapy, assessment and management
+by Harry Von Piekartz, Lynn Bryden, page 90
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Trigeminovascular_system&oldid=1322658385
+"
+Category
+:
+Trigeminal nerve

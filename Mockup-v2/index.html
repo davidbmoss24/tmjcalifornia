@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TMJ California — Dwight Jennings, DDS, MICCMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-subtle: #F7F8FA;
+  --bg-soft: #FAFBFC;
+  --bg-dark: #0A0E13;
+  --bg-dark-2: #0F1419;
+  --bg-dark-3: #1A1F2A;
+  --border: #E5E7EB;
+  --border-strong: #D1D5DB;
+  --border-dark: #1F2733;
+  --text: #0A0E13;
+  --text-2: #1F2937;
+  --text-muted: #6B7280;
+  --text-soft: #9CA3AF;
+  --text-on-dark: #F3F4F6;
+  --text-on-dark-muted: #9CA3AF;
+
+  --accent: #06B6D4;       /* cyan */
+  --accent-hover: #0891B2;
+  --accent-soft: #ECFEFF;
+  --accent-glow: rgba(6, 182, 212, 0.18);
+  --accent-2: #14F195;     /* signal green for live indicators */
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.08);
+  --shadow-xl: 0 24px 60px rgba(0,0,0,0.12);
+
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv01", "cv11";
+}
+
+h1, h2, h3, h4 { font-family: var(--sans); font-weight: 600; line-height: 1.1; letter-spacing: -0.025em; color: var(--text); }
+h1 { font-size: clamp(2.5rem, 5.5vw, 4.4rem); font-weight: 700; letter-spacing: -0.04em; }
+h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); letter-spacing: -0.03em; }
+h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); }
+h4 { font-size: 1.05rem; font-weight: 600; }
+p { color: var(--text-muted); }
+a { color: var(--accent); text-decoration: none; transition: color .15s; }
+a:hover { color: var(--accent-hover); }
+
+.mono { font-family: var(--mono); font-feature-settings: "calt" 0; }
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+}
+.eyebrow::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent); display: inline-block;
+}
+.eyebrow.on-dark { color: #5EEAD4; }
+.eyebrow.on-dark::before { background: var(--accent-2); box-shadow: 0 0 12px var(--accent-2); }
+.lede {
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-muted);
+  max-width: 60ch;
+  letter-spacing: -0.01em;
+}
+.text-balance { text-wrap: balance; }
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 1.5rem; }
+.container-narrow { max-width: 920px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ============ STATUS BAR ============ */
+.status-bar {
+  background: var(--bg-dark);
+  color: var(--text-on-dark-muted);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--mono); font-size: 0.74rem;
+  display: flex; justify-content: center; align-items: center; gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.status-bar .dot {
+  display: inline-block; width: 7px; height: 7px;
+  border-radius: 50%; background: var(--accent-2);
+  margin-right: 0.5rem;
+  box-shadow: 0 0 8px var(--accent-2);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.15); }
+}
+.status-bar .label { color: #9CA3AF; }
+.status-bar .value { color: #F3F4F6; }
+.status-bar .sep { color: #4B5563; }
+
+/* ============ NAV ============ */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.95rem 1.5rem;
+  max-width: 1240px; margin: 0 auto;
+}
+.brand { display: flex; align-items: center; gap: 0.75rem; cursor: pointer; }
+.brand-mark {
+  width: 32px; height: 32px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, var(--accent), #0E7490);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-family: var(--mono); font-weight: 600;
+  font-size: 0.95rem; letter-spacing: -0.04em;
+  box-shadow: 0 2px 8px var(--accent-glow);
+}
+.brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-name { font-size: 0.95rem; font-weight: 600; color: var(--text); letter-spacing: -0.02em; }
+.brand-tag { font-family: var(--mono); font-size: 0.68rem; color: var(--text-soft); letter-spacing: 0.02em; }
+.nav-links { display: flex; gap: 1.75rem; align-items: center; }
+.nav-links a {
+  font-size: 0.9rem; color: var(--text-2); font-weight: 500;
+  padding: 0.4rem 0; transition: color .15s;
+  position: relative;
+}
+.nav-links a:hover { color: var(--accent); }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -0.3rem;
+  height: 2px; background: var(--accent); border-radius: 2px;
+}
+
+/* High-contrast CTA button — fixes the "hard to read" issue */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--text); color: #fff;
+  padding: 0.65rem 1.15rem;
+  border-radius: 7px;
+  font-weight: 600; font-size: 0.88rem;
+  border: 1px solid var(--text);
+  transition: all .15s ease;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+}
+.btn:hover {
+  background: var(--bg-dark-3); color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(10, 14, 19, 0.18);
+}
+.btn-accent {
+  background: var(--accent); border-color: var(--accent);
+}
+.btn-accent:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; }
+.btn-outline {
+  background: transparent; color: var(--text);
+  border-color: var(--border-strong);
+}
+.btn-outline:hover { background: var(--bg-subtle); color: var(--text); transform: translateY(-1px); border-color: var(--text); }
+.btn-on-dark {
+  background: #fff; color: var(--text); border-color: #fff;
+}
+.btn-on-dark:hover { background: #fff; color: var(--accent-hover); transform: translateY(-1px); }
+.btn-arrow::after { content: "→"; transition: transform .2s; font-weight: 400; }
+.btn-arrow:hover::after { transform: translateX(3px); }
+
+.btn-large { padding: 0.85rem 1.5rem; font-size: 0.95rem; }
+
+/* ============ HERO (DARK) ============ */
+.hero {
+  position: relative;
+  background: var(--bg-dark);
+  color: var(--text-on-dark);
+  overflow: hidden;
+  padding: 6rem 0 5rem;
+}
+.hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(6, 182, 212, 0.18) 0%, transparent 35%),
+    radial-gradient(circle at 80% 60%, rgba(20, 241, 149, 0.1) 0%, transparent 40%);
+  pointer-events: none;
+}
+.hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, #000 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, #000 30%, transparent 80%);
+  pointer-events: none;
+}
+.hero-inner {
+  position: relative; z-index: 2;
+  max-width: 1240px; margin: 0 auto; padding: 0 1.5rem;
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem; align-items: center;
+}
+.hero h1 { color: #fff; margin-bottom: 1.5rem; max-width: 14ch; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p.lede { color: #B8C3D1; margin-bottom: 2rem; max-width: 56ch; }
+.hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.hero-meta {
+  display: flex; gap: 2.5rem; padding-top: 2rem;
+  border-top: 1px solid var(--border-dark);
+  flex-wrap: wrap;
+}
+.hero-meta-item .label {
+  font-family: var(--mono); font-size: 0.7rem; color: #6B7280;
+  text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem;
+}
+.hero-meta-item .value {
+  font-size: 1.1rem; font-weight: 600; color: #fff; letter-spacing: -0.01em;
+}
+.hero-image {
+  position: relative;
+}
+.hero-image img {
+  width: 100%; max-height: 540px; object-fit: cover;
+  border-radius: 12px;
+  filter: contrast(1.1) saturate(0.85);
+}
+.hero-image::before {
+  content: ""; position: absolute; inset: -1px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, var(--accent), transparent 50%);
+  z-index: -1;
+  opacity: 0.4;
+}
+.hero-image-overlay {
+  position: absolute; bottom: 1.25rem; left: 1.25rem;
+  background: rgba(10, 14, 19, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.85rem 1.1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  display: flex; align-items: center; gap: 0.8rem;
+}
+.hero-image-overlay .live-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent-2); box-shadow: 0 0 10px var(--accent-2);
+  animation: pulse 2s infinite;
+}
+.hero-image-overlay .text {
+  font-family: var(--mono); font-size: 0.78rem; color: #F3F4F6;
+}
+
+/* ============ SECTIONS ============ */
+section { padding: 6rem 0; position: relative; }
+.section-tight { padding: 4rem 0; }
+.section-subtle { background: var(--bg-subtle); }
+.section-dark {
+  background: var(--bg-dark); color: var(--text-on-dark);
+  position: relative; overflow: hidden;
+}
+.section-dark::before {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 20%, transparent 80%);
+  pointer-events: none;
+}
+.section-dark > * { position: relative; z-index: 1; }
+.section-dark h2, .section-dark h3, .section-dark h4 { color: #fff; }
+.section-dark p { color: #B8C3D1; }
+
+.section-header { max-width: 720px; margin: 0 auto 4rem; }
+.section-header.center { text-align: center; }
+.section-header h2 { margin-bottom: 1rem; }
+.section-header p { font-size: 1.08rem; }
+
+/* ============ HOW IT WORKS / EDITORIAL ============ */
+.thesis {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.thesis h2 { margin-bottom: 1.5rem; }
+.thesis-prose p {
+  font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.2rem;
+  color: var(--text-2);
+}
+.thesis-prose strong { color: var(--text); font-weight: 600; }
+.thesis-callout {
+  background: var(--text);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  position: sticky; top: 6rem;
+}
+.thesis-callout .label {
+  font-family: var(--mono); font-size: 0.72rem; color: #5EEAD4;
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.thesis-callout h3 {
+  color: #fff; font-size: 1.25rem;
+  margin: 0.75rem 0 1rem;
+}
+.thesis-callout p { color: #B8C3D1; font-size: 0.95rem; line-height: 1.6; }
+.thesis-callout-meta {
+  display: flex; align-items: center; gap: 0.5rem;
+  margin-top: 1.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--border-dark);
+  font-family: var(--mono); font-size: 0.78rem; color: #9CA3AF;
+}
+
+/* ============ CONDITIONS GRID ============ */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.condition-card {
+  background: #fff;
+  padding: 2rem 1.75rem;
+  cursor: pointer;
+  transition: background .15s, transform .15s;
+  position: relative;
+  display: flex; flex-direction: column;
+  min-height: 260px;
+}
+.condition-card:hover { background: var(--bg-soft); }
+.condition-card-head {
+  display: flex; align-items: center; gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.condition-icon {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--text); color: var(--accent);
+  border-radius: 8px;
+  font-family: var(--mono); font-size: 0.95rem; font-weight: 600;
+}
+.condition-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+.condition-card p { font-size: 0.92rem; line-height: 1.55; color: var(--text-muted); flex: 1; }
+.condition-tag {
+  font-family: var(--mono); font-size: 0.68rem;
+  color: var(--accent); letter-spacing: 0.04em;
+  text-transform: uppercase; margin-bottom: 0.4rem;
+}
+.condition-card-link {
+  margin-top: 1.2rem;
+  font-family: var(--mono); font-size: 0.78rem;
+  font-weight: 500; color: var(--text); letter-spacing: 0.02em;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+}
+.condition-card-link::after { content: "→"; transition: transform .15s; }
+.condition-card:hover .condition-card-link::after { transform: translateX(3px); }
+
+/* ============ STATS ============ */
+.stats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--border-dark);
+  border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--border-dark);
+}
+.stat {
+  background: var(--bg-dark);
+  padding: 2.5rem 2rem;
+  position: relative;
+}
+.stat::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: linear-gradient(90deg, var(--accent), transparent 70%);
+  opacity: 0.6;
+}
+.stat-number {
+  font-family: var(--sans); font-size: 3.4rem; font-weight: 700;
+  letter-spacing: -0.04em; color: #fff; line-height: 1;
+  margin-bottom: 0.6rem;
+  font-variant-numeric: tabular-nums;
+}
+.stat-number .unit { font-size: 1.6rem; color: var(--accent); margin-left: 0.1em; }
+.stat-label { font-size: 0.88rem; color: #B8C3D1; line-height: 1.5; }
+.stat-tag {
+  font-family: var(--mono); font-size: 0.7rem;
+  color: var(--accent); letter-spacing: 0.06em;
+  text-transform: uppercase; margin-bottom: 0.8rem;
+}
+
+/* ============ DOCTOR PREVIEW ============ */
+.doctor-preview {
+  display: grid; grid-template-columns: 0.9fr 1.1fr;
+  gap: 4rem; align-items: center;
+}
+.doctor-img-wrap {
+  position: relative;
+  background: linear-gradient(135deg, var(--accent-soft), #DBEAFE);
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem 0 1.5rem;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+}
+.doctor-img-wrap::after {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+.doctor-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+  border-radius: 12px 12px 0 0;
+  display: block;
+  position: relative; z-index: 1;
+}
+.doctor-credential-card {
+  position: absolute; bottom: 1rem; right: 1rem; z-index: 2;
+  background: #fff;
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  font-family: var(--mono); font-size: 0.78rem;
+  color: var(--text); border: 1px solid var(--border);
+}
+.doctor-credential-card strong { color: var(--accent); font-weight: 600; }
+.doctor-info .credentials {
+  font-family: var(--mono); font-size: 0.78rem;
+  color: var(--text-muted); letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+}
+.doctor-info p { font-size: 1.02rem; margin-bottom: 1.2rem; color: var(--text-2); }
+.doctor-info p strong { color: var(--text); font-weight: 600; }
+
+/* ============ CASE STORY (TERMINAL STYLE) ============ */
+.case-terminal {
+  background: var(--bg-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: 12px;
+  font-family: var(--mono);
+  overflow: hidden;
+  max-width: 880px; margin: 0 auto;
+  box-shadow: var(--shadow-xl);
+}
+.case-terminal-header {
+  background: var(--bg-dark-3);
+  padding: 0.8rem 1.2rem;
+  display: flex; align-items: center; gap: 0.6rem;
+  border-bottom: 1px solid var(--border-dark);
+}
+.case-terminal-header .dots { display: flex; gap: 0.45rem; }
+.case-terminal-header .dot { width: 11px; height: 11px; border-radius: 50%; }
+.case-terminal-header .dot:nth-child(1) { background: #FF5F56; }
+.case-terminal-header .dot:nth-child(2) { background: #FFBD2E; }
+.case-terminal-header .dot:nth-child(3) { background: #27C93F; }
+.case-terminal-header .title {
+  flex: 1; text-align: center;
+  color: #9CA3AF; font-size: 0.78rem;
+}
+.case-terminal-body {
+  padding: 1.8rem 2rem 2rem;
+  color: #D1D5DB; font-size: 0.95rem; line-height: 1.7;
+}
+.case-terminal-body .field {
+  display: grid; grid-template-columns: 110px 1fr;
+  gap: 1.2rem; padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.88rem;
+}
+.case-terminal-body .field:last-child { border-bottom: none; }
+.case-terminal-body .field .key { color: #6B7280; }
+.case-terminal-body .field .val { color: #F3F4F6; }
+.case-terminal-body .narrative {
+  font-family: var(--sans); font-size: 1rem;
+  color: #D1D5DB; line-height: 1.7;
+  margin: 1.5rem 0; letter-spacing: -0.005em;
+}
+.case-terminal-resolution {
+  margin-top: 1.2rem; padding: 1.2rem 1.4rem;
+  background: rgba(6, 182, 212, 0.1);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  font-family: var(--sans); font-size: 0.95rem;
+  color: #fff; line-height: 1.6;
+}
+.case-terminal-resolution .tag {
+  display: inline-block; font-family: var(--mono);
+  font-size: 0.7rem; color: var(--accent);
+  background: rgba(6, 182, 212, 0.15);
+  padding: 0.2rem 0.5rem; border-radius: 4px;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* ============ MECHANISM FLOW ============ */
+.mechanism {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+  margin: 3rem 0;
+}
+.mech-step {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  position: relative;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.mech-step:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--accent); }
+.mech-step .step-tag {
+  font-family: var(--mono); font-size: 0.7rem; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem;
+}
+.mech-step .step-num {
+  position: absolute; top: 1.5rem; right: 1.5rem;
+  font-family: var(--mono); font-size: 0.78rem;
+  color: var(--text-soft);
+}
+.mech-step h4 { font-size: 1.15rem; margin-bottom: 0.7rem; letter-spacing: -0.02em; }
+.mech-step p { font-size: 0.92rem; line-height: 1.55; }
+.mech-step.dark {
+  background: var(--text); color: #fff; border-color: var(--text);
+}
+.mech-step.dark h4 { color: #fff; }
+.mech-step.dark p { color: #B8C3D1; }
+.mech-step.dark .step-tag { color: #5EEAD4; }
+.mech-step.dark .step-num { color: #6B7280; }
+
+/* ============ PAPERS ============ */
+.papers-list { list-style: none; }
+.paper-row {
+  display: grid; grid-template-columns: 80px 1fr 100px;
+  gap: 1.5rem; align-items: center;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: padding-left .15s;
+  cursor: pointer;
+}
+.paper-row:hover { padding-left: 0.8rem; background: var(--bg-soft); border-radius: 0 8px 8px 0; }
+.paper-row .year {
+  font-family: var(--mono); font-size: 0.92rem;
+  color: var(--accent); font-weight: 500;
+}
+.paper-row .title { color: var(--text); font-weight: 500; line-height: 1.4; font-size: 1rem; }
+.paper-row .meta { font-size: 0.85rem; color: var(--text-soft); margin-top: 0.2rem; font-family: var(--mono); }
+.paper-row .action { color: var(--accent); font-family: var(--mono); font-size: 0.8rem; text-align: right; font-weight: 500; }
+
+.papers-list-dark .paper-row { border-bottom-color: var(--border-dark); }
+.papers-list-dark .paper-row:hover { background: rgba(255,255,255,0.03); }
+.papers-list-dark .paper-row .title { color: #F3F4F6; }
+.papers-list-dark .paper-row .meta { color: #9CA3AF; }
+
+/* ============ CTA ============ */
+.cta-block {
+  background: var(--text);
+  color: #fff;
+  border-radius: 16px;
+  padding: 4rem 3rem;
+  display: grid; grid-template-columns: 1.4fr 1fr;
+  gap: 3rem; align-items: center;
+  position: relative; overflow: hidden;
+}
+.cta-block::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.18), transparent 50%),
+              radial-gradient(circle at 20% 90%, rgba(20, 241, 149, 0.08), transparent 50%);
+  pointer-events: none;
+}
+.cta-block > * { position: relative; z-index: 1; }
+.cta-block h2 { color: #fff; margin-bottom: 1rem; }
+.cta-block p { color: #B8C3D1; font-size: 1.04rem; }
+.cta-call {
+  font-family: var(--mono); font-size: 1.15rem;
+  color: #fff; margin-top: 0.8rem;
+}
+.cta-call strong { color: var(--accent-2); }
+
+/* ============ FOOTER ============ */
+.footer {
+  background: var(--bg-dark);
+  color: #9CA3AF;
+  padding: 4rem 0 2rem;
+  border-top: 1px solid var(--border-dark);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  gap: 3rem;
+}
+.footer h4 { color: #fff; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; margin-bottom: 1.4rem; color: #6B7280; }
+.footer ul { list-style: none; }
+.footer ul li { margin-bottom: 0.6rem; font-size: 0.9rem; }
+.footer ul li a { color: #D1D5DB; }
+.footer ul li a:hover { color: var(--accent); }
+.footer-brand .brand-name { color: #fff; }
+.footer-brand .brand-tag { color: #5EEAD4; }
+.footer-brand p { font-size: 0.92rem; color: #9CA3AF; margin-top: 1rem; line-height: 1.6; max-width: 32ch; }
+.footer-bottom {
+  border-top: 1px solid var(--border-dark);
+  margin-top: 3rem; padding-top: 1.5rem;
+  font-family: var(--mono); font-size: 0.78rem; color: #6B7280;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+}
+
+/* ============ INNER PAGES ============ */
+.page-header {
+  background: var(--bg-dark); color: #fff;
+  padding: 6rem 0 4rem;
+  position: relative; overflow: hidden;
+}
+.page-header::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(6, 182, 212, 0.15), transparent 50%);
+}
+.page-header::after {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 80%);
+}
+.page-header > * { position: relative; z-index: 1; }
+.page-header h1 { color: #fff; max-width: 22ch; margin-bottom: 1rem; }
+.page-header p { color: #B8C3D1; max-width: 60ch; font-size: 1.08rem; }
+.page-header .breadcrumb {
+  font-family: var(--mono); font-size: 0.78rem; color: #6B7280;
+  margin-bottom: 1.5rem;
+}
+.page-header .breadcrumb a { color: var(--accent); }
+.page-header .breadcrumb .sep { margin: 0 0.5rem; color: #4B5563; }
+
+/* ============ CONDITIONS DETAIL PAGE ============ */
+.conditions-detail {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.condition-detail-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  display: flex; flex-direction: column;
+  transition: border-color .2s, transform .2s;
+}
+.condition-detail-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.condition-detail-card .row-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.condition-detail-card h3 { font-size: 1.4rem; }
+.condition-detail-card .row-id {
+  font-family: var(--mono); font-size: 0.75rem; color: var(--text-soft);
+}
+.condition-detail-card p { line-height: 1.65; flex: 1; font-size: 0.97rem; }
+.condition-detail-card .symptom-list {
+  margin-top: 1.2rem;
+  list-style: none;
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+}
+.condition-detail-card .symptom-list li {
+  font-family: var(--mono); font-size: 0.74rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--bg-subtle); border-radius: 4px;
+  color: var(--text-2); border: 1px solid var(--border);
+}
+
+/* ============ ABOUT PAGE ============ */
+.about-hero {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4rem; align-items: center;
+  padding: 5rem 0;
+}
+.about-info p { font-size: 1.06rem; line-height: 1.7; color: var(--text-2); margin-bottom: 1.2rem; }
+.about-grid {
+  display: grid; grid-template-columns: 240px 1fr;
+  gap: 4rem; padding: 3rem 0;
+  border-top: 1px solid var(--border);
+}
+.about-grid .meta-tag {
+  font-family: var(--mono); font-size: 0.78rem;
+  color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.about-grid h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+.about-grid p { font-size: 1.02rem; line-height: 1.7; color: var(--text-2); margin-bottom: 1rem; }
+
+/* ============ RESEARCH FEATURED ============ */
+.featured-paper {
+  background: var(--text);
+  color: #fff;
+  border-radius: 16px;
+  padding: 0;
+  display: grid; grid-template-columns: 1fr 1.5fr;
+  overflow: hidden; margin-bottom: 4rem;
+  position: relative;
+}
+.featured-paper::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 0% 0%, rgba(6, 182, 212, 0.2), transparent 50%);
+  pointer-events: none;
+}
+.featured-paper-cover {
+  background: linear-gradient(135deg, #06B6D4 0%, #0E7490 100%);
+  padding: 3rem 2.5rem;
+  position: relative;
+  display: flex; flex-direction: column; justify-content: space-between;
+  min-height: 320px;
+}
+.featured-paper-cover::after {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.featured-paper-cover > * { position: relative; z-index: 1; }
+.featured-paper-cover .doc-meta {
+  font-family: var(--mono); font-size: 0.72rem; color: rgba(255,255,255,0.7);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.featured-paper-cover h4 {
+  color: #fff; font-size: 1.7rem; line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.featured-paper-cover .author {
+  font-family: var(--mono); font-size: 0.85rem; color: rgba(255,255,255,0.85);
+}
+.featured-paper-content {
+  padding: 3rem 2.5rem; position: relative; z-index: 1;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.featured-paper-content h3 { color: #fff; margin-bottom: 1rem; }
+.featured-paper-content p { color: #B8C3D1; font-size: 1rem; line-height: 1.65; }
+
+/* ============ CONTACT PAGE ============ */
+.contact-grid {
+  display: grid; grid-template-columns: 1.2fr 1fr;
+  gap: 3rem; padding: 4rem 0;
+}
+.contact-form {
+  background: #fff;
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.contact-form h3 { margin-bottom: 0.5rem; }
+.contact-form .form-intro { font-size: 0.95rem; margin-bottom: 1.8rem; }
+.form-row { margin-bottom: 1.2rem; }
+.form-row label {
+  display: block; font-family: var(--mono); font-size: 0.74rem;
+  color: var(--text-muted); margin-bottom: 0.5rem;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.form-row input, .form-row textarea, .form-row select {
+  width: 100%; padding: 0.75rem 0.95rem;
+  border: 1px solid var(--border); border-radius: 7px;
+  font-family: var(--sans); font-size: 0.95rem;
+  background: var(--bg-soft); color: var(--text);
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+.form-row input:focus, .form-row textarea:focus, .form-row select:focus {
+  outline: none; border-color: var(--accent); background: #fff;
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.form-row textarea { min-height: 110px; resize: vertical; }
+.contact-info-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.contact-info-card .label {
+  font-family: var(--mono); font-size: 0.7rem;
+  color: var(--text-muted); text-transform: uppercase;
+  letter-spacing: 0.06em; margin-bottom: 0.4rem;
+}
+.contact-info-card .value {
+  font-size: 1.1rem; font-weight: 500; color: var(--text); line-height: 1.4;
+}
+.contact-info-card .value-sub {
+  font-size: 0.88rem; color: var(--text-muted); margin-top: 0.3rem;
+  font-family: var(--mono);
+}
+.travel-card {
+  background: var(--text);
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin-top: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.travel-card::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 100% 0%, rgba(6, 182, 212, 0.15), transparent 50%);
+}
+.travel-card > * { position: relative; z-index: 1; }
+.travel-card h4 { color: #fff; margin-bottom: 0.5rem; font-size: 1rem; }
+.travel-card p { font-size: 0.9rem; color: #B8C3D1; }
+
+.steps {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.step {
+  padding: 2rem 1.75rem;
+  background: #fff;
+  border-right: 1px solid var(--border);
+  transition: background .15s;
+}
+.step:last-child { border-right: none; }
+.step:hover { background: var(--bg-soft); }
+.step .step-id {
+  font-family: var(--mono); font-size: 0.7rem;
+  color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.06em; margin-bottom: 0.6rem;
+}
+.step h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+.step p { font-size: 0.9rem; line-height: 1.55; }
+
+/* ============ PAGE ROUTING ============ */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ============ FADE-IN ON SCROLL ============ */
+.fade-in {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 980px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .hero-meta { gap: 1.5rem; }
+  .conditions-grid { grid-template-columns: 1fr 1fr; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .doctor-preview { grid-template-columns: 1fr; }
+  .thesis { grid-template-columns: 1fr; gap: 2.5rem; }
+  .thesis-callout { position: static; }
+  .mechanism { grid-template-columns: 1fr; }
+  .cta-block { grid-template-columns: 1fr; padding: 3rem 2rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .conditions-detail { grid-template-columns: 1fr; }
+  .featured-paper { grid-template-columns: 1fr; }
+  .featured-paper-cover { min-height: 200px; }
+  .about-hero, .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .step { border-right: none; border-bottom: 1px solid var(--border); }
+  .step:last-child { border-bottom: none; }
+  .nav-links { display: none; }
+  .nav-links.mobile-menu-visible { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 1.5rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+  .paper-row { grid-template-columns: 60px 1fr 70px; gap: 1rem; }
+}
+@media (max-width: 640px) {
+  .conditions-grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 2.4rem; }
+  .case-terminal-body { padding: 1.5rem 1.2rem; }
+}
+
+/* ============ MOCKUP NOTICE ============ */
+.mockup-banner {
+  background: #FEF3C7; border-bottom: 1px solid #FDE68A;
+  padding: 0.5rem 1.5rem; font-family: var(--mono); font-size: 0.74rem; text-align: center;
+  color: #92400E;
+}
+.mockup-banner strong { color: #422006; }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">
+  <strong>MOCKUP_V2</strong> — modern tech aesthetic · use the nav to move between pages
+</div>
+
+<!-- Status bar — modern tech-product feel -->
+<div class="status-bar">
+  <span><span class="dot"></span><span class="label">Status</span> <span class="value">Accepting new patients</span></span>
+  <span class="sep">·</span>
+  <span><span class="label">Practice est.</span> <span class="value">1986</span></span>
+  <span class="sep">·</span>
+  <span><span class="label">Tertiary referral</span> <span class="value">Alameda, CA</span></span>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" data-page="home">
+      <div class="brand-mark">TC</div>
+      <div class="brand-text">
+        <span class="brand-name">TMJ California</span>
+        <span class="brand-tag">jennings.dds · miccmo</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a data-page="home">Home</a>
+      <a data-page="conditions">Conditions</a>
+      <a data-page="about">About</a>
+      <a data-page="research">Research</a>
+      <a data-page="contact" class="btn btn-arrow">New patients</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HOME ============ -->
+<div class="page" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="eyebrow on-dark">Specialist · dental medicine</span>
+        <h1 class="text-balance">When the answer isn't where doctors are looking, look at the <em>jaw</em>.</h1>
+        <p class="lede">For 40 years, Dr. Dwight Jennings has helped patients with chronic pain, migraines, sleep apnea, and unexplained medical conditions find relief through a non-surgical approach mainstream medicine has overlooked.</p>
+        <div class="hero-actions">
+          <a class="btn btn-on-dark btn-large btn-arrow" data-page="contact">Request consultation</a>
+          <a class="btn btn-outline btn-large" data-page="conditions" style="color:#fff; border-color: rgba(255,255,255,0.2);">Explore conditions</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="label">Years in practice</div>
+            <div class="value">40+</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="label">Headache success rate</div>
+            <div class="value">~85%</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="label">Surgery in our protocol</div>
+            <div class="value">~0%</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="label">Published papers</div>
+            <div class="value">12+</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/fmf_4920-scaled.jpg" alt="Patient with chronic pain" />
+        <div class="hero-image-overlay">
+          <span class="live-dot"></span>
+          <span class="text">case_history.log · last_visit: today</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THESIS -->
+  <section>
+    <div class="container">
+      <div class="thesis">
+        <div class="thesis-prose">
+          <span class="eyebrow">The hypothesis</span>
+          <h2>What if your chronic symptoms have been a structural problem all along?</h2>
+          <p>Multiple research studies have shown that TMJ — temporomandibular joint dysfunction — is associated with a startlingly long list of comorbidities: chronic headaches, fibromyalgia, fatigue, sleep disorders, even movement disorders like Tourette's and Parkinson's. Patients with bite issues have markedly higher medical utilization rates than the general population.</p>
+          <p>The mechanism is now well-documented. Jaw misalignment elevates trigeminal nerve activity, which in turn increases <strong>substance P</strong> — a neuropeptide that, when chronically elevated, sensitizes cell membranes throughout the body and disrupts function across multiple systems. The trigeminal nerve has on average <strong>100× the density of pain fibers</strong> of any other nerve in the body. When it's chronically activated, the consequences ripple outward.</p>
+          <p>Dr. Jennings has spent four decades developing the diagnostic and treatment protocols this work requires. The treatment itself is undramatic — a removable dental appliance, almost never surgery — that aligns the jaw and relieves the pressure on the joint. The results, for the right patients, can be transformative.</p>
+        </div>
+        <div class="thesis-callout">
+          <div class="label">Quote · case context</div>
+          <h3>"Curiously, I have never heard a single physician mention the idea of looking at the bite on patients having broad medical complaints."</h3>
+          <p>The mainstream medical workup for chronic pain rarely includes the jaw. Dr. Jennings argues this is the missing variable in a large share of unsolved cases — and the published literature increasingly agrees.</p>
+          <div class="thesis-callout-meta">
+            <span>— Dwight Jennings, DDS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS -->
+  <section class="section-subtle">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Conditions we treat</span>
+        <h2 class="text-balance">Six entry points into the same body of work</h2>
+        <p>If any of these describe you — or someone you've been trying to help — start here.</p>
+      </div>
+      <div class="conditions-grid">
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-tag">01 · foundational</div>
+          <div class="condition-card-head">
+            <div class="condition-icon">T</div>
+            <h3>TMJ pain & dysfunction</h3>
+          </div>
+          <p>Jaw pain, clicking, locking, ear pressure, facial pain. The original specialty of the practice — and where most patients begin.</p>
+          <span class="condition-card-link">View detail</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-tag">02 · highest volume</div>
+          <div class="condition-card-head">
+            <div class="condition-icon">H</div>
+            <h3>Headaches & migraines</h3>
+          </div>
+          <p>Bite alignment therapy is shown in multiple studies to be 85% effective at reversing chronic headaches — regardless of headache type.</p>
+          <span class="condition-card-link">View detail</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-tag">03 · alternative to cpap</div>
+          <div class="condition-card-head">
+            <div class="condition-icon">S</div>
+            <h3>Sleep apnea</h3>
+          </div>
+          <p>Advanced obstructive sleep apnea treatment based on dental orthopedics — for patients who can't tolerate CPAP or are looking for an alternative.</p>
+          <span class="condition-card-link">View detail</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-tag">04 · unusual cases</div>
+          <div class="condition-card-head">
+            <div class="condition-icon">M</div>
+            <h3>Movement disorders</h3>
+          </div>
+          <p>Tourette's, Parkinson's, dystonia, torticollis, and gait disorders have been reversed in cases through craniomandibular alignment therapy.</p>
+          <span class="condition-card-link">View detail</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-tag">05 · pre-surgical</div>
+          <div class="condition-card-head">
+            <div class="condition-icon">A</div>
+            <h3>Surgical alternative</h3>
+          </div>
+          <p>Many cases recommended for orthognathic or TMJ surgery can be treated nonsurgically with precision jaw orthopedics.</p>
+          <span class="condition-card-link">View detail</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-tag">06 · chronic illness</div>
+          <div class="condition-card-head">
+            <div class="condition-icon">C</div>
+            <h3>Complex & undiagnosed</h3>
+          </div>
+          <p>Fibromyalgia, IBS, autoimmune, depression, ADHD, autism, and the long list of conditions linked to substance P dysregulation.</p>
+          <span class="condition-card-link">View detail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow on-dark">By the numbers</span>
+        <h2 class="text-balance">A practice unlike any other</h2>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-tag">Specialization</div>
+          <div class="stat-number">40<span class="unit">yr+</span></div>
+          <div class="stat-label">Full-time specialization in dental orthopedics. Almost no one in the U.S. has this depth.</div>
+        </div>
+        <div class="stat">
+          <div class="stat-tag">Travel distance</div>
+          <div class="stat-number">50<span class="unit">mi+</span></div>
+          <div class="stat-label">Median distance patients travel. Many fly into Oakland from across the country.</div>
+        </div>
+        <div class="stat">
+          <div class="stat-tag">Clinical response</div>
+          <div class="stat-number">95<span class="unit">%</span></div>
+          <div class="stat-label">Of TMJ cases respond to jaw repositioning rather than psychotherapy or stress management.</div>
+        </div>
+        <div class="stat">
+          <div class="stat-tag">Surgical rate</div>
+          <div class="stat-number">~0<span class="unit">%</span></div>
+          <div class="stat-label">Treatment plans involving surgery. The primary therapeutic is a removable appliance.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR -->
+  <section>
+    <div class="container">
+      <div class="doctor-preview">
+        <div class="doctor-img-wrap">
+          <img src="images/dj_headshots_101-200x300-1.jpg" alt="Dr. Dwight Jennings, DDS" />
+          <div class="doctor-credential-card">
+            <strong>MICCMO</strong><br/>Master · ICCMO
+          </div>
+        </div>
+        <div class="doctor-info">
+          <span class="eyebrow">Meet the doctor</span>
+          <h2 style="margin-bottom: 0.7rem;">Dr. Dwight Jennings, DDS</h2>
+          <div class="credentials">DDS · MICCMO · UNIV. OF THE PACIFIC</div>
+          <p>A general dentist for ten years before specializing in jaw orthopedics, Dr. Jennings has spent the last four decades developing diagnostic protocols and treatment innovations that are <strong>now reshaping how the field understands the connection between jaw function and systemic health</strong>.</p>
+          <p>His original research on the substance-P cascade, the trigeminal system, and the mechanism by which jaw dysfunction drives systemic illness has been published in journals including <em>Cranio</em> and <em>TMDiary</em>. He holds the Master designation from the International College of Cranio-Mandibular Orthopedics.</p>
+          <a class="btn btn-outline btn-arrow" data-page="about" style="margin-top: 0.8rem;">Read his full story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STORY (TERMINAL) -->
+  <section class="section-subtle">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Case history · 01</span>
+        <h2 class="text-balance">The kind of patient who finds us</h2>
+      </div>
+      <div class="case-terminal">
+        <div class="case-terminal-header">
+          <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+          <div class="title">case_001 — anonymized patient record</div>
+        </div>
+        <div class="case-terminal-body">
+          <div class="field"><span class="key">patient</span><span class="val">Male, mid-60s</span></div>
+          <div class="field"><span class="key">presentation</span><span class="val">Fainting on uphill walks</span></div>
+          <div class="field"><span class="key">prior_workup</span><span class="val">Multiple physicians · X-rays · MRI · EKG</span></div>
+          <div class="field"><span class="key">prior_findings</span><span class="val">No abnormalities detected</span></div>
+          <div class="field"><span class="key">prior_diagnosis</span><span class="val">Unexplained</span></div>
+          <p class="narrative">In a phone interview, the patient mentioned that before he passed out he would develop pain in his ankles, knees, and hips — a sign suggesting a possible trigeminal nerve component to the fainting. An examination was recommended.</p>
+          <p class="narrative">On examination, observation showed a very large jaw misalignment caused by orthodontic extraction therapy when he was a teenager. A 4mm tall mouthpiece was made for him.</p>
+          <div class="case-terminal-resolution">
+            <div class="tag">Outcome</div>
+            <strong style="color:#fff;">Immediate relief.</strong> Patient reported significant improvement in memory within approximately one week. No surgery; no medication.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH PREVIEW -->
+  <section class="section-dark">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 4rem; align-items: start;">
+        <div>
+          <span class="eyebrow on-dark">For referring clinicians</span>
+          <h2 class="text-balance" style="margin-bottom: 1.2rem;">A scientific basis. Not a hunch.</h2>
+          <p style="margin-bottom: 1.5rem;">If you're a physician, dentist, or neurologist with a patient whose presentation doesn't add up, the trigeminal–substance P axis may be worth investigating. Dr. Jennings' published work and a referral pathway are below.</p>
+          <a class="btn btn-on-dark btn-arrow" data-page="research">Research & referrals</a>
+        </div>
+        <div>
+          <ul class="papers-list papers-list-dark">
+            <li class="paper-row">
+              <span class="year">2010</span>
+              <div>
+                <div class="title">Substance P Cascade as a Result of Jaw Malalignment</div>
+                <div class="meta">Dr. Jennings · original mechanism paper</div>
+              </div>
+              <span class="action" data-page="research">PDF →</span>
+            </li>
+            <li class="paper-row">
+              <span class="year">2012</span>
+              <div>
+                <div class="title">Fibromyalgia: The Trigeminal Factor</div>
+                <div class="meta">Dr. Jennings</div>
+              </div>
+              <span class="action" data-page="research">PDF →</span>
+            </li>
+            <li class="paper-row">
+              <span class="year">2008</span>
+              <div>
+                <div class="title">Parkinson's: Are Some Cases Misdiagnosed Cranio-mandibular Dysfunction?</div>
+                <div class="meta">TMDiary · Vol 21 No. 1</div>
+              </div>
+              <span class="action" data-page="research">PDF →</span>
+            </li>
+            <li class="paper-row">
+              <span class="year">—</span>
+              <div>
+                <div class="title">A New Model of Occlusion</div>
+                <div class="meta">Featured paper · 30 pages</div>
+              </div>
+              <a class="action" href="../archive_capture/documents_flat/New-model-of-Occlusion.pdf" target="_blank">PDF →</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-block">
+        <div>
+          <span class="eyebrow on-dark">Take the first step</span>
+          <h2 class="text-balance">Ready to find out if jaw orthopedics could help?</h2>
+          <p>Most consultations begin with a phone call or a brief written intake. We'll ask about your symptoms and your medical history — and tell you honestly whether we're the right place for you.</p>
+        </div>
+        <div>
+          <a class="btn btn-accent btn-large btn-arrow" data-page="contact" style="width: 100%; justify-content: center;">Request consultation</a>
+          <div class="cta-call">or call <strong>(510) 522-6828</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CONDITIONS PAGE ============ -->
+<div class="page" id="page-conditions">
+  <header class="page-header">
+    <div class="container-narrow">
+      <div class="breadcrumb"><a data-page="home">Home</a><span class="sep">/</span>Conditions</div>
+      <span class="eyebrow on-dark">Conditions we treat</span>
+      <h1>One mechanism. Many manifestations.</h1>
+      <p>The body has very few ways of registering distress. When the trigeminal–substance P axis is dysregulated by jaw misalignment, that distress shows up wherever each person is most vulnerable — the head, the joints, the gut, the nervous system. These are the conditions we see most often.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="conditions-detail">
+        <div class="condition-detail-card">
+          <div class="row-head">
+            <h3>TMJ pain & dysfunction</h3>
+            <span class="row-id">cond_01</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 0.8rem;">Foundational condition</span>
+          <p>Temporomandibular joint dysfunction occurs when the jaw is misaligned, causing compression of the joint when biting down. The result is often pain — but TMJ is properly described as a syndrome, a constellation of symptoms that can include headaches, ear pressure, sinus pain, eye pain, neck pain, and visual disturbances. Treatment with a properly designed appliance to realign the jaw resolves most cases without surgery.</p>
+          <ul class="symptom-list">
+            <li>Jaw pain</li><li>Clicking</li><li>Locking</li><li>Ear pressure</li><li>Facial pain</li><li>Tinnitus</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <div class="row-head">
+            <h3>Headaches & migraines</h3>
+            <span class="row-id">cond_02</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 0.8rem;">Highest volume</span>
+          <p>Chronic headaches are caused, in most cases, when the nerve endings around the brain become hypersensitized and are then triggered by ordinary sensory stimulation — light, noise, stress, lack of sleep. The hypersensitization is usually caused by a lifelong poor bite. Multiple studies have shown that bite alignment therapy is approximately 85% effective at reversing chronic headaches, regardless of headache type.</p>
+          <ul class="symptom-list">
+            <li>Migraine</li><li>Tension</li><li>Cluster</li><li>Sinus headache</li><li>Photophobia</li><li>Nausea</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <div class="row-head">
+            <h3>Sleep apnea</h3>
+            <span class="row-id">cond_03</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 0.8rem;">Non-CPAP alternative</span>
+          <p>Obstructive sleep apnea is often a structural problem of jaw position. When the jaw is retruded, the airway behind the tongue is compromised. Advanced jaw-orthopedic treatment can change the structural relationship and resolve apnea in many patients — particularly those who cannot tolerate CPAP or are looking for an alternative based on integration of medical history and overall health status.</p>
+          <ul class="symptom-list">
+            <li>Loud snoring</li><li>Daytime fatigue</li><li>Witnessed apneas</li><li>CPAP intolerance</li><li>Morning headache</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <div class="row-head">
+            <h3>Movement disorders</h3>
+            <span class="row-id">cond_04</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 0.8rem;">The unusual cases</span>
+          <p>Tourette's, Parkinson's, torticollis, dystonia, scoliosis, gait disorders, and tics have all been reversed in clinical cases by craniomandibular alignment therapy. The mechanism is twofold: jaw alignment sensors have massive representation in the reticular formation (where movement originates), and substance P — elevated by jaw dysfunction — is a direct modulator of movement.</p>
+          <ul class="symptom-list">
+            <li>Tourette's</li><li>Parkinson's</li><li>Tics</li><li>Dystonia</li><li>Restless leg</li><li>Scoliosis</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <div class="row-head">
+            <h3>Considering jaw surgery?</h3>
+            <span class="row-id">cond_05</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 0.8rem;">Surgical alternative</span>
+          <p>Through advanced jaw-orthopedic techniques, Dr. Jennings is able to treat many cases nonsurgically that have been recommended for orthognathic or TMJ surgery. Our primary treatment is with removable dental appliances. With these, we can align the jaw and teeth and resolve many medical complaints. Traditional braces are sometimes used at the end to finish the case.</p>
+          <ul class="symptom-list">
+            <li>Underbite</li><li>Lateral shift</li><li>Vertical deficiency</li><li>Class II / III</li><li>Pre-surgical consult</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <div class="row-head">
+            <h3>Undiagnosed & systemic</h3>
+            <span class="row-id">cond_06</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 0.8rem;">Complex chronic illness</span>
+          <p>The list of conditions clinically associated with jaw dysfunction is long: asthma, autoimmune disorders, depression, fatigue, fibromyalgia, IBS, multiple chemical sensitivity, MS, ADHD, periodontal disease, seizures, sinus infections, trigeminal neuralgia, autism, and more. Not every case is jaw-driven, but for the patient who has run out of answers, the bite is worth a careful look.</p>
+          <ul class="symptom-list">
+            <li>Fibromyalgia</li><li>Fatigue</li><li>IBS</li><li>Autoimmune</li><li>Depression</li><li>ADHD</li><li>Autism</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top: 5rem;">
+        <div class="cta-block">
+          <div>
+            <span class="eyebrow on-dark">Not sure if your case fits?</span>
+            <h2 class="text-balance">That's a normal place to start.</h2>
+            <p>Send a brief description of your situation through the contact form, and we'll let you know whether jaw orthopedics is worth exploring for you.</p>
+          </div>
+          <div>
+            <a class="btn btn-accent btn-large btn-arrow" data-page="contact" style="width:100%; justify-content:center;">Request consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ABOUT PAGE ============ -->
+<div class="page" id="page-about">
+  <header class="page-header">
+    <div class="container-narrow">
+      <div class="breadcrumb"><a data-page="home">Home</a><span class="sep">/</span>About</div>
+      <span class="eyebrow on-dark">About Dr. Jennings</span>
+      <h1>Forty years of asking why dentistry stopped at the teeth.</h1>
+      <p>Dwight Jennings, DDS, MICCMO, has built one of the most specialized practices in the country around a single observation: that the jaw, properly understood, is a window into systemic health.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="about-hero">
+        <div class="about-info">
+          <span class="eyebrow">A practice limited to</span>
+          <h2 style="margin-bottom: 1.5rem;">Orofacial pain. Orthodontics. Dental medicine.</h2>
+          <p>Dr. Jennings practiced general dentistry for ten years before narrowing his focus to dental orthopedics — the assessment and correction of jaw alignment. The practice he founded in 1986, the Northern California Cranio-Facial Diagnostic Center, operates from Alameda in the San Francisco Bay Area, with a second location in Sutter Creek.</p>
+          <p>It functions as a tertiary referral practice. A significant percentage of patients travel more than 50 miles, and many fly into Oakland International Airport — five minutes from the office — from across the country.</p>
+        </div>
+        <div class="doctor-img-wrap" style="max-width: 460px; justify-self: end;">
+          <img src="images/dj_headshots_101-200x300-1.jpg" alt="Dr. Dwight Jennings, DDS" />
+          <div class="doctor-credential-card">
+            <strong>40 years</strong><br/>full-time, this work
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-subtle">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <span class="meta-tag">// background</span>
+        </div>
+        <div>
+          <h3>From the Ozarks to Oakland</h3>
+          <p>Dr. Jennings was born in the San Joaquin Valley and grew up on a farm in the Ozarks of Missouri, where he learned the value of a hard day's work and the virtue of honesty. He returned to California at fifteen to finish high school in Manteca, then graduated from the University of the Pacific in Stockton and attended their dental school in San Francisco.</p>
+          <p>In his spare time, Dr. Jennings enjoys construction projects, gardening, blacksmithing, and art projects — the same hands-on instincts that shape how he thinks about jaw mechanics.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <span class="meta-tag">// philosophy</span>
+        </div>
+        <div>
+          <h3>Structure and function are not the same thing.</h3>
+          <p>Mainstream dentistry, Dr. Jennings argues, is built on a structural model of the bite — the textbook "class I occlusion" — without an adequate functional model of what an ideal bite actually <em>does</em>. That gap is why most dentists have never been trained to recognize the jaw as a possible source of headaches, sleep apnea, or movement disorders.</p>
+          <p>It's also why the same practitioners charged with assessing the jaw — orthodontists — often miss what is in front of them. The American Dental Association renamed orthodontists "orthodontic and dento-facial orthopedic specialists" in 1998, but did not change their educational requirements. The title changed; the curriculum didn't.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <span class="meta-tag">// innovation</span>
+        </div>
+        <div>
+          <h3>Research, protocols, and clinical evidence</h3>
+          <p>Beyond practice, Dr. Jennings has developed a series of new diagnostic and treatment protocols — including innovations in functional testing, appliance design, and the integration of bite work with broader medical history — that have meaningfully improved outcomes in jaw dysfunction and related muscle disorders.</p>
+          <p>His paper <em>A New Model of Occlusion</em> proposes a functional reframing of how the bite should be understood. Other published work covers the substance-P cascade, the trigeminal system, fibromyalgia, autism spectrum, and the perils of conventional orthodontics. He holds the Master designation (MICCMO) from the International College of Cranio-Mandibular Orthopedics.</p>
+          <a class="btn btn-outline btn-arrow" data-page="research" style="margin-top: 0.8rem;">Browse the research</a>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <span class="meta-tag">// approach</span>
+        </div>
+        <div>
+          <h3>Almost never surgery.</h3>
+          <p>The primary treatment in this practice is a removable dental appliance — a precisely fitted device that adjusts the jaw's position so that the joint is no longer under compression. Functional tests, based on dental orthopedic principles, are run to identify defects that are not always evident on X-rays. Appliances are then modified and adjusted iteratively until function is ideal and symptoms resolve.</p>
+          <p>Dr. Jennings has, over the course of his career, treated many cases nonsurgically that had been recommended for orthognathic or TMJ surgery. Traditional braces are used in some instances at the end of treatment to finish a case. Surgery is rare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ RESEARCH PAGE ============ -->
+<div class="page" id="page-research">
+  <header class="page-header">
+    <div class="container-narrow">
+      <div class="breadcrumb"><a data-page="home">Home</a><span class="sep">/</span>Research</div>
+      <span class="eyebrow on-dark">Research & evidence</span>
+      <h1>The mechanism behind the practice.</h1>
+      <p>For physicians, dentists, neurologists, and curious patients: the published work, the proposed mechanism, and the case for considering jaw orthopedics in complex chronic illness.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="featured-paper">
+        <div class="featured-paper-cover">
+          <span class="doc-meta">Featured · 30 pages · pdf</span>
+          <h4>A New Model of Occlusion</h4>
+          <span class="author">Dwight Jennings, DDS</span>
+        </div>
+        <div class="featured-paper-content">
+          <h3 style="color:#fff; margin-bottom: 1rem;">A functional reframing of how dentistry should think about the bite.</h3>
+          <p>Dentistry's current understanding of occlusion is structural — built around the textbook "class I" relationship of teeth. But structure and function are not the same thing. This paper proposes a functional model of occlusion grounded in jaw orthopedic principles, with implications for how clinicians evaluate, diagnose, and treat the dysfunctions that follow from a poor bite.</p>
+          <a class="btn btn-on-dark btn-arrow" href="../archive_capture/documents_flat/New-model-of-Occlusion.pdf" target="_blank" style="margin-top: 1.5rem;">Read the paper</a>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-top: 4rem; margin-bottom: 2.5rem;">
+        <span class="eyebrow">The proposed mechanism</span>
+        <h2 class="text-balance">How a misaligned jaw becomes a systemic problem.</h2>
+      </div>
+
+      <div class="mechanism">
+        <div class="mech-step">
+          <div class="step-tag">Step 01</div>
+          <div class="step-num">/01</div>
+          <h4>Jaw misalignment</h4>
+          <p>A vertical-height deficiency, often inherited or caused by extraction-based orthodontics, requires the jaw to retrude in order to bring the teeth together. The TMJ is compressed.</p>
+        </div>
+        <div class="mech-step dark">
+          <div class="step-tag">Step 02</div>
+          <div class="step-num">/02</div>
+          <h4>Trigeminal hyperactivation</h4>
+          <p>The trigeminal nerve, with 100× the density of pain fibers of any other nerve, becomes chronically hypertonic. Substance P — a neurotransmitter without a reuptake mechanism — accumulates.</p>
+        </div>
+        <div class="mech-step">
+          <div class="step-tag">Step 03</div>
+          <div class="step-num">/03</div>
+          <h4>Systemic dysfunction</h4>
+          <p>Elevated substance P sensitizes cell membranes throughout the body, modulates bone metabolism, stem cell differentiation, and movement, and disrupts homeostasis across multiple systems.</p>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-top: 5rem; margin-bottom: 2rem;">
+        <span class="eyebrow">Selected publications</span>
+        <h2 class="text-balance">Dr. Jennings' published work.</h2>
+        <p>A working bibliography of original papers and supporting research. PDFs are linked where available.</p>
+      </div>
+
+      <ul class="papers-list">
+        <li class="paper-row">
+          <span class="year">2010</span>
+          <div>
+            <div class="title">Substance P Cascade as a Result of Jaw Malalignment</div>
+            <div class="meta">jennings.dds · original mechanism paper</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">2012</span>
+          <div>
+            <div class="title">Fibromyalgia: The Trigeminal Factor</div>
+            <div class="meta">jennings.dds</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">2010</span>
+          <div>
+            <div class="title">Finding the Causes of Autism Spectrum Disorders: The Trigeminal Factor</div>
+            <div class="meta">jennings.dds</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">2008</span>
+          <div>
+            <div class="title">Parkinson's: Are Some Cases Misdiagnosed Cranio-mandibular Dysfunction?</div>
+            <div class="meta">tmdiary · vol 21 no. 1 · pp 28–33</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">2011</span>
+          <div>
+            <div class="title">The Perils of Orthodontics</div>
+            <div class="meta">jennings.dds · on extraction-based orthodontics</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">—</span>
+          <div>
+            <div class="title">New Advances in Our Understanding of Occlusion</div>
+            <div class="meta">jennings.dds</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">2009</span>
+          <div>
+            <div class="title">Tourette's Due to Craniomandibular Dysfunction: A Pilot Study</div>
+            <div class="meta">sims & stack · journal of craniomandibular practice · jan 2009 vol 27 #1 · pp 11–18</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">2012</span>
+          <div>
+            <div class="title">Spasmodic Torticollis: The Dental Connection</div>
+            <div class="meta">sims, stack & demerjian · cranio · jul 2012 vol 30 issue 3</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+        <li class="paper-row">
+          <span class="year">—</span>
+          <div>
+            <div class="title">Medical Utilization in Patients With TMJ</div>
+            <div class="meta">reviews · elevated medical service usage among tmj patients</div>
+          </div>
+          <span class="action">PDF →</span>
+        </li>
+      </ul>
+
+      <div style="margin-top: 5rem;">
+        <div class="cta-block">
+          <div>
+            <span class="eyebrow on-dark">For clinicians</span>
+            <h2 class="text-balance">Have a patient who might fit?</h2>
+            <p>If you're a referring physician, dentist, or other clinician, we welcome your inquiry. Dr. Jennings reviews referrals personally and will respond within a few business days.</p>
+          </div>
+          <div>
+            <a class="btn btn-accent btn-large btn-arrow" data-page="contact" style="width:100%; justify-content:center;">Refer a patient</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CONTACT PAGE ============ -->
+<div class="page" id="page-contact">
+  <header class="page-header">
+    <div class="container-narrow">
+      <div class="breadcrumb"><a data-page="home">Home</a><span class="sep">/</span>New patients</div>
+      <span class="eyebrow on-dark">New patients & inquiries</span>
+      <h1>Take the first step.</h1>
+      <p>Most consultations begin with a phone call or a brief written description of your situation. We'll review and tell you honestly whether jaw orthopedics is worth exploring for you.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('This is a mockup — form submission is not yet wired up.');">
+          <span class="eyebrow">Inquiry · 01</span>
+          <h3 style="margin-top: 0.5rem;">Tell us about your situation</h3>
+          <p class="form-intro">A few details help us route your inquiry to the right place. Everything you share is confidential.</p>
+          <div class="form-row">
+            <label for="f-name">Your name</label>
+            <input type="text" id="f-name" required />
+          </div>
+          <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" required />
+            </div>
+            <div>
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="f-type">I'm reaching out as a…</label>
+            <select id="f-type">
+              <option>Patient seeking treatment</option>
+              <option>Family member of a patient</option>
+              <option>Referring physician / dentist / clinician</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="f-symptoms">What are you (or your patient) experiencing?</label>
+            <textarea id="f-symptoms" placeholder="e.g. Chronic migraines for 6 years, multiple medications tried, no improvement. Recent MRI normal. Started experiencing jaw clicking last year."></textarea>
+          </div>
+          <div class="form-row">
+            <label for="f-tried">What have you already tried?</label>
+            <textarea id="f-tried" placeholder="Optional, but helpful." style="min-height: 80px;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent btn-large btn-arrow" style="width: 100%; justify-content: center;">Send inquiry</button>
+        </form>
+
+        <div>
+          <div class="contact-info-card">
+            <div class="label">// office</div>
+            <div class="value">2187 Harbor Bay Pkwy.<br/>Alameda, CA 94502</div>
+            <div class="value-sub">5 min from Oakland International</div>
+          </div>
+          <div class="contact-info-card">
+            <div class="label">// phone</div>
+            <div class="value">(510) 522-6828</div>
+            <div class="value-sub">fax: (510) 522-0877</div>
+          </div>
+          <div class="contact-info-card">
+            <div class="label">// email</div>
+            <div class="value" style="font-size: 1.05rem;"><a href="mailto:dejdds@gmail.com">dejdds@gmail.com</a></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="label">// hours</div>
+            <div class="value" style="font-size: 1.05rem;">Mon – Thu, 7 AM – 4 PM</div>
+          </div>
+
+          <div class="travel-card">
+            <span class="eyebrow on-dark">// travel</span>
+            <h4 style="margin-top: 0.4rem;">Out-of-state patients</h4>
+            <p>A meaningful share of our patients fly in from across the country. We coordinate diagnostic work efficiently across multi-day visits — mention this in your inquiry and we'll send a travel guide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-subtle">
+    <div class="container-narrow">
+      <div class="section-header">
+        <span class="eyebrow">What to expect</span>
+        <h2 class="text-balance">How a first visit works.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-id">step / 01</span>
+          <h3>Initial review</h3>
+          <p>Phone or written intake. Dr. Jennings personally reviews each inquiry and tells you honestly whether your case is a fit. No charge for this step.</p>
+        </div>
+        <div class="step">
+          <span class="step-id">step / 02</span>
+          <h3>Comprehensive evaluation</h3>
+          <p>In-person evaluation with detailed history, functional testing, and imaging where appropriate. Goal: understand what is and isn't jaw-driven.</p>
+        </div>
+        <div class="step">
+          <span class="step-id">step / 03</span>
+          <h3>Treatment plan</h3>
+          <p>If we proceed, treatment typically begins with a custom appliance and is adjusted iteratively. Most cases avoid surgery entirely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" data-page="home">
+          <div class="brand-mark">TC</div>
+          <div class="brand-text">
+            <span class="brand-name">TMJ California</span>
+            <span class="brand-tag">jennings.dds · miccmo</span>
+          </div>
+        </a>
+        <p>Northern California Cranio-Facial Diagnostic Center. A specialist practice limited to orofacial pain, orthodontics, and dental medicine since 1986.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a data-page="home">Home</a></li>
+          <li><a data-page="conditions">Conditions</a></li>
+          <li><a data-page="about">About</a></li>
+          <li><a data-page="research">Research</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conditions</h4>
+        <ul>
+          <li><a data-page="conditions">TMJ pain</a></li>
+          <li><a data-page="conditions">Headaches & migraines</a></li>
+          <li><a data-page="conditions">Sleep apnea</a></li>
+          <li><a data-page="conditions">Movement disorders</a></li>
+          <li><a data-page="conditions">Surgical alternative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>(510) 522-6828</li>
+          <li><a href="mailto:dejdds@gmail.com">dejdds@gmail.com</a></li>
+          <li>2187 Harbor Bay Pkwy.<br/>Alameda, CA 94502</li>
+          <li>Mon–Thu · 7 AM – 4 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TMJ California · Dwight Jennings, DDS</span>
+      <span>build: mockup_v2 · modern_tech</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hash-based page routing
+  const pages = ['home', 'conditions', 'about', 'research', 'contact'];
+
+  function showPage(name) {
+    if (!pages.includes(name)) name = 'home';
+    pages.forEach(p => {
+      const el = document.getElementById('page-' + p);
+      if (el) el.classList.toggle('active', p === name);
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === name);
+    });
+    if (location.hash !== '#' + name) {
+      history.pushState(null, '', '#' + name);
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+    runFadeInObserver();
+  }
+
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('[data-page]');
+    if (target) {
+      e.preventDefault();
+      showPage(target.dataset.page);
+    }
+  });
+
+  window.addEventListener('popstate', () => {
+    const name = (location.hash || '#home').replace('#', '');
+    showPage(name);
+  });
+
+  // Scroll fade-in
+  let observer;
+  function runFadeInObserver() {
+    if (observer) observer.disconnect();
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  }
+
+  const initial = (location.hash || '#home').replace('#', '');
+  showPage(initial);
+</script>
+
+</body>
+</html>

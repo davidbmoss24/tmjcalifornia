@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TMJ California — Dwight Jennings, DDS, MICCMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7;
+  --bg-warm: #F5F2ED;
+  --card: #FFFFFF;
+  --text: #1A2233;
+  --text-muted: #5C6371;
+  --text-soft: #8A8F9C;
+  --border: #E8E4DC;
+  --border-soft: #F0EDE6;
+  --accent: #1F4E4D;
+  --accent-hover: #133231;
+  --accent-bright: #0E8987;
+  --accent-bright-hover: #0A6E6C;
+  --accent-soft: #E5EDEC;
+  --shadow-sm: 0 1px 2px rgba(26, 34, 51, 0.04);
+  --shadow-md: 0 4px 16px rgba(26, 34, 51, 0.06);
+  --shadow-lg: 0 16px 48px rgba(26, 34, 51, 0.08);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; color: var(--text); }
+h1 { font-size: clamp(2.4rem, 4.5vw, 3.8rem); font-weight: 500; }
+h2 { font-size: clamp(1.9rem, 3.2vw, 2.7rem); }
+h3 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); }
+h4 { font-size: 1.2rem; font-weight: 600; }
+p { color: var(--text-muted); }
+a { color: var(--accent); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--accent-hover); }
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.lede {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text);
+  max-width: 56ch;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.container-narrow { max-width: 880px; margin: 0 auto; padding: 0 2rem; }
+
+/* ============ NAV ============ */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(250, 250, 247, 0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--border-soft);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.1rem 2rem; max-width: 1200px; margin: 0 auto;
+}
+.brand { display: flex; flex-direction: column; line-height: 1.1; cursor: pointer; }
+.brand-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
+.brand-tag { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-soft); margin-top: 0.18rem; }
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a {
+  font-size: 0.92rem; color: var(--text); font-weight: 500;
+  padding: 0.4rem 0; border-bottom: 2px solid transparent;
+  transition: border-color .2s, color .2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--accent); border-color: var(--accent); }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--accent-bright); color: #FFFFFF;
+  padding: 0.85rem 1.6rem; border-radius: 4px;
+  font-weight: 700; font-size: 0.95rem;
+  letter-spacing: 0.005em;
+  border: 1px solid var(--accent-bright);
+  transition: background .2s, transform .15s, box-shadow .2s, border-color .2s;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(14, 137, 135, 0.25);
+}
+.btn:hover {
+  background: var(--accent-bright-hover);
+  border-color: var(--accent-bright-hover);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(14, 137, 135, 0.3);
+}
+.btn-outline {
+  background: #FFFFFF;
+  color: var(--accent-bright);
+  border: 2px solid var(--accent-bright);
+  font-weight: 700;
+  box-shadow: none;
+}
+.btn-outline:hover {
+  background: var(--accent-bright);
+  color: #FFFFFF;
+  border-color: var(--accent-bright);
+}
+.btn-arrow::after { content: "→"; transition: transform .2s; }
+.btn-arrow:hover::after { transform: translateX(3px); }
+
+/* ============ HERO ============ */
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 5rem 0 6rem;
+}
+.hero-text h1 { margin-bottom: 1.5rem; }
+.hero-text h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+.hero-text p.lede { margin-bottom: 2rem; color: var(--text-muted); }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-image { position: relative; }
+.hero-image img {
+  width: 100%; height: auto; max-height: 560px;
+  object-fit: cover; border-radius: 4px;
+  filter: contrast(1.05) brightness(0.96);
+  box-shadow: var(--shadow-lg);
+}
+.hero-quote {
+  position: absolute; bottom: -1.5rem; left: -2rem;
+  background: var(--card); padding: 1.4rem 1.6rem;
+  max-width: 320px; box-shadow: var(--shadow-md);
+  border-left: 3px solid var(--accent);
+  font-family: var(--serif); font-style: italic; font-size: 1.08rem;
+  color: var(--text); line-height: 1.45;
+}
+.hero-quote-author {
+  display: block; margin-top: 0.6rem;
+  font-family: var(--sans); font-style: normal; font-size: 0.78rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+/* ============ SECTIONS ============ */
+section { padding: 5rem 0; }
+.section-tight { padding: 3.5rem 0; }
+.section-warm { background: var(--bg-warm); }
+.section-dark { background: var(--text); color: #fff; }
+.section-dark h2, .section-dark h3 { color: #fff; }
+.section-dark p { color: #B8BDC9; }
+.section-dark .eyebrow { color: #87B0AE; }
+
+.section-header { max-width: 760px; margin: 0 auto 3rem; text-align: center; }
+.section-header h2 { margin-bottom: 1rem; }
+.section-header p { font-size: 1.1rem; }
+.section-header.left { text-align: left; margin-left: 0; }
+
+/* ============ EDITORIAL ============ */
+.editorial {
+  max-width: 760px; margin: 0 auto;
+  font-size: 1.12rem; line-height: 1.78;
+}
+.editorial p { margin-bottom: 1.4rem; color: var(--text); }
+.editorial p:first-of-type::first-letter {
+  font-family: var(--serif); font-size: 4.2rem; font-weight: 500;
+  line-height: 0.9; float: left; margin: 0.2rem 0.5rem -0.2rem 0;
+  color: var(--accent);
+}
+.editorial-pullquote {
+  font-family: var(--serif); font-size: 1.6rem; font-style: italic;
+  line-height: 1.4; color: var(--accent);
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 2rem 0;
+}
+
+/* ============ CONDITIONS GRID ============ */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.condition-card {
+  background: var(--card);
+  border: 1px solid var(--border-soft);
+  padding: 2rem 1.8rem;
+  border-radius: 6px;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+  cursor: pointer;
+  position: relative;
+  display: flex; flex-direction: column; min-height: 240px;
+}
+.condition-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-soft);
+}
+.condition-icon {
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent);
+  border-radius: 8px; margin-bottom: 1.2rem;
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 600;
+}
+.condition-card h3 { font-size: 1.35rem; margin-bottom: 0.7rem; }
+.condition-card p { font-size: 0.94rem; line-height: 1.6; flex: 1; }
+.condition-card-link {
+  margin-top: 1.2rem; font-size: 0.85rem; font-weight: 600;
+  letter-spacing: 0.04em; color: var(--accent);
+}
+.condition-card-link::after { content: " →"; transition: margin-left .2s; }
+
+/* ============ STATS ROW ============ */
+.stats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; margin-top: 1rem;
+}
+.stat { text-align: left; padding-left: 1.5rem; border-left: 2px solid var(--accent); }
+.stat-number { font-family: var(--serif); font-size: 3.2rem; font-weight: 500; color: var(--accent); line-height: 1; margin-bottom: 0.5rem; }
+.stat-label { font-size: 0.92rem; color: var(--text-muted); line-height: 1.4; }
+
+/* ============ DOCTOR PREVIEW ============ */
+.doctor-preview {
+  display: grid; grid-template-columns: 0.9fr 1.1fr;
+  gap: 4rem; align-items: center;
+}
+.doctor-preview-img {
+  position: relative;
+  background: var(--bg-warm);
+  padding: 2rem 1rem 2rem 2rem;
+  border-radius: 4px;
+}
+.doctor-preview-img img {
+  width: 100%; height: auto;
+  border-radius: 4px;
+  display: block;
+  box-shadow: var(--shadow-lg);
+}
+.doctor-preview-img::before {
+  content: ""; position: absolute; inset: 0;
+  border: 1px solid var(--border);
+  transform: translate(-1rem, 1rem);
+  border-radius: 4px; z-index: -1;
+}
+.doctor-preview h2 { margin-bottom: 1rem; }
+.doctor-preview .credentials {
+  font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-soft); margin-bottom: 1.5rem;
+}
+
+/* ============ CASE STORY ============ */
+.case-story {
+  background: var(--card);
+  padding: 3rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  max-width: 880px; margin: 0 auto;
+  position: relative;
+}
+.case-story::before {
+  content: "“";
+  position: absolute; top: -0.2rem; left: 1.5rem;
+  font-family: var(--serif); font-size: 6rem; line-height: 1;
+  color: var(--accent-soft);
+}
+.case-story-meta {
+  display: flex; gap: 1.5rem; margin-bottom: 1.2rem;
+  font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); font-weight: 600;
+}
+.case-story h3 { margin-bottom: 1.2rem; font-size: 1.6rem; }
+.case-story p { font-size: 1.05rem; line-height: 1.7; color: var(--text); }
+.case-story-resolution {
+  margin-top: 1.5rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--accent-soft);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.case-story-resolution strong { color: var(--accent); }
+
+/* ============ EVIDENCE / RESEARCH STRIP ============ */
+.research-strip {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+.papers-list {
+  list-style: none;
+  border-top: 1px solid var(--border);
+}
+.papers-list li {
+  border-bottom: 1px solid var(--border);
+  padding: 1.4rem 0;
+  display: grid; grid-template-columns: 80px 1fr auto;
+  gap: 1.5rem; align-items: start;
+}
+.paper-year {
+  font-family: var(--serif); font-size: 1.1rem;
+  color: var(--accent); font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.paper-title { color: var(--text); font-weight: 500; line-height: 1.4; margin-bottom: 0.2rem; }
+.paper-meta { font-size: 0.85rem; color: var(--text-soft); }
+.paper-link { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+
+/* ============ CTA BANNER ============ */
+.cta-banner {
+  background: var(--accent);
+  color: #fff;
+  padding: 4rem 3rem;
+  border-radius: 4px;
+  display: grid; grid-template-columns: 1.5fr 1fr;
+  gap: 3rem; align-items: center;
+}
+.cta-banner h2 { color: #fff; margin-bottom: 1rem; }
+.cta-banner p { color: #C9DBDA; font-size: 1.05rem; }
+.cta-banner .btn { background: #fff; color: var(--accent); border-color: #fff; }
+.cta-banner .btn:hover { background: var(--bg-warm); }
+
+/* ============ FOOTER ============ */
+.footer {
+  background: #11181F;
+  color: #B8BDC9;
+  padding: 4rem 0 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.footer h4 { color: #fff; font-family: var(--sans); font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; margin-bottom: 1.2rem; }
+.footer ul { list-style: none; }
+.footer ul li { margin-bottom: 0.6rem; font-size: 0.94rem; }
+.footer ul li a { color: #B8BDC9; }
+.footer ul li a:hover { color: #fff; }
+.footer-brand .brand-name { color: #fff; }
+.footer-brand .brand-tag { color: #87B0AE; }
+.footer-brand p { font-size: 0.92rem; color: #B8BDC9; margin-top: 1rem; line-height: 1.6; max-width: 32ch; }
+.footer-bottom {
+  border-top: 1px solid #2A3340;
+  margin-top: 3rem; padding-top: 1.5rem;
+  font-size: 0.82rem; color: #6B7280;
+  display: flex; justify-content: space-between;
+}
+
+/* ============ PAGE HEADERS (for inner pages) ============ */
+.page-header {
+  background: var(--bg-warm);
+  padding: 5rem 0 4rem;
+  border-bottom: 1px solid var(--border);
+}
+.page-header .eyebrow { display: block; }
+.page-header h1 { font-size: clamp(2.4rem, 4vw, 3.4rem); margin-bottom: 1rem; max-width: 22ch; }
+.page-header p { font-size: 1.18rem; max-width: 60ch; }
+
+/* ============ CONDITIONS PAGE ============ */
+.conditions-detail {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.condition-detail-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2.4rem;
+  border-radius: 4px;
+  display: flex; flex-direction: column;
+}
+.condition-detail-card h3 { font-size: 1.6rem; margin-bottom: 0.8rem; }
+.condition-detail-card p { line-height: 1.7; flex: 1; }
+.condition-detail-card .symptom-list {
+  margin-top: 1.2rem;
+  list-style: none;
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+}
+.condition-detail-card .symptom-list li {
+  font-size: 0.82rem; padding: 0.3rem 0.7rem;
+  background: var(--bg-warm); border-radius: 12px;
+  color: var(--text); border: 1px solid var(--border);
+}
+
+/* ============ ABOUT PAGE ============ */
+.about-hero {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4rem; align-items: center;
+  padding: 4rem 0 5rem;
+}
+.about-hero-img img {
+  width: 100%; max-width: 480px; height: auto;
+  border-radius: 4px; box-shadow: var(--shadow-lg);
+}
+.about-section { padding: 3rem 0; }
+.about-section .container-narrow { display: grid; grid-template-columns: 1fr 2.5fr; gap: 3rem; }
+.about-section h3 { font-size: 1.5rem; }
+.about-section .label {
+  font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); font-weight: 600;
+}
+.about-section p { font-size: 1.05rem; line-height: 1.75; color: var(--text); }
+.about-section + .about-section { border-top: 1px solid var(--border-soft); }
+
+/* ============ RESEARCH PAGE ============ */
+.featured-paper {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2.5rem 3rem;
+  display: grid; grid-template-columns: 1fr 1.5fr;
+  gap: 3rem; align-items: center;
+  border-radius: 4px; margin-bottom: 4rem;
+}
+.featured-paper-cover {
+  background: linear-gradient(135deg, var(--accent), #2C6F6E);
+  color: #fff; padding: 3rem 2rem; border-radius: 4px;
+  text-align: center; min-height: 240px;
+  display: flex; flex-direction: column; justify-content: center;
+  font-family: var(--serif);
+}
+.featured-paper-cover .paper-type {
+  font-family: var(--sans); font-size: 0.72rem;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: #87B0AE; margin-bottom: 1rem;
+}
+.featured-paper-cover h4 { color: #fff; font-size: 1.5rem; line-height: 1.25; margin-bottom: 1rem; }
+.featured-paper-cover .author { font-size: 0.9rem; color: #C9DBDA; font-family: var(--sans); }
+.featured-paper-content h3 { margin-bottom: 1rem; }
+.featured-paper-content p { font-size: 1.02rem; }
+.featured-paper-content .btn { margin-top: 1.5rem; }
+
+.mechanism-explainer {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 0; margin: 3rem 0;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 4px; overflow: hidden;
+}
+.mechanism-step {
+  padding: 2rem 1.8rem; position: relative;
+  border-right: 1px solid var(--border);
+}
+.mechanism-step:last-child { border-right: none; }
+.mechanism-step .step-num {
+  font-family: var(--serif); font-size: 2.2rem; color: var(--accent); line-height: 1;
+}
+.mechanism-step h4 { margin: 0.6rem 0; font-size: 1.1rem; font-family: var(--serif); font-weight: 600; }
+.mechanism-step p { font-size: 0.92rem; line-height: 1.55; }
+.mechanism-step::after {
+  content: "→"; position: absolute; right: -0.6rem; top: 50%;
+  transform: translateY(-50%); background: var(--card); padding: 0.2rem 0.4rem;
+  color: var(--accent); font-size: 1.2rem; font-weight: 600;
+  border: 1px solid var(--border); border-radius: 50%;
+  width: 1.6rem; height: 1.6rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.mechanism-step:last-child::after { display: none; }
+
+/* ============ CONTACT PAGE ============ */
+.contact-grid {
+  display: grid; grid-template-columns: 1.2fr 1fr;
+  gap: 4rem; padding: 4rem 0;
+}
+.contact-form {
+  background: var(--card); padding: 2.5rem;
+  border: 1px solid var(--border); border-radius: 4px;
+}
+.contact-form h3 { margin-bottom: 1.5rem; }
+.form-row { margin-bottom: 1.2rem; }
+.form-row label {
+  display: block; font-size: 0.85rem; font-weight: 500;
+  color: var(--text); margin-bottom: 0.4rem;
+}
+.form-row input, .form-row textarea, .form-row select {
+  width: 100%; padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border); border-radius: 3px;
+  font-family: var(--sans); font-size: 0.95rem;
+  background: var(--bg); color: var(--text);
+  transition: border-color .2s;
+}
+.form-row input:focus, .form-row textarea:focus, .form-row select:focus {
+  outline: none; border-color: var(--accent);
+}
+.form-row textarea { min-height: 110px; resize: vertical; }
+.contact-info-block {
+  background: var(--bg-warm);
+  padding: 2rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+.contact-info-block .label {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;
+}
+.contact-info-block .value {
+  font-family: var(--serif); font-size: 1.4rem; color: var(--text); line-height: 1.4;
+}
+.contact-info-block .value-sub {
+  font-size: 0.95rem; color: var(--text-muted); margin-top: 0.4rem;
+}
+.travel-note {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.4rem; margin-top: 2rem;
+}
+.travel-note h4 { margin-bottom: 0.6rem; }
+
+/* ============ PAGE ROUTING ============ */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 980px) {
+  .hero { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 0 4rem; }
+  .hero-quote { position: static; margin-top: 1.5rem; left: 0; }
+  .conditions-grid { grid-template-columns: 1fr 1fr; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .doctor-preview { grid-template-columns: 1fr; }
+  .research-strip { grid-template-columns: 1fr; }
+  .cta-banner { grid-template-columns: 1fr; padding: 3rem 2rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .conditions-detail { grid-template-columns: 1fr; }
+  .featured-paper { grid-template-columns: 1fr; }
+  .mechanism-explainer { grid-template-columns: 1fr; }
+  .mechanism-step { border-right: none; border-bottom: 1px solid var(--border); }
+  .mechanism-step::after { right: 50%; top: auto; bottom: -0.8rem; transform: translateX(50%) rotate(90deg); }
+  .about-hero, .about-section .container-narrow { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .nav-links.mobile-menu-visible { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+}
+@media (max-width: 640px) {
+  .conditions-grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .case-story { padding: 2rem 1.5rem; }
+  .featured-paper { padding: 2rem; }
+  h1 { font-size: 2.2rem; }
+}
+
+/* ============ MOCKUP NOTICE ============ */
+.mockup-banner {
+  background: #FFF8E6; border-bottom: 1px solid #F0E1B5;
+  padding: 0.6rem 2rem; font-size: 0.82rem; text-align: center;
+  color: #6B5520;
+}
+.mockup-banner strong { color: #1A2233; }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">
+  <strong>Mockup v1</strong> — design exploration based on the archived 2024 site content. Use the nav above to move between pages.
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" data-page="home">
+      <span class="brand-name">TMJ California</span>
+      <span class="brand-tag">Dwight Jennings, DDS, MICCMO</span>
+    </a>
+    <div class="nav-links">
+      <a data-page="home">Home</a>
+      <a data-page="conditions">Conditions</a>
+      <a data-page="about">About Dr. Jennings</a>
+      <a data-page="research">Research</a>
+      <a data-page="contact" class="btn">New Patients</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HOME ============ -->
+<div class="page" id="page-home">
+  <section>
+    <div class="container">
+      <div class="hero">
+        <div class="hero-text">
+          <span class="eyebrow">Specialist Dental Medicine</span>
+          <h1>When the medical system can't explain your symptoms, the answer may be in your <em>jaw</em>.</h1>
+          <p class="lede">For 40 years, Dr. Dwight Jennings has helped patients with chronic pain, migraines, sleep apnea, and unexplained medical conditions find relief through a non-surgical approach mainstream medicine has overlooked.</p>
+          <div class="hero-actions">
+            <a class="btn" data-page="contact">Request a consultation</a>
+            <a class="btn btn-outline btn-arrow" data-page="conditions">Conditions we treat</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/fmf_4920-scaled.jpg" alt="Patient holding their head, suffering from chronic pain" />
+          <div class="hero-quote">
+            “Patients fly into Oakland from across the country because there are very few practices in the world doing this work.”
+            <span class="hero-quote-author">— Dr. Jennings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The thesis -->
+  <section class="section-warm">
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">The hypothesis</span>
+        <h2>What if the cause of your symptoms isn't where doctors have been looking?</h2>
+      </div>
+      <div class="editorial">
+        <p>Multiple research studies have shown that TMJ — temporomandibular joint dysfunction — is associated with a startlingly long list of comorbidities: chronic headaches, fibromyalgia, fatigue, sleep disorders, even movement disorders like Tourette's and Parkinson's. Patients with bite issues have markedly higher medical utilization rates than the general population.</p>
+
+        <p>The mechanism is now well-documented. Jaw misalignment elevates trigeminal nerve activity, which in turn increases substance P — a neuropeptide that, when chronically elevated, sensitizes cell membranes throughout the body and disrupts normal function across multiple systems. The trigeminal nerve has on average <em>100 times more dense pain fibers</em> than any other nerve in the body. When it's chronically activated, the consequences ripple outward.</p>
+
+        <div class="editorial-pullquote">
+          “Curiously, I have never heard a single physician mention the idea of looking at the bite on patients having broad medical complaints.”
+        </div>
+
+        <p>Dr. Jennings has spent four decades developing the diagnostic and treatment protocols this work requires. The treatment itself is undramatic — a removable dental appliance, almost never surgery, that aligns the jaw and relieves the pressure on the joint. The results, for the right patients, can be transformative.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions grid -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Conditions we treat</span>
+        <h2>Six entry points into the same body of work</h2>
+        <p>If any of these describe you — or someone you've been trying to help — start here.</p>
+      </div>
+      <div class="conditions-grid">
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-icon">T</div>
+          <h3>TMJ pain & dysfunction</h3>
+          <p>Jaw pain, clicking, locking, ear pressure, facial pain. The original specialty of the practice — and where most patients begin.</p>
+          <span class="condition-card-link">Learn more</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-icon">H</div>
+          <h3>Chronic headaches & migraines</h3>
+          <p>Bite alignment therapy is shown in multiple studies to be 85% effective at reversing chronic headaches — regardless of headache type.</p>
+          <span class="condition-card-link">Learn more</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-icon">S</div>
+          <h3>Sleep apnea</h3>
+          <p>Advanced obstructive sleep apnea treatment based on dental orthopedics — for patients who can't tolerate or aren't well-served by CPAP.</p>
+          <span class="condition-card-link">Learn more</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-icon">M</div>
+          <h3>Movement disorders</h3>
+          <p>Tourette's, Parkinson's, dystonia, torticollis, and gait disorders have been reversed in cases through craniomandibular alignment therapy.</p>
+          <span class="condition-card-link">Learn more</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-icon">A</div>
+          <h3>Surgical alternative</h3>
+          <p>Many cases recommended for orthognathic surgery or TMJ surgery can be treated nonsurgically with precision jaw orthopedics.</p>
+          <span class="condition-card-link">Learn more</span>
+        </div>
+        <div class="condition-card" data-page="conditions">
+          <div class="condition-icon">C</div>
+          <h3>Complex & undiagnosed</h3>
+          <p>Fibromyalgia, IBS, autoimmune conditions, depression, ADD, autism, and the long list of conditions linked to substance P dysregulation.</p>
+          <span class="condition-card-link">Learn more</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / why patients travel -->
+  <section class="section-warm">
+    <div class="container">
+      <div class="section-header left">
+        <span class="eyebrow">Why patients travel</span>
+        <h2>A practice unlike any other</h2>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">years of full-time specialization in dental orthopedics — almost no one in the U.S. has this depth</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">miles is the median distance patients travel; many fly into Oakland from across the country</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">of TMJ cases respond to jaw repositioning rather than psychotherapy or stress management, in our clinical experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">~0%</div>
+          <div class="stat-label">of treatment plans involve surgery — the primary therapeutic is a removable dental appliance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor preview -->
+  <section>
+    <div class="container">
+      <div class="doctor-preview">
+        <div class="doctor-preview-img">
+          <img src="images/dj_headshots_101-200x300-1.jpg" alt="Dr. Dwight Jennings, DDS" />
+        </div>
+        <div>
+          <span class="eyebrow">Meet the doctor</span>
+          <h2>Dr. Dwight Jennings, DDS, MICCMO</h2>
+          <div class="credentials">Northern California Cranio-Facial Diagnostic Center · Established 1986</div>
+          <p style="font-size: 1.08rem; color: var(--text); margin-bottom: 1rem;">A general dentist for ten years before specializing in jaw orthopedics, Dr. Jennings has spent the last four decades developing diagnostic protocols and treatment innovations that are now reshaping how the field understands the connection between jaw function and systemic health.</p>
+          <p style="margin-bottom: 1.5rem;">His original research on the substance-P cascade, the trigeminal system, and the mechanism by which jaw dysfunction drives systemic illness has been published in journals including <em>Cranio</em> and <em>TMDiary</em>. He is a Master of the International College of Cranio-Mandibular Orthopedics (MICCMO).</p>
+          <a class="btn btn-outline btn-arrow" data-page="about">Read his full story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient story -->
+  <section class="section-warm">
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">Case history</span>
+        <h2>The kind of patient who finds us</h2>
+      </div>
+      <div class="case-story">
+        <div class="case-story-meta">
+          <span>Case No. 1</span>
+          <span>Male, mid-60s</span>
+        </div>
+        <h3>Fainting on uphill walks. Multiple physicians. Normal X-rays, MRI, EKG.</h3>
+        <p>A man in his mid-sixties had a history of fainting when he walked uphill. He had been examined by multiple physicians and undergone X-rays, MRI, and EKG with no abnormal findings. In a phone interview, he mentioned that before he passed out he would develop pain in his ankles, knees, and hips — a sign that there was possibly a trigeminal nerve component to his fainting.</p>
+        <div class="case-story-resolution">
+          On examination, observation showed a very large jaw misalignment caused by orthodontic extraction therapy when he was a teenager. <strong>A 4mm tall mouthpiece was made for him which gave him immediate relief. He reported a significant improvement in memory within about one week.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient testimonials -->
+  <section>
+    <div class="container">
+      <div class="section-header left">
+        <span class="eyebrow">In their own words</span>
+        <h2>What patients say after the work is done.</h2>
+        <p>A small sample. The full set of patient stories is on the <a data-page="conditions" style="cursor: pointer;">Conditions</a> pages and grows continuously.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+        <div class="case-story" style="padding: 2rem;">
+          <div class="case-story-meta"><span>Patient · 5 years in</span></div>
+          <p style="font-size: 1rem; line-height: 1.65;">Down to four hours of sleep a night. Sleep apnea from teenage braces that retruded the lower jaw. Severe chemical sensitivity — couldn't tolerate rubbing alcohol. Every lab test normal. The first night with the splint, eight hours like a baby. Two years to fully recover.</p>
+          <div style="margin-top: 1.2rem; font-family: var(--serif); font-style: italic; font-size: 1.02rem; color: var(--accent-bright);">"I feel better now than I have felt in my entire life."</div>
+        </div>
+
+        <div class="case-story" style="padding: 2rem;">
+          <div class="case-story-meta"><span>Patient · 4 years in</span></div>
+          <p style="font-size: 1rem; line-height: 1.65;">Chronic fatigue syndrome with severe hypersensitivity. Couldn't tolerate perfume. Felt wind <em>inside</em> her head on windy days — to the point of needing to lie down with pillows around her head. Years later, those days no longer affect her. Her son was treated separately for sleep apnea, recurrent ear and sinus infections, and a toed-in foot.</p>
+          <div style="margin-top: 1.2rem; font-family: var(--serif); font-style: italic; font-size: 1.02rem; color: var(--accent-bright);">"In three days he walked straight. He no longer snores. He hasn't had an ear infection since."</div>
+        </div>
+
+        <div class="case-story" style="padding: 2rem;">
+          <div class="case-story-meta"><span>Patient · 6 months in</span></div>
+          <p style="font-size: 1rem; line-height: 1.65;">Eighty-three years old. Wet macular degeneration. Photodynamic therapy nine times, around-the-eye laser treatment 150+ times per side, radiation in one eye. The bleeding wouldn't stop. Six months of jaw orthopedic treatment with Dr. Jennings, and the bleeding and leakage stopped. Vision didn't return — but the deterioration stopped.</p>
+          <div style="margin-top: 1.2rem; font-family: var(--serif); font-style: italic; font-size: 1.02rem; color: var(--accent-bright);">"Nothing I'd tried in twenty years had been as effective as the treatment with Dr. Jennings."</div>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-soft); font-style: italic;">Drawn from publicly recorded patient remarks. To be confirmed and re-consented before publication on the live site.</p>
+    </div>
+  </section>
+
+  <!-- Research / for clinicians -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="research-strip">
+        <div>
+          <span class="eyebrow">For referring clinicians</span>
+          <h2 style="margin-bottom: 1.2rem;">A scientific basis, not a hunch.</h2>
+          <p style="margin-bottom: 1.5rem;">If you're a physician, dentist, or neurologist with a patient whose presentation doesn't add up, the trigeminal–substance P axis may be worth investigating. The framework is built on textbook neuroscience and a growing peer-reviewed evidence base. Citations and the referral pathway are on the Research page.</p>
+          <a class="btn" data-page="research">Research & referrals</a>
+        </div>
+        <div>
+          <ul class="papers-list">
+            <li>
+              <span class="paper-year">2025</span>
+              <div>
+                <div class="paper-title">A New Model of Occlusion</div>
+                <div class="paper-meta">Dr. Jennings — featured 30-page paper</div>
+              </div>
+              <a href="documents/New-model-of-Occlusion.pdf" class="paper-link" target="_blank">PDF →</a>
+            </li>
+            <li>
+              <span class="paper-year">2019</span>
+              <div>
+                <div class="paper-title">The association between Parkinson's disease and temporomandibular disorder</div>
+                <div class="paper-meta">Chen et al. — PLoS One — 24,740-patient population study showing 2.11× elevated TMD risk</div>
+              </div>
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6568392/" class="paper-link" target="_blank">PMC →</a>
+            </li>
+            <li>
+              <span class="paper-year">2004</span>
+              <div>
+                <div class="paper-title">The role of substance P in inflammatory disease</div>
+                <div class="paper-meta">O'Connor et al. — J Cell Physiol — the cornerstone substance-P / inflammation review</div>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/15334652/" class="paper-link" target="_blank">PubMed →</a>
+            </li>
+            <li>
+              <span class="paper-year">2014</span>
+              <div>
+                <div class="paper-title">Cranio-mandibular Dysfunction Causation Theory of Parkinson's</div>
+                <div class="paper-meta">Dr. Jennings — the symptom-by-symptom hypothesis paper</div>
+              </div>
+              <a href="https://www.parkinsonsresource.org/news/articles/cranio-mandibular-dysfunction-tmj-causation-theory-of-parkinsons/" class="paper-link" target="_blank">Read →</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <span class="eyebrow" style="color: #87B0AE;">Take the first step</span>
+          <h2>Ready to find out if jaw orthopedics could help?</h2>
+          <p>Most consultations begin with a phone call. We'll ask about your symptoms, your medical history, and what you've tried so far — and tell you honestly whether we're the right place for you.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+          <a class="btn" data-page="contact">Request consultation</a>
+          <div style="font-size: 1.4rem; font-family: var(--serif); color: #fff;">or call <strong>(510) 522-6828</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CONDITIONS PAGE ============ -->
+<div class="page" id="page-conditions">
+  <header class="page-header">
+    <div class="container-narrow">
+      <span class="eyebrow">Conditions we treat</span>
+      <h1>One mechanism, many manifestations.</h1>
+      <p>The body has very few ways of registering distress. When the trigeminal-substance P axis is dysregulated by jaw misalignment, that distress shows up wherever each person is most vulnerable — the head, the joints, the gut, the nervous system. These are the conditions we see most often.</p>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="conditions-detail">
+        <div class="condition-detail-card">
+          <span class="eyebrow">Foundational condition</span>
+          <h3>TMJ pain & dysfunction</h3>
+          <p>Temporomandibular joint dysfunction occurs when the jaw is misaligned, causing compression of the joint when biting down. The result is often pain — but TMJ is properly described as a syndrome, a constellation of symptoms that can include headaches, ear pressure, sinus pain, eye pain, neck pain, and visual disturbances. Treatment with a properly designed appliance to realign the jaw resolves most cases without surgery.</p>
+          <ul class="symptom-list">
+            <li>Jaw pain</li><li>Clicking / popping</li><li>Locking</li><li>Ear pressure</li><li>Facial pain</li><li>Tinnitus</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <span class="eyebrow">Highest-volume condition</span>
+          <h3>Chronic headaches & migraines</h3>
+          <p>Chronic headaches are caused, in most cases, when the nerve endings around the brain become hypersensitized and are then triggered by ordinary sensory stimulation — light, noise, stress, lack of sleep. The hypersensitization is usually caused by a lifelong poor bite. Multiple studies have shown that bite alignment therapy is approximately 85% effective at reversing chronic headaches, regardless of headache type.</p>
+          <ul class="symptom-list">
+            <li>Migraine</li><li>Tension headache</li><li>Cluster</li><li>Sinus headache</li><li>Photophobia</li><li>Nausea with headache</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <span class="eyebrow">Non-CPAP alternative</span>
+          <h3>Sleep apnea</h3>
+          <p>Obstructive sleep apnea is often a structural problem of jaw position. When the jaw is retruded, the airway behind the tongue is compromised. Advanced jaw-orthopedic treatment can change the structural relationship and resolve apnea in many patients — particularly those who cannot tolerate CPAP or are looking for an alternative based on integration of medical history and overall health status.</p>
+          <ul class="symptom-list">
+            <li>Loud snoring</li><li>Daytime fatigue</li><li>Witnessed apneas</li><li>CPAP intolerance</li><li>Morning headache</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <span class="eyebrow">The unusual cases</span>
+          <h3>Movement disorders</h3>
+          <p>Tourette's, Parkinson's, torticollis, dystonia, scoliosis, gait disorders, and tics have all been reversed in clinical cases by craniomandibular alignment therapy. The mechanism is twofold: jaw alignment sensors have massive representation in the reticular formation (where movement originates), and substance P — elevated by jaw dysfunction — is a direct modulator of movement.</p>
+          <ul class="symptom-list">
+            <li>Tourette's syndrome</li><li>Parkinson's</li><li>Tics</li><li>Dystonia</li><li>Restless leg</li><li>Scoliosis</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <span class="eyebrow">Surgical alternative</span>
+          <h3>Considering jaw surgery?</h3>
+          <p>Through advanced jaw-orthopedic techniques, Dr. Jennings is able to treat many cases nonsurgically that have been recommended for orthognathic surgery or TMJ surgery. Our primary treatment is with removable dental appliances. With these, we can align the jaw and teeth and resolve many medical complaints. Traditional braces are sometimes used at the end to finish the case.</p>
+          <ul class="symptom-list">
+            <li>Underbite</li><li>Lateral shift</li><li>Vertical deficiency</li><li>Class II / III</li><li>Pre-surgical consult</li>
+          </ul>
+        </div>
+
+        <div class="condition-detail-card">
+          <span class="eyebrow">Complex chronic illness</span>
+          <h3>Undiagnosed & systemic</h3>
+          <p>The list of conditions clinically associated with jaw dysfunction is long: asthma, autoimmune disorders, depression, fatigue, fibromyalgia, IBS, multiple chemical sensitivity, MS, ADHD, periodontal disease, seizures, sinus infections, trigeminal neuralgia, autism, and more. Not every case is jaw-driven, but for the patient who has run out of answers, the bite is worth a careful look.</p>
+          <ul class="symptom-list">
+            <li>Fibromyalgia</li><li>Fatigue</li><li>IBS</li><li>Autoimmune</li><li>Depression</li><li>ADHD</li><li>Autism</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--border);">
+        <div class="cta-banner">
+          <div>
+            <h2>Not sure if your case fits?</h2>
+            <p>That's a normal place to start. Send a brief description of your situation through the contact form, and we'll let you know whether jaw orthopedics is worth exploring for you.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+            <a class="btn" data-page="contact">Request a consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ABOUT PAGE ============ -->
+<div class="page" id="page-about">
+  <header class="page-header">
+    <div class="container-narrow">
+      <span class="eyebrow">About Dr. Jennings</span>
+      <h1>Forty years of asking why dentistry stopped at the teeth.</h1>
+      <p>Dwight Jennings, DDS, MICCMO, has built one of the most specialized practices in the country around a single observation: that the jaw, properly understood, is a window into systemic health.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="about-hero">
+        <div>
+          <span class="eyebrow">A practice limited to</span>
+          <h2 style="margin-bottom: 1.5rem;">Orofacial pain, orthodontics, and dental medicine.</h2>
+          <p style="font-size: 1.1rem; line-height: 1.75; color: var(--text); margin-bottom: 1.2rem;">Dr. Jennings practiced general dentistry for ten years before narrowing his focus to dental orthopedics — the assessment and correction of jaw alignment. The practice he founded in 1986, the Northern California Cranio-Facial Diagnostic Center, operates from Alameda in the San Francisco Bay Area, with a second location in Sutter Creek.</p>
+          <p style="font-size: 1.1rem; line-height: 1.75; color: var(--text);">It functions as a tertiary referral practice. A significant percentage of patients travel more than 50 miles, and many fly into Oakland International Airport — five minutes from the office — from across the country.</p>
+        </div>
+        <div class="about-hero-img">
+          <img src="images/dj_headshots_101-200x300-1.jpg" alt="Dr. Dwight Jennings, DDS" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section section-warm">
+    <div class="container-narrow">
+      <div>
+        <span class="label">Background</span>
+      </div>
+      <div>
+        <h3>From the Ozarks to Oakland</h3>
+        <p style="margin-top: 1rem;">Dr. Jennings was born in the San Joaquin Valley and grew up on a farm in the Ozarks of Missouri, where he learned the value of a hard day's work and the virtue of honesty. He returned to California at fifteen to finish high school in Manteca, then graduated from the University of the Pacific in Stockton and attended their dental school in San Francisco.</p>
+        <p style="margin-top: 1rem;">In his spare time, Dr. Jennings enjoys construction projects, gardening, blacksmithing, and art projects — the same hands-on instincts that shape how he thinks about jaw mechanics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container-narrow">
+      <div>
+        <span class="label">Philosophy</span>
+      </div>
+      <div>
+        <h3>Structure and function are not the same thing.</h3>
+        <p style="margin-top: 1rem;">Mainstream dentistry, Dr. Jennings argues, is built on a structural model of the bite — the textbook "class I occlusion" — without an adequate functional model of what an ideal bite actually <em>does</em>. That gap is why most dentists have never been trained to recognize the jaw as a possible source of headaches, sleep apnea, or movement disorders.</p>
+        <p style="margin-top: 1rem;">It's also why the same practitioners charged with assessing the jaw — orthodontists — often miss what is in front of them. The American Dental Association renamed orthodontists "orthodontic and dento-facial orthopedic specialists" in 1998, but did not change their educational requirements. The title changed; the curriculum didn't.</p>
+        <p style="margin-top: 1rem;">Dr. Jennings has spent his career developing the protocols this functional understanding requires.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section section-warm">
+    <div class="container-narrow">
+      <div>
+        <span class="label">Innovation</span>
+      </div>
+      <div>
+        <h3>Research, protocols, and a body of clinical evidence</h3>
+        <p style="margin-top: 1rem;">Beyond practice, Dr. Jennings has developed a series of new diagnostic and treatment protocols — including innovations in functional testing, appliance design, and the integration of bite work with broader medical history — that have meaningfully improved outcomes in jaw dysfunction and related muscle disorders.</p>
+        <p style="margin-top: 1rem;">His paper <em>A New Model of Occlusion</em> proposes a functional reframing of how the bite should be understood and assessed. Other published work covers the substance-P cascade, the trigeminal system, fibromyalgia, autism spectrum, and the perils of conventional orthodontics. He holds the Master designation (MICCMO) from the International College of Cranio-Mandibular Orthopedics.</p>
+        <a class="btn btn-outline btn-arrow" data-page="research" style="margin-top: 1.5rem;">Browse the research</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container-narrow">
+      <div>
+        <span class="label">Approach</span>
+      </div>
+      <div>
+        <h3>Almost never surgery.</h3>
+        <p style="margin-top: 1rem;">The primary treatment in this practice is a removable dental appliance — a precisely fitted device that adjusts the jaw's position so that the joint is no longer under compression. Functional tests, based on dental orthopedic principles, are run to identify defects that are not always evident on X-rays. Appliances are then modified and adjusted iteratively until function is ideal and symptoms resolve.</p>
+        <p style="margin-top: 1rem;">Dr. Jennings has, over the course of his career, treated many cases nonsurgically that had been recommended for orthognathic or TMJ surgery. Traditional braces are used in some instances at the end of treatment to finish a case. Surgery is rare.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ RESEARCH PAGE ============ -->
+<div class="page" id="page-research">
+  <header class="page-header">
+    <div class="container-narrow">
+      <span class="eyebrow">Research & evidence</span>
+      <h1>The mechanism behind the practice.</h1>
+      <p>For physicians, dentists, neurologists, and curious patients: the published work, the proposed mechanism, and the case for considering jaw orthopedics in complex chronic illness.</p>
+    </div>
+  </header>
+
+  <!-- 1. Featured paper -->
+  <section>
+    <div class="container">
+
+      <div class="featured-paper">
+        <div class="featured-paper-cover">
+          <span class="paper-type">Featured paper · 30 pages · 2025</span>
+          <h4>A New Model of Occlusion</h4>
+          <div class="author">Dwight Jennings, DDS, MICCMO</div>
+        </div>
+        <div class="featured-paper-content">
+          <h3>A functional reframing of how dentistry should think about the bite.</h3>
+          <p>Dentistry's current understanding of occlusion is structural — built around the textbook "class I" relationship of teeth. But structure and function are not the same thing. This paper proposes a functional model of occlusion grounded in jaw orthopedic principles, with implications for how clinicians evaluate, diagnose, and treat the dysfunctions that follow from a poor bite.</p>
+          <a class="btn btn-arrow" href="documents/New-model-of-Occlusion.pdf" target="_blank">Read the paper (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. The case for taking the bite seriously -->
+  <section class="section-warm">
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">Where the literature stands</span>
+        <h2>The bite is not a niche concern. The literature is catching up to what we've been seeing in the clinic for forty years.</h2>
+      </div>
+      <div class="editorial">
+        <p>The peer-reviewed evidence base that links jaw dysfunction to systemic illness has expanded substantially in the last two decades. Some of it sits comfortably in the mainstream — the role of <strong>substance P</strong> in inflammatory disease, the <strong>trigemino-vascular system</strong> as the established mechanism of migraine, the documentation of <strong>polymodal C-fiber nociceptors</strong> as the substrate of chronic pain. These are textbook neuroscience.</p>
+        <p>Other findings are newer and more specific. A 2019 population-based study of nearly 25,000 Taiwanese patients found that <strong>temporomandibular disorder was 2.11 times more prevalent in Parkinson's patients</strong> than in matched controls — rising to <strong>4.25 times in the first year</strong> after Parkinson's diagnosis. The standard interpretation of that finding is that Parkinson's pathology damages the jaw. Dr. Jennings has spent decades developing the clinical hypothesis that, for many of these patients, the jaw dysfunction came first.</p>
+        <div class="editorial-pullquote">
+          "The human condition has severely degenerated. The degeneration is not recognized by either the medical or the dental communities. Orthodontics aligns teeth, not jaws. Dentists are responsible for the TMJ, but they don't image it. Why?"
+        </div>
+        <p>The Research page below collects the literature this practice is built on — both the well-established mechanisms and Dr. Jennings' own original work. PMIDs and DOIs are linked where available. PDFs of unpublished and out-of-print papers are available on request.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. By the numbers -->
+  <section>
+    <div class="container">
+      <div class="section-header left">
+        <span class="eyebrow">By the numbers</span>
+        <h2>Findings worth knowing.</h2>
+        <p>Figures drawn from the peer-reviewed and clinical literature cited below.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-number">2.11×</div>
+          <div class="stat-label">Elevated TMD prevalence in Parkinson's vs. matched controls (PLoS One, 2019 — 24,740 patients)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">~85%</div>
+          <div class="stat-label">Of chronic headaches respond to bite alignment therapy, per multiple studies — regardless of headache type</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">3–5×</div>
+          <div class="stat-label">Substance P levels are elevated in spinal fluid of fibromyalgia patients (well-replicated finding)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">~100×</div>
+          <div class="stat-label">Density of nociceptive (pain) fibers in the trigeminal nerve relative to most other peripheral nerves</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. The mechanism — diagram + expanded explainer -->
+  <section class="section-warm">
+    <div class="container">
+      <div class="section-header left">
+        <span class="eyebrow">The proposed mechanism</span>
+        <h2>How a misaligned jaw becomes a systemic problem.</h2>
+        <p>A four-step cascade. The first three steps are established neuroscience; the fourth maps to Dr. Jennings' clinical observation.</p>
+      </div>
+
+      <!-- Diagram -->
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 1.5rem 1rem; margin-bottom: 2.5rem; overflow: hidden;">
+        <img src="images/cascade-diagram-v3.png" alt="A four-step cascade diagram showing how a misaligned jaw can drive pain and dysfunction throughout the body: structural jaw retrusion, neural irritation, biochemical inflammation, and systemic effects." style="width: 100%; height: auto; display: block;"/>
+      </div>
+
+      <!-- Expanded explainer (text version of the same content for readers who want detail) -->
+      <div class="mechanism-explainer">
+        <div class="mechanism-step">
+          <span class="step-num">1</span>
+          <h4>Structural · Jaw misalignment</h4>
+          <p>A vertical-height deficiency — often inherited, often worsened by extraction-based orthodontics — forces the lower jaw to retrude to bring the teeth together. The TMJ is compressed. The chewing muscles (especially the temporalis) work continuously to hold the jaw in a non-resting position.</p>
+        </div>
+        <div class="mechanism-step">
+          <span class="step-num">2</span>
+          <h4>Neural · Trigeminal hyperactivation</h4>
+          <p>Chronic muscle and joint irritation activates the trigeminal nerve — the body's densest concentration of nociceptive C-fibers. C-fibers release <strong>substance P</strong>, a neuropeptide with no reuptake mechanism. It accumulates and lingers.</p>
+        </div>
+        <div class="mechanism-step">
+          <span class="step-num">3</span>
+          <h4>Biochemical · Substance P at the cell</h4>
+          <p>Substance P binds the NK-1 receptor, opens cell membranes, lowers cell voltage, and allows calcium influx. It is established as a primary driver of inflammatory disease in the respiratory, gastrointestinal, and musculoskeletal systems (<em>J Cell Physiol</em>, 2004).</p>
+        </div>
+      </div>
+
+      <div class="mechanism-explainer" style="margin-top: 1.5rem;">
+        <div class="mechanism-step">
+          <span class="step-num">4</span>
+          <h4>Systemic · Downstream dysfunction</h4>
+          <p>Sustained substance P elevation correlates clinically with the conditions Dr. Jennings sees most often: chronic headaches, fibromyalgia, IBS, autoimmune disorders, sleep apnea, movement disorders, mood and addiction syndromes, and a broad pattern of "complex chronic illness." Whether substance P is causal or only correlative in each of these is an active research question. The clinical observation — that bite alignment therapy reduces this constellation in patients who haven't responded to mainstream care — is what Dr. Jennings' practice was built on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Foundational science -->
+  <section>
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">Foundational science</span>
+        <h2>The neurology this practice is built on.</h2>
+        <p>The non-controversial mechanism papers. If you're a clinician reading the framework for the first time, start here.</p>
+      </div>
+
+      <ul class="papers-list">
+        <li>
+          <span class="paper-year">2004</span>
+          <div>
+            <div class="paper-title">O'Connor TM, O'Connell J, O'Brien DI, et al. <em>The role of substance P in inflammatory disease.</em></div>
+            <div class="paper-meta">Journal of Cellular Physiology, 201(2):167–180 · PMID 15334652</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15334652/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">1992</span>
+          <div>
+            <div class="paper-title">Buzzi MG, Moskowitz MA. <em>The trigemino-vascular system and migraine.</em></div>
+            <div class="paper-meta">Pathologie Biologie · PMID 1379707 · the canonical migraine-mechanism review</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/1379707/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">1996</span>
+          <div>
+            <div class="paper-title">Belmonte C, Cervero F. <em>Cutaneous polymodal nociceptors: characteristics and plasticity.</em></div>
+            <div class="paper-meta">Progress in Brain Research · PMID 9009726 · the standard reference on polymodal C-fiber function</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9009726/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2019</span>
+          <div>
+            <div class="paper-title">Chen YY, Fan HC, Tung MC, Chang YK. <em>The association between Parkinson's disease and temporomandibular disorder.</em></div>
+            <div class="paper-meta">PLoS One, 14(6):e0217763 · PMID 31199837 · population-based cohort study, 6,185 PD patients</div>
+          </div>
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6568392/" class="paper-link" target="_blank">PMC →</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Dr. Jennings' own work -->
+  <section class="section-warm">
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">Dr. Jennings' own work</span>
+        <h2>Original papers and clinical hypotheses.</h2>
+        <p>Forty years of clinical observation, mechanism papers, and case-series writing — recovered from his publication archive. PDFs below open in a new tab.</p>
+      </div>
+
+      <ul class="papers-list">
+        <li>
+          <span class="paper-year">2025</span>
+          <div>
+            <div class="paper-title">A New Model of Occlusion (Biomechanical Principles of Occlusion)</div>
+            <div class="paper-meta">Featured paper · 30 pages · the functional reframing of how dentistry should think about the bite. Also distributed as "New Advances in Our Understanding of Occlusion."</div>
+          </div>
+          <a href="documents/New-model-of-Occlusion.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">2014</span>
+          <div>
+            <div class="paper-title">Cranio-mandibular Dysfunction (TMJ) Causation Theory of Parkinson's</div>
+            <div class="paper-meta">Parkinson's Resource Organization · symptom-by-symptom mechanism for the CMD → Parkinson's hypothesis</div>
+          </div>
+          <a href="https://www.parkinsonsresource.org/news/articles/cranio-mandibular-dysfunction-tmj-causation-theory-of-parkinsons/" class="paper-link" target="_blank">Read →</a>
+        </li>
+        <li>
+          <span class="paper-year">2012</span>
+          <div>
+            <div class="paper-title">Jaw Orthopedics: A Solution for Fibromyalgia</div>
+            <div class="paper-meta">Dr. Jennings · the clinical case for fibromyalgia as a trigeminal disorder</div>
+          </div>
+          <a href="documents/papers/jaw-orthopedics-solution-fibromyalgia.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">2011</span>
+          <div>
+            <div class="paper-title">The Perils of Orthodontics</div>
+            <div class="paper-meta">Dr. Jennings · on extraction-based orthodontics and downstream airway, joint, and neurological consequences</div>
+          </div>
+          <a href="documents/papers/perils-of-orthodontics.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">2010</span>
+          <div>
+            <div class="paper-title">Finding the Causes of Autism Spectrum Disorders: The Trigeminal Factor</div>
+            <div class="paper-meta">Dr. Jennings · autism through a trigeminal–substance-P lens, with the clinical case for jaw alignment as a contributing factor</div>
+          </div>
+          <a href="documents/papers/autism-trigeminal-factor.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">2010</span>
+          <div>
+            <div class="paper-title">Substance P Cascade</div>
+            <div class="paper-meta">Dr. Jennings · diagram and reference of how craniomandibular dysfunction → elevated substance P → systemic neurogenic inflammation</div>
+          </div>
+          <a href="documents/papers/substance-p-cascade.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">2008</span>
+          <div>
+            <div class="paper-title">Parkinson's Disease: Are Some Cases In Fact Misdiagnosed Cranio-Mandibular Dysfunction?</div>
+            <div class="paper-meta">TMDiary, Journal of the American Academy of Craniofacial Pain · case histories of patients with Parkinson's-like symptoms resolved by neuromuscular orthopedic repositioning</div>
+          </div>
+          <a href="documents/papers/parkinsons-misdiagnosed-cmd.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">—</span>
+          <div>
+            <div class="paper-title">Cerebral Palsy: Is There a Trigeminal Factor?</div>
+            <div class="paper-meta">Dr. Jennings · the hypothesis that craniomandibular malalignment is a contributing factor in cerebral palsy etiology</div>
+          </div>
+          <a href="documents/papers/cerebral-palsy-trigeminal-factor.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">—</span>
+          <div>
+            <div class="paper-title">Jaw Orthopedic Therapy in an Anti-Aging Regimen</div>
+            <div class="paper-meta">Dr. Jennings · how teeth height impacts cognitive, postural, and metabolic markers of aging</div>
+          </div>
+          <a href="documents/papers/jaw-orthopedic-therapy-anti-aging.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+        <li>
+          <span class="paper-year">1996</span>
+          <div>
+            <div class="paper-title">Treatment of Epilepsy Through the Trigeminal Nerve</div>
+            <div class="paper-meta">Dr. Jennings · early clinical case-series paper documenting seizure resolution after jaw orthopedic correction</div>
+          </div>
+          <a href="documents/papers/epilepsy-treatment-through-trigeminal-nerve.pdf" class="paper-link" target="_blank">PDF →</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. Supporting literature -->
+  <section>
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">Supporting literature</span>
+        <h2>Other key papers in the field.</h2>
+        <p>Research by other clinicians and investigators that bears directly on the framework — particularly the movement-disorder reversal series. Listed as citations for reference; we don't host third-party PDFs but PubMed links are provided where indexed.</p>
+      </div>
+
+      <ul class="papers-list">
+        <li>
+          <span class="paper-year">2009</span>
+          <div>
+            <div class="paper-title">Sims AB, Stack BC Jr. <em>Tourette's Syndrome: A Pilot Study for the Discontinuance of a Movement Disorder.</em></div>
+            <div class="paper-meta">Cranio: The Journal of Craniomandibular Practice, Vol 27 No. 1, pp. 11–18 · Jan 2009 · PMID 19241794</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19241794/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2012</span>
+          <div>
+            <div class="paper-title">Sims AB, Stack BC Jr, Demerjian GG. <em>Spasmodic Torticollis: The Dental Connection.</em></div>
+            <div class="paper-meta">Cranio: The Journal of Craniomandibular Practice, Vol 30 Issue 3 · Jul 2012 · PMID 22916671</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22916671/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2023</span>
+          <div>
+            <div class="paper-title">Minervini G, Franco R, Marrapodi MM, et al. <em>The association between Parkinson's disease and temporomandibular disorders: a systematic review and meta-analysis.</em></div>
+            <div class="paper-meta">Journal of Oral Rehabilitation · independent confirmation of the Chen et al. 2019 finding · PMID 37147766</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/37147766/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2008</span>
+          <div>
+            <div class="paper-title">Barres BA. <em>The Mystery and Magic of Glia: A Perspective on Their Roles in Health and Disease.</em></div>
+            <div class="paper-meta">Neuron · Perspective · the foundational modern paper on glial cell function in neurodegeneration · PMID 18995817</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18995817/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2008</span>
+          <div>
+            <div class="paper-title">Lerner UH, Persson E. <em>Osteotropic effects by the neuropeptides calcitonin gene-related peptide, substance P and vasoactive intestinal peptide.</em></div>
+            <div class="paper-meta">J Musculoskelet Neuronal Interact 8(2):154-165 · supports the substance-P role in bone metabolism, osteoporosis, and fracture healing · PMID 18622084</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18622084/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2011</span>
+          <div>
+            <div class="paper-title">Ramalho R, Soares R, Couto N, Moreira A. <em>Tachykinin receptors antagonism for asthma: a systematic review.</em></div>
+            <div class="paper-meta">BMC Pulmonary Medicine 11:41 · supports the substance-P / NK-1 axis in asthma · PMID 21810226</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21810226/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2000</span>
+          <div>
+            <div class="paper-title">Schmidt PT, Holst JJ. <em>Tachykinins in regulation of gastric motility and secretion.</em></div>
+            <div class="paper-meta">Cellular and Molecular Life Sciences 57:579-588 · substance-P signaling in the gut — relevant to IBS and gastric motility claims · PMID 11576394</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11576394/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2009</span>
+          <div>
+            <div class="paper-title">Miyamoto I, Yoshida K, Bessho K. <em>Shortened Dental Arch and Cerebral Regional Blood Volume: An Experimental Pilot Study with Optical Topography.</em></div>
+            <div class="paper-meta">Journal of Craniomandibular Practice · direct experimental evidence for the trigeminal-cerebral blood-flow link Dr. Jennings cites · PMID 19455920</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19455920/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2011</span>
+          <div>
+            <div class="paper-title">Okamoto N. <em>Effect of occlusal support by implant prostheses on brain function.</em></div>
+            <div class="paper-meta">Journal of Prosthodontic Research 55:206-213 · clinical evidence that restoring chewing function affects cognitive performance · PMID 21333621</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21333621/" class="paper-link" target="_blank">PubMed →</a>
+        </li>
+        <li>
+          <span class="paper-year">2008</span>
+          <div>
+            <div class="paper-title">Thornton EM. <em>Substance P antagonism as a treatment for experimental Parkinsonism.</em></div>
+            <div class="paper-meta">Doctoral thesis · the lab-animal evidence Dr. Jennings cites for the substance-P pathway in Parkinson's</div>
+          </div>
+          <span class="paper-link" style="color: var(--text-soft);">Citation only</span>
+        </li>
+        <li>
+          <span class="paper-year">2001</span>
+          <div>
+            <div class="paper-title">White BA, Williams LA, Leben JR. <em>Health care utilization and cost among health maintenance organization members with temporomandibular disorders.</em></div>
+            <div class="paper-meta">Journal of Orofacial Pain 15(2):158-169 · the canonical Kaiser Permanente study on elevated medical service usage among TMJ patients</div>
+          </div>
+          <span class="paper-link" style="color: var(--text-soft);">Citation only</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8. A note on what's solid vs. what's framing -->
+  <section class="section-warm">
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">A note for skeptics</span>
+        <h2>What is established. What is hypothesis.</h2>
+      </div>
+      <div class="editorial">
+        <p>We try to be honest about which of Dr. Jennings' claims are uncontroversial textbook neuroscience and which are his own clinical hypothesis. Both have a place — the textbook claims are the foundation; the clinical hypothesis is what makes the practice unique. The two should not be conflated.</p>
+        <p><strong>What is well-established:</strong> the trigeminal nerve as the densest source of nociceptive C-fibers in the body; substance P as a pro-inflammatory neuropeptide implicated in asthma, IBD, rheumatoid arthritis, fibromyalgia, and migraine; the trigemino-vascular system as the established mechanism of migraine; polymodal C-fiber nociceptors as the substrate of chronic pain; capsaicin as a substance-P depleter (the basis of topical capsaicin pain creams); the neural crest as the embryological origin of the front teeth, autonomic nervous system, and pigment cells; the 2.11× elevated rate of TMD in Parkinson's patients in the largest peer-reviewed study to date.</p>
+        <p><strong>What is Dr. Jennings' clinical hypothesis:</strong> that for many patients in the complex-chronic-illness population — fibromyalgia, sleep apnea, movement disorders, neurodegeneration, even some cancers — the bite came first and is therefore worth a careful look. This framework is supported by his forty years of clinical observation and by the peer-reviewed literature on substance P and the trigeminal system, but the specific causal direction (bite dysfunction → systemic disease, rather than the reverse) has not been established by controlled trials in the patient groups he treats. We present the framework confidently because it has held up in his clinical practice for four decades. We don't claim it has the same evidentiary weight as a Phase III drug trial.</p>
+        <p>If you're a clinician with a patient who hasn't responded to mainstream care, the framework is worth taking seriously. If you're a researcher with the resources to test it in controlled studies, Dr. Jennings would welcome the collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Referral / for clinicians CTA -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="research-strip">
+        <div>
+          <span class="eyebrow">For referring clinicians</span>
+          <h2 style="margin-bottom: 1.2rem;">Have a patient who might fit?</h2>
+          <p style="margin-bottom: 1.5rem;">Dr. Jennings reviews referrals personally. The first response is typically within a few business days — an honest read on whether the case is one we can help with. If we're not the right place, we'll say so and where possible suggest a closer specialist.</p>
+          <p style="margin-bottom: 2rem;">For specialists outside the Bay Area, the two organizations below maintain directories of clinicians trained in this work.</p>
+          <a class="btn" data-page="contact">Refer a patient</a>
+        </div>
+        <div>
+          <ul class="papers-list" style="border-top: 1px solid #2A3340;">
+            <li style="border-bottom-color: #2A3340;">
+              <span class="paper-year">ICCMO</span>
+              <div>
+                <div class="paper-title" style="color: #fff;">International College of Cranio-Mandibular Orthopedics</div>
+                <div class="paper-meta" style="color: #87B0AE;">Founded 1980 · Dr. Jennings holds the Master (MICCMO) designation · "Find a Member" directory</div>
+              </div>
+              <a href="https://www.iccmo.org/" class="paper-link" target="_blank">iccmo.org</a>
+            </li>
+            <li style="border-bottom-color: #2A3340;">
+              <span class="paper-year">AACP</span>
+              <div>
+                <div class="paper-title" style="color: #fff;">American Academy of Craniofacial Pain</div>
+                <div class="paper-meta" style="color: #87B0AE;">Publisher of TMDiary · broader scope including orofacial pain specialists</div>
+              </div>
+              <a href="https://www.aacfp.org/" class="paper-link" target="_blank">aacfp.org</a>
+            </li>
+            <li style="border-bottom-color: #2A3340;">
+              <span class="paper-year">PRO</span>
+              <div>
+                <div class="paper-title" style="color: #fff;">Parkinson's Resource Organization · Wellness Village</div>
+                <div class="paper-meta" style="color: #87B0AE;">Hosts Dr. Jennings' 2014 hypothesis paper and ongoing CMD/Parkinson's coverage</div>
+              </div>
+              <a href="https://www.parkinsonsresource.org/" class="paper-link" target="_blank">parkinsonsresource.org</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CONTACT PAGE ============ -->
+<div class="page" id="page-contact">
+  <header class="page-header">
+    <div class="container-narrow">
+      <span class="eyebrow">New patients & inquiries</span>
+      <h1>Take the first step.</h1>
+      <p>Most consultations begin with a phone call or a brief written description of your situation. We'll review and tell you honestly whether jaw orthopedics is worth exploring for you, and what a first visit would involve.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('This is a mockup — form submission is not yet wired up.');">
+          <h3>Tell us about your situation</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">A few details help us route your inquiry to the right place. Everything you share is confidential.</p>
+          <div class="form-row">
+            <label for="f-name">Your name</label>
+            <input type="text" id="f-name" required />
+          </div>
+          <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" required />
+            </div>
+            <div>
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="f-type">I'm reaching out as a…</label>
+            <select id="f-type">
+              <option>Patient seeking treatment</option>
+              <option>Family member of a patient</option>
+              <option>Referring physician / dentist / clinician</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="f-symptoms">Briefly, what are you (or your patient) experiencing?</label>
+            <textarea id="f-symptoms" placeholder="e.g. Chronic migraines for 6 years, multiple medications tried, no improvement. Recent MRI normal. Started experiencing jaw clicking last year."></textarea>
+          </div>
+          <div class="form-row">
+            <label for="f-tried">What treatments have you already tried?</label>
+            <textarea id="f-tried" placeholder="Optional, but helpful." style="min-height: 80px;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-arrow" style="width: 100%; justify-content: center;">Send inquiry</button>
+        </form>
+
+        <div>
+          <div class="contact-info-block">
+            <div class="label">Office</div>
+            <div class="value">2187 Harbor Bay Pkwy.<br/>Alameda, CA 94502</div>
+            <div class="value-sub">5 minutes from Oakland International Airport</div>
+          </div>
+          <div class="contact-info-block">
+            <div class="label">Phone</div>
+            <div class="value">(510) 522-6828</div>
+            <div class="value-sub">Fax: (510) 522-0877</div>
+          </div>
+          <div class="contact-info-block">
+            <div class="label">Email</div>
+            <div class="value" style="font-size: 1.15rem;"><a href="mailto:dejdds@gmail.com">dejdds@gmail.com</a></div>
+          </div>
+          <div class="contact-info-block">
+            <div class="label">Hours</div>
+            <div class="value" style="font-size: 1.15rem;">Monday – Thursday<br/>7 AM – 4 PM</div>
+          </div>
+
+          <div class="travel-note">
+            <h4>Traveling from out of state?</h4>
+            <p style="font-size: 0.95rem;">A meaningful share of our patients fly in from across the country. We can help you plan a multi-day visit and coordinate diagnostic work efficiently. Mention this in your inquiry and we'll send a travel guide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-warm">
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">What to expect</span>
+        <h2>How a first visit works.</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+        <div>
+          <span class="eyebrow">Step 1</span>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Initial review</h3>
+          <p style="font-size: 0.96rem;">Phone or written intake. Dr. Jennings personally reviews each inquiry and tells you honestly whether your case is a fit. No charge for this step.</p>
+        </div>
+        <div>
+          <span class="eyebrow">Step 2</span>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Comprehensive evaluation</h3>
+          <p style="font-size: 0.96rem;">In-person evaluation that includes a detailed history, functional testing, and imaging where appropriate. Goal: understand what is and isn't jaw-driven.</p>
+        </div>
+        <div>
+          <span class="eyebrow">Step 3</span>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.6rem;">Treatment plan</h3>
+          <p style="font-size: 0.96rem;">If we proceed, treatment typically begins with a custom appliance and is adjusted iteratively. Most cases avoid surgery entirely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" data-page="home">
+          <span class="brand-name">TMJ California</span>
+          <span class="brand-tag">Dwight Jennings, DDS, MICCMO</span>
+        </a>
+        <p>Northern California Cranio-Facial Diagnostic Center. A specialist practice limited to orofacial pain, orthodontics, and dental medicine since 1986.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a data-page="home">Home</a></li>
+          <li><a data-page="conditions">Conditions</a></li>
+          <li><a data-page="about">About Dr. Jennings</a></li>
+          <li><a data-page="research">Research</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conditions</h4>
+        <ul>
+          <li><a data-page="conditions">TMJ pain</a></li>
+          <li><a data-page="conditions">Headaches & migraines</a></li>
+          <li><a data-page="conditions">Sleep apnea</a></li>
+          <li><a data-page="conditions">Movement disorders</a></li>
+          <li><a data-page="conditions">Surgical alternative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>(510) 522-6828</li>
+          <li><a href="mailto:dejdds@gmail.com">dejdds@gmail.com</a></li>
+          <li>2187 Harbor Bay Pkwy.<br/>Alameda, CA 94502</li>
+          <li>Mon–Thu, 7 AM – 4 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TMJ California · Dwight Jennings, DDS</span>
+      <span>Mockup v1 — site rebuild in progress</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CHAT WIDGET ============ -->
+<!--
+  Drop this in after deploying the chat Worker.
+  Replace data-endpoint with your Worker URL — see chat-system/SETUP.md
+-->
+<script
+  src="chat-widget.js"
+  data-endpoint="https://tmjcalifornia-chat.YOUR-SUBDOMAIN.workers.dev/chat"
+  defer></script>
+
+<script>
+  // Hash-based page routing — keeps the prototype feeling like a real multi-page site
+  const pages = ['home', 'conditions', 'about', 'research', 'contact'];
+
+  function showPage(name) {
+    if (!pages.includes(name)) name = 'home';
+    pages.forEach(p => {
+      const el = document.getElementById('page-' + p);
+      if (el) el.classList.toggle('active', p === name);
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === name);
+    });
+    if (location.hash !== '#' + name) {
+      history.pushState(null, '', '#' + name);
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  }
+
+  // Wire up every element with a data-page attribute
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('[data-page]');
+    if (target) {
+      e.preventDefault();
+      showPage(target.dataset.page);
+    }
+  });
+
+  // Handle back/forward
+  window.addEventListener('popstate', () => {
+    const name = (location.hash || '#home').replace('#', '');
+    showPage(name);
+  });
+
+  // Initial route
+  const initial = (location.hash || '#home').replace('#', '');
+  showPage(initial);
+</script>
+
+</body>
+</html>

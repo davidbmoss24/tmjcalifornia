@@ -1,0 +1,73 @@
+# ============ macOS / editor cruft ============
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ============ Node / build artifacts ============
+node_modules/
+*.log
+dist/
+.wrangler/
+
+# ============ Chat system generated files ============
+# worker.deploy.js is built from worker.js + knowledge-base.md by build.py
+chat-system/worker.deploy.js
+# Extracted paper text — derived from PDFs we already track
+chat-system/_paper-texts/
+
+# ============ Raw source material — preserve locally, not in git ============
+# Original PowerPoint and PDFs — we already have extracted content in slide_extractions/CASE_STUDIES.md
+weston price lecture 2 25-djlaptop.pptx
+Jaw slides, condensed.pdf
+
+# Top-level duplicate of jaw alignment image (already in Mockup-v1/images/cascade-diagram-v3.png)
+jaw_alignment_image.png
+
+# Generated deploy zips
+*.zip
+
+# Orphaned tmp file from earlier zip operation
+zir4CAyo
+
+# Duplicate site snapshot (we use Mockup-v1 as the canonical deploy folder)
+tmjcalifornia-site/
+
+# ============ archive_capture — keep distilled, exclude raw ============
+# Crawler state files
+archive_capture/.state/
+# Raw HTML — redundant, we have cleaned markdown
+archive_capture/raw_html/
+# Old nested image/doc folders — we use *_flat versions
+archive_capture/documents/
+archive_capture/images/
+# Third-party papers — recovered for clinician reference but not for public redistribution
+archive_capture/papers_recovered/
+
+# ============ slide_extractions — keep CASE_STUDIES.md, exclude bulk renders ============
+slide_extractions/pages/
+slide_extractions/pdf_images/
+slide_extractions/weston_price/pptx_media/
+slide_extractions/weston_price/
+slide_extractions/jaw-slides-condensed.txt
+
+# ============ podcast_transcripts — keep markdown, exclude raw ============
+# Bulletproof #179 raw transcript files (third-party copyrighted material)
+podcast_transcripts/_bulletproof-179.pdf
+podcast_transcripts/_bulletproof-179.txt
+
+# ============ Secrets — never commit ============
+.env
+.env.*
+*.pem
+*secret*
+*api_key*
+*.tfvars
+
+# ============ Misc ============
+*.bak
+*.orig

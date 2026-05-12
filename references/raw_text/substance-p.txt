@@ -1,0 +1,2934 @@
+# Wikipedia — Substance P
+
+From Wikipedia, the free encyclopedia
+Chemical compound (polypeptide neurotransmitter)
+tachykinin, precursor 1
+Spacefilling
+model
+of substance P
+Identifiers
+Symbol
+TAC1
+Alt. symbols
+TAC2, NKNA
+NCBI gene
+6863
+HGNC
+11517
+OMIM
+162320
+RefSeq
+NM_003182
+UniProt
+P20366
+Other data
+Locus
+Chr. 7
+q21-q22
+Search for
+Structures
+Swiss-model
+Domains
+InterPro
+Substance P
+Identifiers
+CAS Number
+33507-63-0
+Y
+ChEBI
+CHEBI:80308
+ChEMBL
+ChEMBL235363
+Y
+ChemSpider
+33558
+Y
+ECHA InfoCard
+100.046.845
+IUPHAR/BPS
+2098
+MeSH
+Substance+P
+PubChem
+CID
+36511
+UNII
+675VGV5J1D
+N
+InChI
+InChI=
+1S/C63H98N18O13S/c1-37(2)33-45(57(89)74-41(53(68)85)27-32-95-3)73-52(84)36-72-54(86)46(34-38-15-6-4-7-16-38)78-58(90)47(35-39-17-8-5-9-18-39)79-56(88)42(23-25-50(66)82)75-55(87)43(24-26-51(67)83)76-59(91)49-22-14-31-81(49)62(94)44(20-10-11-28-64)77-60(92)48-21-13-30-80(48)61(93)40(65)19-12-29-71-63(69)70/h4-9,15-18,37,40-49H,10-14,19-36,64-65H2,1-3H3,(H2,66,82)(H2,67,83)(H2,68,85)(H,72,86)(H,73,84)(H,74,89)(H,75,87)(H,76,91)(H,77,92)(H,78,90)(H,79,88)(H4,69,70,71)/t40-,41-,42-,43-,44-,45-,46-,47-,48-,49-/m0/s1
+N
+Key: ADNPLDHMAVUMIW-CUZNLEPHSA-N
+Y
+InChI=
+1/C63H98N18O13S/c1-37(2)33-45(57(89)74-41(53(68)85)27-32-95-3)73-52(84)36-72-54(86)46(34-38-15-6-4-7-16-38)78-58(90)47(35-39-17-8-5-9-18-39)79-56(88)42(23-25-50(66)82)75-55(87)43(24-26-51(67)83)76-59(91)49-22-14-31-81(49)62(94)44(20-10-11-28-64)77-60(92)48-21-13-30-80(48)61(914,19-36,64-65H2,1-3H3,(H2,66,82)(H2,67,83)(H2,68,85)(H,72,86)(H,73,84)(H,74,89)(H,75,87)(H,76,91)(H,77,92)(H,78,90)(H,79,88)(H4,69,70,71)/t40-,41-,42-,43-,44-,45-,46-,47-,48-,49-/m0/s1
+Key: ADNPLDHMAVUMIW-CUZNLEPHBU
+Properties
+Chemical formula
+C
+63
+H
+98
+N
+18
+O
+13
+S
+Molar mass
+1347.63 g/mol
+Except where otherwise noted, data are given for materials in their
+standard state
+(at 25 °C [77 °F], 100 kPa).
+N
+verify
+(
+what is
+Y
+N
+?)
+Infobox references
+Chemical compound
+Substance P
+(
+SP
+) is a
+neuropeptide
+, belonging to the
+tachykinin
+family of neuropeptides that acts as a
+neurotransmitter
+and a
+neuromodulator
+.
+[
+1
+]
+[
+2
+]
+Substance P and the closely related
+neurokinin A
+(NKA) are produced from a
+polyprotein
+precursor after
+alternative splicing
+of the
+preprotachykinin A
+gene. It is an
+undecapeptide
+(a
+peptide
+composed of a chain of 11
+amino acid
+residues)
+[
+3
+]
+and has the following sequence:
+[
+4
+]
+Arg
+Pro
+Lys
+Pro
+Gln
+Gln
+Phe
+Phe
+Gly
+Leu
+Met
+(RPKPQQFFGLM)
+with an
+amide
+group at the C-terminus.
+[
+5
+]
+Substance P is released from the terminals of specific
+sensory nerves
+. It is found in the brain and spinal cord and is associated with inflammatory processes and
+pain
+.
+Discovery
+[
+edit
+]
+The original discovery of Substance P (SP) was in 1931 by
+Ulf von Euler
+and
+John H. Gaddum
+as a tissue extract that caused intestinal contraction
+in vitro
+.
+[
+6
+]
+Its tissue distribution and biologic actions were further investigated over the following decades.
+[
+1
+]
+The eleven-amino-acid structure of the peptide was determined by Chang, et. al in 1971.
+[
+7
+]
+In 1983,
+Neurokinin A
+(previously known as substance K or neuromedin L) was isolated from
+porcine
+spinal cord
+and was also found to stimulate intestinal contraction.
+[
+8
+]
+Receptor
+[
+edit
+]
+The
+endogenous
+receptor
+for substance P is
+neurokinin 1 receptor
+(NK1-receptor, NK1R).
+[
+9
+]
+It belongs to the
+tachykinin receptor
+sub-family of
+GPCRs
+.
+[
+10
+]
+Other neurokinin subtypes and neurokinin receptors that interact with SP have been reported as well. Amino acid residues that are responsible for the binding of SP and its
+antagonists
+are present in the extracellular loops and transmembrane regions of NK-1. Binding of SP to NK-1R results in internalization by the
+clathrin
+-dependent mechanism to the acidified
+endosomes
+where the complex disassociates. Subsequently, SP is degraded and NK-1R is re-expressed on the cell surface.
+[
+11
+]
+Substance P and the NK1-receptor are widely distributed in the brain and are found in brain regions that are specific to regulating emotion (
+hypothalamus
+,
+amygdala
+, and the
+periaqueductal gray
+).
+[
+12
+]
+They are found in close association with
+serotonin
+(5-HT) and neurons containing norepinephrine that are targeted by the currently used antidepressant drugs.
+[
+13
+]
+The SP receptor promoter contains regions that are sensitive to
+cAMP
+,
+AP-1
+,
+AP-4
+,
+CEBPB
+,
+[
+14
+]
+and
+epidermal growth factor
+. Because these regions are related to complexed
+signal transduction pathways
+mediated by
+cytokines
+, it has been proposed that cytokines and neurotropic factors can induce NK-1. Also, SP can induce the cytokines that are capable of inducing NK-1 transcription factors.
+[
+15
+]
+Function
+[
+edit
+]
+Overview
+[
+edit
+]
+Substance P ("P" standing for
+"Preparation"
+or
+"Powder"
+) is a neuropeptide – but only nominally so, as it is ubiquitous. Its receptor – the neurokinin type 1 –  is distributed over cytoplasmic membranes of many cell types (neurons, glia, endothelia of capillaries and lymphatics, fibroblasts, stem cells, white blood cells) in many tissues and organs. SP amplifies or excites most cellular processes.
+[
+16
+]
+[
+17
+]
+Substance P  is a key first responder to most noxious/extreme stimuli (stressors), i.e., those with a potential to compromise an organism's biological integrity.
+[
+citation needed
+]
+SP is thus regarded as an immediate defense, stress, repair, survival system.   The molecule, which is rapidly inactivated (or at times further activated by peptidases) is rapidly released – repetitively and chronically, as warranted, in the presence of a stressor.  Unique among biological processes, SP release (and expression of its NK1 Receptor (through
+autocrine
+,
+paracrine
+, and
+endocrine
+-like processes)) may not naturally subside in diseases marked by chronic inflammation (including cancer).
+[
+citation needed
+]
+Vasodilation
+[
+edit
+]
+Substance P is a potent
+vasodilator
+. Substance P-induced vasodilation is dependent on
+nitric oxide
+release.
+[
+18
+]
+Substance P is involved in the axon reflex-mediated vasodilation to local heating and
+wheal
+and flare reaction. It has been shown that vasodilation to substance P is dependent on the NK1 receptor located on the endothelium. In contrast to other neuropeptides studied in human skin, substance P-induced vasodilation has been found to decline during continuous infusion. This possibly suggests an internalization of
+neurokinin-1
+(NK1).
+[
+19
+]
+As is typical with many vasodilators, it also has
+bronchoconstrictive
+properties, administered through the non-adrenergic, non-cholinergic nervous system (branch of the vagal system).
+Inflammation
+[
+edit
+]
+SP initiates expression of almost all known immunological chemical messengers (
+cytokines
+).
+[
+20
+]
+[
+21
+]
+[
+22
+]
+Also, most of the cytokines,  in turn,  induce SP and the NK1 receptor.
+[
+23
+]
+[
+24
+]
+SP is particularly excitatory to cell growth and multiplication,
+[
+25
+]
+via usual,
+[
+26
+]
+as well as oncogenic drivers.
+[
+27
+]
+SP is a trigger for
+nausea
+and
+emesis
+.
+[
+28
+]
+Substance P and other sensory neuropeptides can be released from the peripheral terminals of sensory nerve fibers in the skin, muscle, and joints. It is proposed that this release is involved in
+neurogenic inflammation
+, which is a local inflammatory response to certain types of infection or injury.
+[
+29
+]
+Pain
+[
+edit
+]
+Preclinical data support the notion that Substance P is an important element in pain perception. The sensory function of substance P is thought to be related to the transmission of pain information into the
+central nervous system
+. Substance P coexists with the
+excitatory neurotransmitter
+glutamate
+in primary afferents that respond to painful stimulation.
+[
+30
+]
+Substance P and other sensory neuropeptides can be released from the peripheral terminals of sensory nerve fibers in the skin, muscle, and joints. It is proposed that this release is involved in
+neurogenic inflammation
+, which is a local inflammatory response to certain types of infection or injury.
+[
+29
+]
+Unfortunately, the reasons why NK1 receptor antagonists have failed as efficacious analgesics in well-conducted clinical proof of concept studies have not yet been persuasively elucidated.
+Mood, anxiety, learning
+[
+edit
+]
+Substance P has been associated with the regulation of
+mood disorders
+,
+anxiety
+,
+stress
+,
+[
+31
+]
+reinforcement
+,
+[
+32
+]
+neurogenesis
+,
+[
+33
+]
+synaptic growth and dendritic arborisation,
+[
+34
+]
+respiratory rhythm,
+[
+35
+]
+neurotoxicity
+,
+pain
+, and
+nociception
+.
+[
+36
+]
+In 2014, it was found that substance P played a role in male fruit fly aggression.
+[
+37
+]
+Recently, it has been shown that substance P may play a critical role in long-term potentiation of aversive stimuli.
+[
+38
+]
+Vomiting
+[
+edit
+]
+The
+vomiting
+center in the
+medulla
+, called the
+area postrema
+, contains high concentrations of substance P and its receptor, in addition to other neurotransmitters such as
+choline
+,
+histamine
+,
+dopamine
+,
+serotonin
+, and endogenous
+opioids
+. Their activation stimulates the vomiting reflex. Different emetic pathways exist, and substance P/NK1R appears to be within the final common pathway to regulate vomiting.
+[
+39
+]
+Cell growth, proliferation, angiogenesis, and migration
+[
+edit
+]
+The above processes are part and parcel to tissue integrity and repair. Substance P has been known to stimulate cell growth in normal and cancer cell line cultures,
+[
+40
+]
+and it was shown that substance P could promote wound healing of non-healing
+ulcers
+in humans.
+[
+41
+]
+SP and its induced cytokines promote multiplication of cells required for repair or replacement, growth of new blood vessels,
+[
+42
+]
+and "leg-like pods" on cells (including cancer cells) bestowing upon them mobility,
+[
+43
+]
+and metastasis.
+[
+44
+]
+It has been suggested that cancer exploits the SP-NK1R to progress and metastasize, and that NK1RAs may be useful in the treatment of several cancer types.
+[
+45
+]
+[
+46
+]
+[
+47
+]
+[
+48
+]
+Clinical significance
+[
+edit
+]
+Quantification in disease
+[
+edit
+]
+Elevation of serum, plasma, or tissue SP and/or its receptor (NK1R) has been associated with many diseases: sickle cell crisis;
+[
+49
+]
+inflammatory bowel disease;
+[
+50
+]
+[
+51
+]
+major depression and related disorders;
+[
+52
+]
+[
+53
+]
+[
+54
+]
+fibromyalgia;
+[
+55
+]
+rheumatological;
+[
+56
+]
+and infections such as HIV/AIDS and respiratory syncytial virus,
+[
+57
+]
+as well as in cancer.
+[
+58
+]
+[
+59
+]
+When assayed in the human, the observed variability of the SP concentrations are large, and in some cases the assay methodology is questionable.
+[
+60
+]
+SP concentrations cannot yet be used to diagnose disease clinically or gauge disease severity. It is not yet known whether changes in concentration of SP or density of its receptors is the cause of any given disease, or an effect.
+Blockade for diseases with a chronic immunological component
+[
+edit
+]
+As increasingly documented, the SP-NK1R system induces or modulates many aspects of the immune response, including WBC production and activation, and cytokine expression,
+[
+61
+]
+Reciprocally, cytokines may induce expression of SP and its NK1R.
+[
+62
+]
+[
+63
+]
+In this sense, for diseases in which a pro-inflammatory component has been identified or strongly suspected, and for which current treatments are absent or in need of improvement,  abrogation of the SP-NK1 system continues to receive focus as a treatment strategy. Currently, the only completely developed method available in that regard is antagonism (blockade, inhibition) of the  SP preferring receptor, i.e., by drugs known as neurokinin type 1 antagonists (also termed: SP antagonists, or tachykinin antagonists.)  One such drug is
+aprepitant
+to prevent the nausea and vomiting that accompanies chemotherapy, typically for cancer. 
+With the exception of chemotherapy-induced nausea and vomiting, the patho-physiological basis of many of the disease groups listed below, for which NK1RAs have been studied as a therapeutic intervention, are to varying extents hypothesized to be initiated or advanced by a chronic non-homeostatic inflammatory response.
+[
+17
+]
+[
+64
+]
+[
+65
+]
+[
+66
+]
+Dermatological disorders: eczema/psoriasis, chronic pruritus
+[
+edit
+]
+High levels of
+BDNF
+and substance P have been found associated with increased itching in
+eczema
+.
+[
+67
+]
+[
+68
+]
+Infections: HIV-AIDS, measles, RSV, others
+[
+edit
+]
+The role of SP in HIV-AIDS has been well-documented.
+[
+61
+]
+Doses of aprepitant greater than those tested to date are required for demonstration of full efficacy.
+Respiratory syncytial
+and related viruses appear to upregulate SP receptors, and rat studies suggest that NK1RAs may be useful in treating or limiting long term sequelae from such infections.
+[
+69
+]
+[
+70
+]
+Entamoeba histolytica
+is a unicellular  parasitic
+protozoan
+that infects the lower gastrointestinal tract of humans. The symptoms of infection are
+diarrhea
+,
+constipation
+, and
+abdominal pain
+.
+[
+71
+]
+[
+72
+]
+This protozoan was found to secrete
+serotonin
+[
+73
+]
+as well as substance P and
+neurotensin
+.
+[
+74
+]
+Inflammatory bowel disease (IBD)/cystitis
+[
+edit
+]
+Despite strong preclinical rationale,
+[
+75
+]
+efforts to demonstrate efficacy of SP antagonists in inflammatory disease have been unproductive.   A study in women with IBS confirmed that an NK1RAs antagonist was anxiolytic.
+[
+76
+]
+Chemotherapy induced nausea and vomiting
+[
+edit
+]
+Further information:
+Chemotherapy-induced nausea and vomiting
+and
+Aprepitant
+In line with its role as a first line defense system, SP is released when toxicants or poisons come into contact with a range of receptors on cellular elements in the
+chemoreceptor trigger zone
+, located in the floor of the fourth ventricle of the brain (
+area postrema
+).
+[
+citation needed
+]
+Presumably, SP is released in or around the
+nucleus of the solitary tract
+upon integrated activity of
+dopamine
+,
+serotonin
+,
+opioid
+, and/or
+acetylcholine
+receptor signaling. NK1Rs are stimulated. In turn, a fairly complex reflex is triggered involving cranial nerves responsible for respiration, retroperistalsis, and general autonomic discharge.  The actions of aprepitant are said to be entirely central, thus requiring passage of the drug into the central nervous system.
+[
+77
+]
+However, given that NK1Rs are unprotected by a blood brain barrier in the area postrema just adjacent to neuronal structures in the medulla, and the activity of sendide (the peptide based NK1RA) against cisplatin-induced emesis in the ferret,
+[
+78
+]
+it is likely that some peripheral exposure contributes to antiemetic effects, even if through vagal terminals in the clinical setting.
+Other findings
+[
+edit
+]
+Denervation supersensitivity
+[
+edit
+]
+When the innervation to substance P nerve terminals is lost, post-synaptic cells compensate for the loss of adequate neurotransmitter by increasing the expression of post-synaptic receptors.  This, ultimately, leads to a condition known as
+denervation supersensitivity
+as the post-synaptic nerves will become hypersensitive to any release of substance P into the synaptic cleft.
+[
+citation needed
+]
+Aggression
+[
+edit
+]
+Tachykinin / Substance P plays an evolutionarily conserved role in inducing aggressive behaviors.
+[
+79
+]
+In rodents and cats, activation of hypothalamic neurons which release Substance P induces aggressive behaviors (defensive biting and predatory attack).
+[
+80
+]
+[
+81
+]
+[
+82
+]
+Similarly, in fruit flies, tachykinin-releasing neurons have been implicated in aggressive behaviors (lunging).
+[
+83
+]
+[
+84
+]
+In this context, male-specific tachykinin neurons control lunging behaviors that can be modulated by the amount of tachykinin release.
+[
+85
+]
+References
+[
+edit
+]
+^
+a
+b
+Harrison S, Geppetti P (Jun 2001). "Substance p".
+The International Journal of Biochemistry & Cell Biology
+.
+33
+(6):
+555–
+76.
+doi
+:
+10.1016/S1357-2725(01)00031-0
+.
+PMID
+11378438
+.
+^
+Datar P, Srivastava S, Coutinho E, Govil G (2004).
+"Substance P: structure, function, and therapeutics"
+.
+Current Topics in Medicinal Chemistry
+.
+4
+(1):
+75–
+103.
+doi
+:
+10.2174/1568026043451636
+.
+PMID
+14754378
+. Archived from the original on 2009-08-17
+. Retrieved
+2008-11-01
+.
+^
+"Undecapeptide Definition & Meaning"
+.
+Merriam-Webster
+. Retrieved
+17 November
+2022
+.
+^
+Reece JB, Campbell NA (2005).
+Biology, 7th Edition
+. San Francisco: Pearson, Benjamin Cummings.
+ISBN
+978-0-8053-7146-8
+.
+OCLC
+57368924
+.
+^
+Wong M, Jeng AY (Jan 1994). "Posttranslational modification of glycine-extended substance P by an alpha-amidating enzyme in cultured sensory neurons of dorsal root ganglia".
+Journal of Neuroscience Research
+.
+37
+(1):
+97–
+102.
+doi
+:
+10.1002/jnr.490370113
+.
+PMID
+7511706
+.
+S2CID
+31252390
+.
+^
+V Euler US, Gaddum JH (June 1931).
+"An unidentified depressor substance in certain tissue extracts"
+.
+The Journal of Physiology
+.
+72
+(1):
+74–
+87.
+doi
+:
+10.1113/jphysiol.1931.sp002763
+.
+PMC
+1403098
+.
+PMID
+16994201
+.
+^
+Chang MM, Leeman SE, Niall HD (July 1971). "Amino-acid sequence of substance P".
+Nature
+.
+232
+(29):
+86–
+87.
+doi
+:
+10.1038/newbio232086a0
+.
+PMID
+5285346
+.
+^
+Panula P, Hadjiconstantinou M, Yang HY, Costa E (Oct 1983).
+"Immunohistochemical localization of bombesin/gastrin-releasing peptide and substance P in primary sensory neurons"
+.
+The Journal of Neuroscience
+.
+3
+(10):
+2021–
+9.
+doi
+:
+10.1523/JNEUROSCI.03-10-02021.1983
+.
+PMC
+6564571
+.
+PMID
+6194276
+.
+^
+Gerard NP, Garraway LA, Eddy RL, Shows TB, Iijima H, Paquet JL, et al. (Nov 1991). "Human substance P receptor (NK-1): organization of the gene, chromosome localization, and functional expression of cDNA clones".
+Biochemistry
+.
+30
+(44):
+10640–
+6.
+doi
+:
+10.1021/bi00108a006
+.
+PMID
+1657150
+.
+^
+Maggi CA (Sep 1995). "The mammalian tachykinin receptors".
+General Pharmacology
+.
+26
+(5):
+911–
+44.
+doi
+:
+10.1016/0306-3623(94)00292-U
+.
+PMID
+7557266
+.
+^
+Grady EF, Garland AM, Gamp PD, Lovett M, Payan DG, Bunnett NW (May 1995).
+"Delineation of the endocytic pathway of substance P and its seven-transmembrane domain NK1 receptor"
+.
+Molecular Biology of the Cell
+.
+6
+(5):
+509–
+24.
+doi
+:
+10.1091/mbc.6.5.509
+.
+PMC
+301212
+.
+PMID
+7545030
+.
+^
+Yip J, Chahl LA (Apr 2001). "Localization of NK1 and NK3 receptors in guinea-pig brain".
+Regulatory Peptides
+.
+98
+(
+1–
+2):
+55–
+62.
+doi
+:
+10.1016/S0167-0115(00)00228-7
+.
+PMID
+11179779
+.
+S2CID
+33205594
+.
+^
+Gobbi G
+, Cassano T, Radja F, Morgese MG, Cuomo V, Santarelli L, et al. (Apr 2007). "Neurokinin 1 receptor antagonism requires norepinephrine to increase serotonin function".
+European Neuropsychopharmacology
+.
+17
+(5):
+328–
+38.
+doi
+:
+10.1016/j.euroneuro.2006.07.004
+.
+PMID
+16950604
+.
+S2CID
+24350120
+.
+^
+Kovács KA, Steinmann M, Magistretti PJ, Halfon O, Cardinaux JR (Sep 2006). "C/EBPbeta couples dopamine signalling to substance P precursor gene expression in striatal neurones".
+Journal of Neurochemistry
+.
+98
+(5):
+1390–
+9.
+doi
+:
+10.1111/j.1471-4159.2006.03957.x
+.
+PMID
+16771829
+.
+S2CID
+36225447
+.
+^
+Rameshwar P (Nov 1997). "Substance P: a regulatory neuropeptide for hematopoiesis and immune functions".
+Clinical Immunology and Immunopathology
+.
+85
+(2):
+129–
+33.
+doi
+:
+10.1006/clin.1997.4446
+.
+PMID
+9344694
+.
+^
+Pinto FM, Almeida TA, Hernandez M, Devillier P, Advenier C, Candenas ML (Jun 2004). "mRNA expression of tachykinins and tachykinin receptors in different human tissues".
+European Journal of Pharmacology
+.
+494
+(
+2–
+3):
+233–
+9.
+doi
+:
+10.1016/j.ejphar.2004.05.016
+.
+PMID
+15212980
+.
+^
+a
+b
+O'Connor TM, O'Connell J, O'Brien DI, Goode T, Bredin CP, Shanahan F (Nov 2004).
+"The role of substance P in inflammatory disease"
+.
+Journal of Cellular Physiology
+.
+201
+(2):
+167–
+80.
+doi
+:
+10.1002/jcp.20061
+.
+PMID
+15334652
+.
+S2CID
+30899555
+.
+^
+Bossaller C, Reither K, Hehlert-Friedrich C, Auch-Schwelk W, Graf K, Gräfe M, et al. (Oct 1992). "In vivo measurement of endothelium-dependent vasodilation with substance P in man".
+Herz
+.
+17
+(5):
+284–
+90.
+PMID
+1282120
+.
+^
+Wong BJ, Tublitz NJ, Minson CT (Nov 2005).
+"Neurokinin-1 receptor desensitization to consecutive microdialysis infusions of substance P in human skin"
+.
+The Journal of Physiology
+.
+568
+(Pt 3):
+1047–
+56.
+doi
+:
+10.1113/jphysiol.2005.095372
+.
+PMC
+1464169
+.
+PMID
+16123103
+.
+^
+Rameshwar P, Gascon P, Ganea D (Mar 1992). "Immunoregulatory effects of neuropeptides. Stimulation of interleukin-2 production by substance p".
+Journal of Neuroimmunology
+.
+37
+(
+1–
+2):
+65–
+74.
+doi
+:
+10.1016/0165-5728(92)90156-f
+.
+PMID
+1372331
+.
+S2CID
+45933685
+.
+^
+Palma C, Manzini S (Jan 1998). "Substance P induces secretion of immunomodulatory cytokines by human astrocytoma cells".
+Journal of Neuroimmunology
+.
+81
+(
+1–
+2):
+127–
+37.
+doi
+:
+10.1016/s0165-5728(97)00167-7
+.
+PMID
+9521614
+.
+S2CID
+6114230
+.
+^
+Garza A, Weinstock J, Robinson P (Dec 2008).
+"Absence of the SP/SP receptor circuitry in the substance P-precursor knockout mice or SP receptor, neurokinin (NK)1 knockout mice leads to an inhibited cytokine response in granulomas associated with murine Taenia crassiceps infection"
+.
+The Journal of Parasitology
+.
+94
+(6):
+1253–
+8.
+doi
+:
+10.1645/GE-1481.1
+.
+PMC
+2647574
+.
+PMID
+18576810
+.
+^
+Freidin M, Kessler JA (Apr 1991).
+"Cytokine regulation of substance P expression in sympathetic neurons"
+.
+Proceedings of the National Academy of Sciences of the United States of America
+.
+88
+(8):
+3200–
+3.
+Bibcode
+:
+1991PNAS...88.3200F
+.
+doi
+:
+10.1073/pnas.88.8.3200
+.
+PMC
+51413
+.
+PMID
+1707535
+.
+^
+Derocq JM, Ségui M, Blazy C, Emonds-Alt X, Le Fur G, Brelire JC, et al. (Dec 1996). "Effect of substance P on cytokine production by human astrocytic cells and blood mononuclear cells: characterization of novel tachykinin receptor antagonists".
+FEBS Letters
+.
+399
+(3):
+321–
+5.
+Bibcode
+:
+1996FEBSL.399..321D
+.
+doi
+:
+10.1016/s0014-5793(96)01346-4
+.
+PMID
+8985172
+.
+S2CID
+84912440
+.
+^
+Koon HW, Zhao D, Na X,
+Moyer MP
+, Pothoulakis C (Oct 2004).
+"Metalloproteinases and transforming growth factor-alpha mediate substance P-induced mitogen-activated protein kinase activation and proliferation in human colonocytes"
+.
+The Journal of Biological Chemistry
+.
+279
+(44):
+45519–
+27.
+doi
+:
+10.1074/jbc.M408523200
+.
+PMID
+15319441
+.
+^
+Fiebich BL, Schleicher S, Butcher RD, Craig A, Lieb K (Nov 2000).
+"The neuropeptide substance P activates p38 mitogen-activated protein kinase resulting in IL-6 expression independently from NF-kappa B"
+.
+Journal of Immunology
+.
+165
+(10):
+5606–
+11.
+doi
+:
+10.4049/jimmunol.165.10.5606
+.
+PMID
+11067916
+.
+^
+Kearney CJ, Sheridan C, Cullen SP, Tynan GA, Logue SE, Afonina IS, et al. (Feb 2013).
+"Inhibitor of apoptosis proteins (IAPs) and their antagonists regulate spontaneous and tumor necrosis factor (TNF)-induced proinflammatory cytokine and chemokine production"
+.
+The Journal of Biological Chemistry
+.
+288
+(7):
+4878–
+90.
+doi
+:
+10.1074/jbc.M112.422410
+.
+PMC
+3576092
+.
+PMID
+23275336
+.
+^
+Hesketh PJ (Jul 2001). "Potential role of the NK1 receptor antagonists in chemotherapy-induced nausea and vomiting".
+Supportive Care in Cancer
+.
+9
+(5):
+350–
+4.
+doi
+:
+10.1007/s005200000199
+.
+PMID
+11497388
+.
+S2CID
+34636170
+.
+^
+a
+b
+Donkin JJ, Turner RJ, Hassan I, Vink R (2007). "Substance P in traumatic brain injury".
+Neurotrauma: New Insights into Pathology and Treatment
+. Progress in Brain Research. Vol. 161. pp.
+97–
+109.
+doi
+:
+10.1016/S0079-6123(06)61007-8
+.
+ISBN
+978-0-444-53017-2
+.
+PMID
+17618972
+.
+^
+De Felipe C, Herrero JF, O'Brien JA, Palmer JA, Doyle CA, Smith AJ, et al. (Mar 1998). "Altered nociception, analgesia and aggression in mice lacking the receptor for substance P".
+Nature
+.
+392
+(6674):
+394–
+7.
+Bibcode
+:
+1998Natur.392..394D
+.
+doi
+:
+10.1038/32904
+.
+PMID
+9537323
+.
+S2CID
+4324247
+.
+^
+Ebner K, Singewald N (Oct 2006). "The role of substance P in stress and anxiety responses".
+Amino Acids
+.
+31
+(3):
+251–
+72.
+doi
+:
+10.1007/s00726-006-0335-9
+.
+PMID
+16820980
+.
+S2CID
+23380355
+.
+^
+Huston JP, Hasenöhrl RU, Boix F, Gerhardt P, Schwarting RK (1993). "Sequence-specific effects of neurokinin substance P on memory, reinforcement, and brain dopamine activity".
+Psychopharmacology
+.
+112
+(
+2–
+3):
+147–
+62.
+doi
+:
+10.1007/BF02244906
+.
+PMID
+7532865
+.
+S2CID
+21680843
+.
+^
+Park SW, Yan YP, Satriotomo I, Vemuganti R, Dempsey RJ (Sep 2007).
+"Substance P is a promoter of adult neural progenitor cell proliferation under normal and ischemic conditions"
+.
+Journal of Neurosurgery
+.
+107
+(3):
+593–
+9.
+doi
+:
+10.3171/JNS-07/09/0593
+.
+PMID
+17886560
+.
+^
+Baloyannis S, Costa V, Deretzi G, Michmizos D. 1999. Intraventricular Administration of Substance P Increases the Dendritic Arborisation and the Synaptic Surfaces of Purkinje Cells in Rat's Cerebellum.
+International Journal of Neuroscience
+, 101(1-4):89-107.
+https://www.tandfonline.com/doi/abs/10.3109/00207450008986495
+^
+Bonham AC (Sep 1995). "Neurotransmitters in the CNS control of breathing".
+Respiration Physiology
+.
+101
+(3):
+219–
+30.
+doi
+:
+10.1016/0034-5687(95)00045-F
+.
+PMID
+8606995
+.
+^
+Zubrzycka M, Janecka A (Dec 2000). "Substance P: transmitter of nociception (Minireview)".
+Endocrine Regulations
+.
+34
+(4):
+195–
+201.
+PMID
+11137976
+.
+^
+Gorman, James,
+To Study Aggression, a Fight Club for Flies
+, The New York Times, February 4, 2014, page D5 of the New York edition
+^
+Belilos A, Gray C, Sanders C, Black D, Mays E, Richie C, et al. (December 2023).
+"Nucleus accumbens local circuit for cue-dependent aversive learning"
+.
+Cell Reports
+.
+42
+(12) 113488.
+doi
+:
+10.1016/j.celrep.2023.113488
+.
+PMC
+10795009
+.
+PMID
+37995189
+.
+^
+Hornby PJ (Dec 2001). "Central neurocircuitry associated with emesis".
+The American Journal of Medicine
+.
+111
+(8 Suppl 8A):
+106S–
+112S.
+doi
+:
+10.1016/S0002-9343(01)00849-X
+.
+PMID
+11749934
+.
+^
+Reid TW, Murphy CJ, Iwahashi CK, Foster BA, Mannis MJ (Aug 1993). "Stimulation of epithelial cell growth by the neuropeptide substance P".
+Journal of Cellular Biochemistry
+.
+52
+(4):
+476–
+85.
+doi
+:
+10.1002/jcb.240520411
+.
+PMID
+7693729
+.
+S2CID
+45018815
+.
+^
+Brown SM, Lamberts DW, Reid TW, Nishida T, Murphy CJ (Jul 1997). "Neurotrophic and anhidrotic keratopathy treated with substance P and insulinlike growth factor 1".
+Archives of Ophthalmology
+.
+115
+(7):
+926–
+7.
+doi
+:
+10.1001/archopht.1997.01100160096021
+.
+PMID
+9230840
+.
+^
+Katsanos GS, Anogeianaki A, Orso C, Tete S, Salini V, Antinolfi PL, et al. (2008).
+"Impact of substance P on cellular immunity"
+(PDF)
+.
+Journal of Biological Regulators and Homeostatic Agents
+.
+22
+(2):
+93–
+8.
+PMID
+18597700
+.
+^
+Meshki J, Douglas SD, Hu M, Leeman SE, Tuluc F (2011).
+"Substance P induces rapid and transient membrane blebbing in U373MG cells in a p21-activated kinase-dependent manner"
+.
+PLOS ONE
+.
+6
+(9) e25332.
+Bibcode
+:
+2011PLoSO...625332M
+.
+doi
+:
+10.1371/journal.pone.0025332
+.
+PMC
+3179504
+.
+PMID
+21966499
+.
+^
+Muñoz M, Rosso M, Coveñas R (Jun 2011). "The NK-1 receptor: a new target in cancer therapy".
+Current Drug Targets
+.
+12
+(6):
+909–
+21.
+doi
+:
+10.2174/138945011795528796
+.
+PMID
+21226668
+.
+^
+Seckl MJ, Higgins T, Widmer F, Rozengurt E (Jan 1997). "[D-Arg1,D-Trp5,7,9,Leu11]substance P: a novel potent inhibitor of signal transduction and growth in vitro and in vivo in small cell lung cancer cells".
+Cancer Research
+.
+57
+(1):
+51–
+4.
+PMID
+8988040
+.
+^
+Muñoz M, Rosso M, Coveñas R (2010). "A new frontier in the treatment of cancer: NK-1 receptor antagonists".
+Current Medicinal Chemistry
+.
+17
+(6):
+504–
+16.
+doi
+:
+10.2174/092986710790416308
+.
+PMID
+20015033
+.
+^
+Muñoz M, Coveñas R (Oct 2013). "Involvement of substance P and the NK-1 receptor in cancer progression".
+Peptides
+.
+48
+:
+1–
+9.
+doi
+:
+10.1016/j.peptides.2013.07.024
+.
+PMID
+23933301
+.
+S2CID
+34038324
+.
+^
+Berger M, Neth O, Ilmer M, Garnier A, Salinas-Martín MV, de Agustín Asencio JC, et al. (May 2014). "Hepatoblastoma cells express truncated neurokinin-1 receptor and can be growth inhibited by aprepitant in vitro and in vivo".
+Journal of Hepatology
+.
+60
+(5):
+985–
+94.
+doi
+:
+10.1016/j.jhep.2013.12.024
+.
+PMID
+24412605
+.
+^
+Michaels LA, Ohene-Frempong K, Zhao H, Douglas SD (Nov 1998). "Serum levels of substance P are elevated in patients with sickle cell disease and increase further during vaso-occlusive crisis".
+Blood
+.
+92
+(9):
+3148–
+51.
+doi
+:
+10.1182/blood.V92.9.3148
+.
+PMID
+9787150
+.
+^
+Mantyh CR, Gates TS, Zimmerman RP, Welton ML, Passaro EP, Vigna SR, et al. (May 1988).
+"Receptor binding sites for substance P, but not substance K or neuromedin K, are expressed in high concentrations by arterioles, venules, and lymph nodules in surgical specimens obtained from patients with ulcerative colitis and Crohn disease"
+.
+Proceedings of the National Academy of Sciences of the United States of America
+.
+85
+(9):
+3235–
+9.
+Bibcode
+:
+1988PNAS...85.3235M
+.
+doi
+:
+10.1073/pnas.85.9.3235
+.
+PMC
+280179
+.
+PMID
+2834738
+.
+^
+Fehder WP, Sachs J, Uvaydova M, Douglas SD (1997). "Substance P as an immune modulator of anxiety".
+Neuroimmunomodulation
+.
+4
+(1):
+42–
+8.
+doi
+:
+10.1159/000097314
+.
+PMID
+9326744
+.
+^
+Geracioti TD, Carpenter LL, Owens MJ, Baker DG, Ekhator NN, Horn PS, et al. (Apr 2006). "Elevated cerebrospinal fluid substance p concentrations in posttraumatic stress disorder and major depression".
+The American Journal of Psychiatry
+.
+163
+(4):
+637–
+43.
+doi
+:
+10.1176/appi.ajp.163.4.637
+.
+PMID
+16585438
+.
+^
+Schwarz MJ, Ackenheil M (Mar 2002).
+"The role of substance P in depression: therapeutic implications"
+.
+Dialogues in Clinical Neuroscience
+.
+4
+(1):
+21–
+9.
+doi
+:
+10.31887/DCNS.2002.4.1/mschwarz
+.
+PMC
+3181667
+.
+PMID
+22033776
+.
+^
+Rupniak NM (May 2002). "New insights into the antidepressant actions of substance P (NK1 receptor) antagonists".
+Canadian Journal of Physiology and Pharmacology
+.
+80
+(5):
+489–
+94.
+doi
+:
+10.1139/y02-048
+.
+PMID
+12056558
+.
+^
+Vaerøy H, Helle R, Førre O, Kåss E, Terenius L (Jan 1988). "Elevated CSF levels of substance P and high incidence of Raynaud phenomenon in patients with fibromyalgia: new features for diagnosis".
+Pain
+.
+32
+(1):
+21–
+6.
+doi
+:
+10.1016/0304-3959(88)90019-X
+.
+PMID
+2448729
+.
+S2CID
+41455803
+.
+^
+Anichini M, Cesaretti S, Lepori M, Maddali Bongi S, Maresca M, Zoppi M (Jan 1997). "Substance P in the serum of patients with rheumatoid arthritis".
+Revue du Rhumatisme
+.
+64
+(1):
+18–
+21.
+PMID
+9051855
+.
+^
+Douglas SD, Ho WZ, Gettes DR, Cnaan A, Zhao H, Leserman J, et al. (Oct 2001).
+"Elevated substance P levels in HIV-infected men"
+.
+AIDS
+.
+15
+(15):
+2043–
+5.
+doi
+:
+10.1097/00002030-200110190-00019
+.
+PMID
+11600835
+.
+^
+Palma C, Maggi CA (2000). "The role of tachykinins via NK1 receptors in progression of human gliomas".
+Life Sciences
+.
+67
+(9):
+985–
+1001.
+doi
+:
+10.1016/s0024-3205(00)00692-5
+.
+PMID
+10954033
+.
+^
+Singh D, Joshi DD, Hameed M, Qian J, Gascón P, Maloof PB, et al. (Jan 2000).
+"Increased expression of preprotachykinin-I and neurokinin receptors in human breast cancer cells: implications for bone marrow metastasis"
+.
+Proceedings of the National Academy of Sciences of the United States of America
+.
+97
+(1):
+388–
+93.
+Bibcode
+:
+2000PNAS...97..388S
+.
+doi
+:
+10.1073/pnas.97.1.388
+.
+PMC
+26673
+.
+PMID
+10618428
+.
+^
+Campbell DE, Raftery N, Tustin R, Tustin NB, Desilvio ML, Cnaan A, et al. (Nov 2006).
+"Measurement of plasma-derived substance P: biological, methodological, and statistical considerations"
+.
+Clinical and Vaccine Immunology
+.
+13
+(11):
+1197–
+203.
+doi
+:
+10.1128/CVI.00174-06
+.
+PMC
+1656550
+.
+PMID
+16971517
+.
+^
+a
+b
+Ho WZ, Douglas SD (Dec 2004). "Substance P and neurokinin-1 receptor modulation of HIV".
+Journal of Neuroimmunology
+.
+157
+(
+1–
+2):
+48–
+55.
+doi
+:
+10.1016/j.jneuroim.2004.08.022
+.
+PMID
+15579279
+.
+S2CID
+14975995
+.
+^
+Lambert N, Lescoulié PL, Yassine-Diab B, Enault G, Mazières B, De Préval C, et al. (Aug 1998).
+"Substance P enhances cytokine-induced vascular cell adhesion molecule-1 (VCAM-1) expression on cultured rheumatoid fibroblast-like synoviocytes"
+.
+Clinical and Experimental Immunology
+.
+113
+(2):
+269–
+75.
+doi
+:
+10.1046/j.1365-2249.1998.00621.x
+.
+PMC
+1905034
+.
+PMID
+9717978
+.
+^
+Azzolina A, Bongiovanni A, Lampiasi N (Dec 2003). "Substance P induces TNF-alpha and IL-6 production through NF kappa B in peritoneal mast cells".
+Biochimica et Biophysica Acta (BBA) - Molecular Cell Research
+.
+1643
+(
+1–
+3):
+75–
+83.
+doi
+:
+10.1016/j.bbamcr.2003.09.003
+.
+PMID
+14654230
+.
+^
+Douglas SD, Leeman SE (Jan 2011).
+"Neurokinin-1 receptor: functional significance in the immune system in reference to selected infections and inflammation"
+.
+Annals of the New York Academy of Sciences
+.
+1217
+(1):
+83–
+95.
+Bibcode
+:
+2011NYASA1217...83D
+.
+doi
+:
+10.1111/j.1749-6632.2010.05826.x
+.
+PMC
+3058850
+.
+PMID
+21091716
+.
+^
+Łazarczyk M, Matyja E, Lipkowski A (2007). "Substance P and its receptors -- a potential target for novel medicines in malignant brain tumour therapies (mini-review)".
+Folia Neuropathologica
+.
+45
+(3):
+99–
+107.
+PMID
+17849359
+.
+^
+van der Hart MG (2009).
+Substance P and the Neurokinin 1 receptor: From behavior to bioanalysis
+(Ph.D.). University of Groningen.
+ISBN
+978-90-367-3874-3
+.
+^
+"
+'Blood chemicals link' to eczema"
+.
+Health
+. BBC News. 2007-08-26
+. Retrieved
+2008-11-01
+.
+^
+Hon KL, Lam MC, Wong KY, Leung TF, Ng PC (Nov 2007).
+"Pathophysiology of nocturnal scratching in childhood atopic dermatitis: the role of brain-derived neurotrophic factor and substance P"
+(PDF)
+.
+The British Journal of Dermatology
+.
+157
+(5):
+922–
+5.
+doi
+:
+10.1111/j.1365-2133.2007.08149.x
+.
+PMID
+17725670
+.
+S2CID
+38031193
+.
+^
+King KA, Hu C, Rodriguez MM, Romaguera R, Jiang X, Piedimonte G (Feb 2001). "Exaggerated neurogenic inflammation and substance P receptor upregulation in RSV-infected weanling rats".
+American Journal of Respiratory Cell and Molecular Biology
+.
+24
+(2):
+101–
+7.
+doi
+:
+10.1165/ajrcmb.24.2.4264
+.
+PMID
+11159042
+.
+^
+Piedimonte G (Mar 2001). "Neural mechanisms of respiratory syncytial virus-induced inflammation and prevention of respiratory syncytial virus sequelae".
+American Journal of Respiratory and Critical Care Medicine
+.
+163
+(3 Pt 2): S18-21.
+doi
+:
+10.1164/ajrccm.163.supplement_1.2011113
+.
+PMID
+11254547
+.
+^
+Steinitz H (Aug 1979). "[Chronic recurrent intestinal amebiasis in Israel (author's transl)]".
+Leber, Magen, Darm
+(in German).
+9
+(4):
+175–
+9.
+PMID
+491812
+.
+^
+Stark D, van Hal S, Marriott D, Ellis J, Harkness J (Jan 2007). "Irritable bowel syndrome: a review on the role of intestinal protozoa and the importance of their detection and diagnosis".
+International Journal for Parasitology
+.
+37
+(1):
+11–
+20.
+doi
+:
+10.1016/j.ijpara.2006.09.009
+.
+PMID
+17070814
+.
+^
+McGowan K, Kane A, Asarkof N, Wicks J, Guerina V, Kellum J, et al. (Aug 1983). "Entamoeba histolytica causes intestinal secretion: role of serotonin".
+Science
+.
+221
+(4612):
+762–
+4.
+Bibcode
+:
+1983Sci...221..762M
+.
+doi
+:
+10.1126/science.6308760
+.
+PMID
+6308760
+.
+^
+McGowan K, Guerina V, Wicks J, Donowitz M (1985). "Chapter 8: Secretory Hormones of
+Entamoeba histolytica
+". In D. Evered, J. Whelan (eds.).
+Microbial Toxins and Diarrhoeal Disease
+. Ciba Found. Symp. Vol. 112. pp.
+139–
+54.
+doi
+:
+10.1002/9780470720936.ch8
+.
+PMID
+2861068
+.
+^
+Steinhoff MS, von Mentzer B, Geppetti P, Pothoulakis C, Bunnett NW (2014).
+"Tachykinins and their receptors: contributions to physiological control and the mechanisms of disease"
+.
+Physiol. Rev
+.
+94
+(1):
+265–
+301.
+doi
+:
+10.1152/physrev.00031.2013
+.
+PMC
+3929113
+.
+PMID
+24382888
+.
+^
+Tillisch K, Labus J, Nam B, et al. (2012).
+"Neurokinin-1-receptor antagonism decreases anxiety and emotional arousal circuit response to noxious visceral distension in women with irritable bowel syndrome: a pilot study"
+.
+Aliment. Pharmacol. Ther
+.
+35
+(3):
+360–
+367.
+doi
+:
+10.1111/j.1365-2036.2011.04958.x
+.
+PMC
+4073664
+.
+PMID
+22221140
+.
+^
+Huskey SE, Dean BJ, Bakhtiar R, Sanchez RI, Tattersall FD, Rycroft W, et al. (Jun 2003). "Brain penetration of aprepitant, a substance P receptor antagonist, in ferrets".
+Drug Metabolism and Disposition
+.
+31
+(6):
+785–
+91.
+doi
+:
+10.1124/dmd.31.6.785
+.
+PMID
+12756213
+.
+S2CID
+5350781
+.
+^
+Diemunsch P, Joshi GP, Brichant JF (Jul 2009).
+"Neurokinin-1 receptor antagonists in the prevention of postoperative nausea and vomiting"
+.
+British Journal of Anaesthesia
+.
+103
+(1):
+7–
+13.
+doi
+:
+10.1093/bja/aep125
+.
+PMID
+19454547
+.
+^
+Nässel DR, Zandawala M, Kawada T, Satake H (2019-11-20).
+"Tachykinins: Neuropeptides That Are Ancient, Diverse, Widespread and Functionally Pleiotropic"
+.
+Frontiers in Neuroscience
+.
+13
+: 1262.
+doi
+:
+10.3389/fnins.2019.01262
+.
+PMC
+6880623
+.
+PMID
+31824255
+.
+^
+Siegel A, Schubert KL, Shaikh MB (November 1997). "Neurotransmitters regulating defensive rage behavior in the cat".
+Neuroscience and Biobehavioral Reviews
+. The neurobiology of defensive behavior in animals.
+21
+(6):
+733–
+742.
+doi
+:
+10.1016/S0149-7634(96)00056-5
+.
+PMID
+9415898
+.
+S2CID
+38166332
+.
+^
+Halasz J, Zelena D, Toth M, Tulogdi A, Mikics E, Haller J (June 2009). "Substance P neurotransmission and violent aggression: the role of tachykinin NK(1) receptors in the hypothalamic attack area".
+European Journal of Pharmacology
+.
+611
+(
+1–
+3):
+35–
+43.
+doi
+:
+10.1016/j.ejphar.2009.03.050
+.
+PMID
+19344710
+.
+^
+Katsouni E, Sakkas P, Zarros A, Skandali N, Liapi C (August 2009). "The involvement of substance P in the induction of aggressive behavior".
+Peptides
+.
+30
+(8):
+1586–
+1591.
+doi
+:
+10.1016/j.peptides.2009.05.001
+.
+PMID
+19442694
+.
+S2CID
+207357396
+.
+^
+Asahina K (July 2017).
+"Neuromodulation and Strategic Action Choice in Drosophila Aggression"
+.
+Annual Review of Neuroscience
+.
+40
+(1):
+51–
+75.
+doi
+:
+10.1146/annurev-neuro-072116-031240
+.
+PMID
+28375770
+.
+S2CID
+207745183
+.
+^
+Gorman J (2014-02-03).
+"To Study Aggression, a Fight Club for Flies-US"
+.
+The New York Times
+.
+ISSN
+0362-4331
+. Retrieved
+2022-03-24
+.
+^
+Asahina K, Watanabe K, Duistermars BJ, Hoopfer E, González CR, Eyjólfsdóttir EA, et al. (January 2014).
+"Tachykinin-expressing neurons control male-specific aggressive arousal in Drosophila"
+.
+Cell
+.
+156
+(
+1–
+2):
+221–
+235.
+doi
+:
+10.1016/j.cell.2013.11.045
+.
+PMC
+3978814
+.
+PMID
+24439378
+.
+External links
+[
+edit
+]
+Russell J (2001-09-14).
+"Neurochemical Substance P is Key to Understanding Pain Process"
+.
+Fibromyalgia Library
+. ProHealth.com
+. Retrieved
+2008-11-01
+.
+Fight Club for Flies video
+, Science Take, New York Times, February 3, 2014
+v
+t
+e
+Pain
+By region/system
+Head and neck
+Eye strain
+Headache
+Neck
+Odynophagia
+(swallowing)
+Toothache
+Respiratory system
+Sore throat
+Pleurodynia
+Musculoskeletal
+Arthralgia
+(joint)
+Bone pain
+Myalgia
+(muscle)
+Acute
+Delayed-onset
+Neurologic
+Neuralgia
+Pain asymbolia
+Pain disorder
+Paroxysmal extreme pain disorder
+Allodynia
+Chronic pain
+Hyperalgesia
+Hypoalgesia
+Hyperpathia
+Phantom pain
+Referred pain
+Congenital insensitivity to pain
+congenital insensitivity to pain with anhidrosis
+congenital insensitivity to pain with partial anhidrosis
+Other
+Pelvic pain
+Proctalgia
+Back
+Low back pain
+Measurement and testing
+Pain scale
+Cold pressor test
+Dolorimeter
+Grimace scale
+Hot plate test
+Tail flick test
+Visual analogue scale
+Pathophysiology
+Nociception
+Anterolateral system
+Posteromarginal nucleus
+Substance P
+Management
+Analgesia
+Anesthesia
+Cordotomy
+Pain eradication
+Related concepts
+Pain threshold
+Pain tolerance
+Suffering
+SOCRATES
+Philosophy of pain
+Cancer pain
+Drug-seeking behavior
+v
+t
+e
+Peptides
+:
+neuropeptides
+Hormones
+see
+hormones
+Opioid peptides
+Dynorphins
+Dynorphin A
+Dynorphin A
+1–8
+Dynorphin B
+Big dynorphin
+Leumorphin
+α-Neoendorphin
+β-Neoendorphin
+Endomorphins
+Endomorphin-1
+Endomorphin-2
+Endorphins
+α-Endorphin
+β-Endorphin
+γ-Endorphin
+Enkephalins
+Met-enkephalin
+Leu-enkephalin
+Others
+Adrenorphin
+Amidorphin
+Hemorphin
+Hemorphin-4
+Nociceptin
+Opiorphin
+Spinorphin
+Valorphin
+Other
+neuropeptides
+Kinins
+Bradykinins
+Tachykinins
+: mammal
+Substance P
+Neurokinin A
+Neurokinin B
+amphibian
+Kassinin
+Physalaemin
+Neuromedins
+B
+N
+S
+U
+Orexins
+A
+B
+Other
+Angiotensin
+Bombesin
+Calcitonin gene-related peptide
+Carnosine
+Cocaine- and amphetamine-regulated transcript
+Delta-sleep-inducing peptide
+FMRFamide
+Galanin
+Galanin-like peptide
+Gastrin-releasing peptide
+Ghrelin
+Neuropeptide AF
+Neuropeptide FF
+Neuropeptide SF
+Neuropeptide VF
+Neuropeptide S
+Neuropeptide Y
+Neurophysins
+Neurotensin
+Pancreatic polypeptide
+Pituitary adenylate cyclase-activating peptide
+RVD-Hpα
+VGF
+v
+t
+e
+Neurokinin receptor
+modulators
+NK
+1
+Agonists:
+Substance P
+Antagonists:
+Aprepitant
+Befetupitant
+Burapitant
+Casopitant
+CI-1021
+CP-96345
+CP-99994
+CP-122721
+Dapitant
+Elinzanetant
+Ezlopitant
+Figopitant
+FK-888
+Fosaprepitant
+Fosnetupitant
+GR-203040
+GW-597599
+HSP-117
+L-733,060
+L-741,671
+L-743,310
+L-758,298
+Lanepitant
+LY-306740
+Maropitant
+Netupitant
+NKP-608
+Nolpitantium besilate
+Orvepitant
+Rolapitant
+RP-67580
+SDZ NKT 343
+Serlopitant
+T-2328
+Telmapitant
+Tradipitant
+Vestipitant
+Vofopitant
+NK
+2
+Agonists:
+Neurokinin A
+Antagonists:
+GR-159897
+Ibodutant
+Nepadutant
+Saredutant
+Otilonium bromide
+NK
+3
+Agonists:
+Neurokinin B
+Senktide
+Antagonists:
+Elinzanetant
+Fezolinetant
+Osanetant
+Pavinetant
+SB-218,795
+SB-222,200
+Talnetant
+v
+t
+e
+TRP
+channel
+modulators
+TRPA
+Activators
+4-Hydroxynonenal
+4-Oxo-2-nonenal
+5,6-EET
+12S-HpETE
+15-Deoxy-Δ
+12,14
+-prostaglandin J2
+α-Sanshool
+(
+ginger
+,
+Sichuan
+and
+melegueta peppers
+)
+Acrolein
+Allicin
+(
+garlic
+)
+Allyl isothiocyanate
+(
+mustard
+,
+radish
+,
+horseradish
+,
+wasabi
+)
+AM404
+ASP-7663
+Bradykinin
+Cannabichromene
+(
+cannabis
+)
+Cannabidiol
+(
+cannabis
+)
+Cannabigerol
+(
+cannabis
+)
+Cinnamaldehyde
+(
+cinnamon
+)
+CR gas (dibenzoxazepine; DBO)
+CS gas (2-chlorobenzal malononitrile)
+Cuminaldehyde
+(
+cumin
+)
+Curcumin
+(
+turmeric
+)
+Dehydroligustilide
+(
+celery
+)
+Diallyl disulfide
+Dicentrine
+(
+Lindera
+spp.)
+Farnesyl thiosalicylic acid
+Formalin
+Gingerols
+(
+ginger
+)
+Hepoxilin A3
+Hepoxilin B3
+Hydrogen peroxide
+Icilin
+Isothiocyanate
+JT-010
+Ligustilide
+(
+celery
+,
+Angelica acutiloba
+)
+Linalool
+(
+Sichuan pepper
+,
+thyme
+)
+Methylglyoxal
+Methyl salicylate
+(
+wintergreen
+)
+N-Methylmaleimide
+Nicotine
+(
+tobacco
+)
+Oleocanthal
+(
+olive oil
+)
+Paclitaxel
+(
+Pacific yew
+)
+PF-4840154
+Phenacyl chloride
+Polygodial
+(
+Dorrigo pepper
+)
+Shogaols
+(
+ginger
+,
+Sichuan
+and
+melegueta peppers
+)
+Tear gases
+Tetrahydrocannabinol
+(
+cannabis
+)
+Tetrahydrocannabiorcol
+Thiopropanal S-oxide
+(
+onion
+)
+Umbellulone
+(
+Umbellularia californica
+)
+WIN 55,212-2
+Blockers
+A-967079
+AM-0902
+Dehydroligustilide
+(
+celery
+)
+HC-030031
+Nicotine
+(
+tobacco
+)
+PF-04745637
+Ruthenium red
+TRPC
+Activators
+Adhyperforin
+(
+St John's wort
+)
+Diacyl glycerol
+GSK1702934A
+Hyperforin
+(
+St John's wort
+)
+Substance P
+Blockers
+DCDPC
+DHEA-S
+Flufenamic acid
+GSK417651A
+GSK2293017A
+Meclofenamic acid
+N-(p-Amylcinnamoyl)anthranilic acid
+Niflumic acid
+Pregnenolone sulfate
+Progesterone
+Pyr3
+Tolfenamic acid
+TRPM
+Activators
+ADP-ribose
+BCTC
+Calcium
+(intracellular)
+CIM-0216
+Cold
+Coolact P
+Cooling Agent 10
+Eucalyptol
+(
+eucalyptus
+)
+Frescolat MGA
+Frescolat ML
+Geraniol
+Hydroxycitronellal
+Icilin
+Linalool
+Menthol
+(
+mint
+)
+PMD 38
+Pregnenolone sulfate
+Rutamarin
+(
+Ruta graveolens
+)
+Steviol glycosides
+(e.g.,
+stevioside
+) (
+Stevia rebaudiana
+)
+Sweet
+tastants
+(e.g.,
+glucose
+,
+fructose
+,
+sucrose
+; indirectly)
+Thio-BCTC
+WS-12
+Blockers
+AMG-333
+Capsazepine
+Clotrimazole
+DCDPC
+Elismetrep
+Flufenamic acid
+Meclofenamic acid
+Mefenamic acid
+N-(p-Amylcinnamoyl)anthranilic acid
+Nicotine
+(
+tobacco
+)
+Niflumic acid
+Ononetin
+PF-05105679
+RQ-00203078
+Ruthenium red
+Rutamarin
+(
+Ruta graveolens
+)
+Tolfenamic acid
+TPPO
+TRPM4-IN-5
+TRPML
+Activators
+EVP21
+MK6-83
+ML-SA1
+ML2-SA1
+PI(3,5)P
+2
+SF-22
+SN-2
+Blockers
+ML-SI3
+PI(4,5)P
+2
+TRPP
+Activators
+Triptolide
+(
+Tripterygium wilfordii
+)
+Blockers
+Ruthenium red
+TRPV
+Activators
+2-APB
+5,6-EET
+9-HODE
+9-oxoODE
+12S-HETE
+12S-HpETE
+13-HODE
+13-oxoODE
+20-HETE
+α-Sanshool
+(
+ginger
+,
+Sichuan
+and
+melegueta peppers
+)
+Allicin
+(
+garlic
+)
+AM404
+Anandamide
+Bisandrographolide
+(
+Andrographis paniculata
+)
+Camphor
+(
+camphor laurel
+,
+rosemary
+,
+camphorweed
+,
+African blue basil
+,
+camphor basil
+)
+Cannabidiol
+(
+cannabis
+)
+Cannabidivarin
+(
+cannabis
+)
+Capsaicin
+(
+chili pepper
+)
+Carvacrol
+(
+oregano
+,
+thyme
+,
+pepperwort
+,
+wild bergamot
+, others)
+DHEA
+Diacyl glycerol
+Dihydrocapsaicin
+(
+chili pepper
+)
+Estradiol
+Eugenol
+(
+basil
+,
+clove
+)
+Evodiamine
+(
+Euodia ruticarpa
+)
+Gingerols
+(
+ginger
+)
+GSK1016790A
+Heat
+Hepoxilin A3
+Hepoxilin B3
+Homocapsaicin
+(
+chili pepper
+)
+Homodihydrocapsaicin
+(
+chili pepper
+)
+Incensole
+(
+incense
+)
+Lysophosphatidic acid
+Low
+pH
+(acidic conditions)
+Menthol
+(
+mint
+)
+N-Arachidonoyl dopamine
+N-Oleoyldopamine
+N-Oleoylethanolamide
+Nonivamide (PAVA)
+(
+PAVA spray
+)
+Nordihydrocapsaicin
+(
+chili pepper
+)
+Paclitaxel
+(
+Pacific yew
+)
+Paracetamol (acetaminophen)
+Phenylacetylrinvanil
+Phorbol esters
+(e.g.,
+4α-PDD
+)
+Piperine
+(
+black pepper
+,
+long pepper
+)
+Polygodial
+(
+Dorrigo pepper
+)
+Probenecid
+Protons
+RhTx
+Rutamarin
+(
+Ruta graveolens
+)
+Resiniferatoxin
+(RTX) (
+Euphorbia resinifera
+/
+pooissonii
+)
+Shogaols
+(
+ginger
+,
+Sichuan
+and
+melegueta peppers
+)
+Tetrahydrocannabivarin
+(
+cannabis
+)
+Thymol
+(
+thyme
+,
+oregano
+)
+Tinyatoxin
+(
+Euphorbia resinifera
+/
+pooissonii
+)
+Tramadol
+Vanillin
+(
+vanilla
+)
+Zucapsaicin
+Blockers
+α-Spinasterol
+(
+Vernonia tweediana
+)
+AMG-517
+AMG-9810
+Asivatrep
+BCTC
+Cannabigerol
+(
+cannabis
+)
+Cannabigerolic acid
+(
+cannabis
+)
+Cannabigerovarin
+(
+cannabis
+)
+Cannabinol
+(
+cannabis
+)
+Capsazepine
+DCDPC
+DHEA
+DHEA-S
+Flufenamic acid
+GRC-6211
+HC-067047
+Lanthanum
+Mavatrep
+Meclofenamic acid
+N-(p-Amylcinnamoyl)anthranilic acid
+NGD-8243
+Niflumic acid
+Pregnenolone sulfate
+RN-1734
+RN-9893
+Ruthenium red
+SB-366791
+SB-705498
+Tivanisiran
+Tolfenamic acid
+TRPV3-74a
+See also:
+Receptor/signaling modulators
+•
+Ion channel modulators
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Substance_P&oldid=1339874825
+"
+Categories
+:
+Genes on human chromosome 7
+Neuropeptides
+Neurotransmitters
+Hendecapeptides
+Hidden categories:
+CS1: unfit URL
+CS1 German-language sources (de)
+Articles with short description
+Short description is different from Wikidata
+Articles without KEGG source
+ECHA InfoCard ID from Wikidata
+Articles with changed FDA identifier
+Articles with changed InChI identifier
+Articles containing unverified chemical infoboxes
+Chembox image size set
+All articles with unsourced statements
+Articles with unsourced statements from March 2025

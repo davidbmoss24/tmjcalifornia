@@ -1,0 +1,39 @@
+# Cloudflare Worker configuration for the TMJ California chat API.
+#
+# Deploy:
+#   1. python3 build.py                                    # bundles knowledge-base.md into worker.deploy.js
+#   2. wrangler secret put ANTHROPIC_API_KEY              # paste your Anthropic key when prompted
+#   3. wrangler deploy                                     # ships the worker
+#
+# After first deploy you'll get a URL like:
+#   https://tmjcalifornia-chat.<your-subdomain>.workers.dev
+# Use that URL in the chat widget config.
+
+name = "tmjcalifornia-chat"
+main = "worker.deploy.js"
+compatibility_date = "2025-05-01"
+
+# Optional: tie this Worker to a custom subdomain like chat.tmjcalifornia.expertaisys.com.
+# Uncomment and customize once your domain is set up on Cloudflare.
+# [[routes]]
+# pattern = "chat.tmjcalifornia.expertaisys.com/*"
+# zone_name = "expertaisys.com"
+
+# Optional: Workers Logs for debugging — free, retains 7 days.
+[observability]
+enabled = true
+
+# Optional: KV namespace for IP-based rate limiting.
+# Run `wrangler kv namespace create chat_rate_limit` to create one, then paste the id below.
+# Without this, rate limiting is silently disabled and the worker still works.
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT_KV"
+# id = "PASTE_ID_HERE"
+
+# Environment vars (non-secret — these are visible in the dashboard).
+# Override these in the dashboard or via `wrangler secret put` for sensitive values.
+[vars]
+ALLOWED_ORIGIN = "*"  # set to "https://tmjcalifornia.expertaisys.com" in production
+MODEL = "claude-sonnet-4-5-20250929"
+MAX_OUTPUT_TOKENS = "1024"
+RATE_LIMIT_PER_MIN = "10"
