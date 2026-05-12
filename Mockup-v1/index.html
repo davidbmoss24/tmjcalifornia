@@ -149,23 +149,26 @@ a:hover { color: var(--accent-hover); }
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 4rem;
-  align-items: center;
-  padding: 0.5rem 0 7rem;
+  align-items: stretch;
+  padding: 0.5rem 0 3rem;
 }
 .hero-text h1 { margin-bottom: 1.5rem; }
 .hero-text h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
 .hero-text p.lede { margin-bottom: 2rem; color: var(--text-muted); }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-.hero-image { position: relative; }
+.hero-image {
+  position: relative;
+  display: flex; flex-direction: column;
+  justify-content: space-between; gap: 1.25rem;
+}
 .hero-image img {
-  width: 100%; height: auto; max-height: 560px;
+  width: 100%; height: auto; max-height: 480px;
   object-fit: cover; border-radius: 4px;
   filter: contrast(1.05) brightness(0.96);
   box-shadow: var(--shadow-lg);
 }
 .hero-quote {
-  position: absolute; left: -2rem; bottom: 0;
-  transform: translateY(calc(100% + 0.75rem));
+  position: static; margin-left: -2rem;
   background: var(--card); padding: 1.4rem 1.6rem;
   max-width: 320px; box-shadow: var(--shadow-md);
   border-left: 3px solid var(--accent);
