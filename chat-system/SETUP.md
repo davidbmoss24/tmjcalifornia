@@ -46,6 +46,30 @@ wrangler secret put ANTHROPIC_API_KEY
 
 Wrangler will prompt for the key — paste it. It's stored encrypted on Cloudflare's side; the browser never sees it.
 
+### Step 2b — Resend API key for the contact form
+
+The contact form on the site POSTs to `/contact` on this same Worker, which forwards each inquiry as an email to Dr. Jennings via [Resend](https://resend.com).
+
+1. Sign up at <https://resend.com> (free, no credit card — 100 emails/day on the free plan, far more than this practice needs).
+2. From the Resend dashboard, create an API key.
+3. Add it to the Worker:
+
+   ```bash
+   wrangler secret put RESEND_API_KEY
+   ```
+
+4. Defaults: the email is sent to `dejdds@gmail.com` from `TMJ California <onboarding@resend.dev>`. Override either by adding to the `[vars]` block of `wrangler.toml`:
+
+   ```toml
+   [vars]
+   CONTACT_TO   = "dejdds@gmail.com"
+   CONTACT_FROM = "TMJ California <inquiries@yourdomain.com>"
+   ```
+
+   Using a custom `CONTACT_FROM` requires verifying that domain in Resend (DNS records). Until then, leave the default — submissions still land in the inbox, just from the Resend onboarding address.
+
+If `RESEND_API_KEY` is not set, the chat still works; the contact form returns an error when someone tries to submit.
+
 ---
 
 ## Step 3 — (Optional) Create a KV namespace for rate limiting
