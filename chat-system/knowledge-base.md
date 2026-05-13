@@ -200,7 +200,7 @@ Plus foundational chapters: Ch 1 (synthesis, release, binding of SP), Ch 5 (NK-1
 ---
 
 Dr. Jennings' own published papers are hosted on the Research page of this site and can be linked directly:
-- A New Model of Occlusion (2025)
+- A New Model of Occlusion / Biomechanical Principles of Occlusion (2007, *J Am Acad Gnathological Orthopedics*)
 - Cranio-mandibular Dysfunction Causation Theory of Parkinson's (2014)
 - Jaw Orthopedics: A Solution for Fibromyalgia (2012)
 - The Perils of Orthodontics (2011)
