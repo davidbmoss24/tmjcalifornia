@@ -85,9 +85,11 @@ a:hover { color: var(--accent-hover); }
   display: flex; align-items: center; justify-content: space-between;
   padding: 1.1rem 2rem; max-width: 1200px; margin: 0 auto;
 }
-.brand { display: flex; flex-direction: column; line-height: 1.1; cursor: pointer; }
-.brand-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
-.brand-tag { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-soft); margin-top: 0.18rem; }
+.brand { display: flex; align-items: center; gap: 0.85rem; line-height: 1.1; cursor: pointer; text-decoration: none; }
+.brand-logo { height: 52px; width: auto; display: block; flex-shrink: 0; }
+.brand-text { display: flex; flex-direction: column; }
+.brand-name { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
+.brand-tag { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-soft); margin-top: 0.15rem; }
 .nav-links { display: flex; gap: 2rem; align-items: center; }
 .nav-links a {
   font-size: 0.92rem; color: var(--text); font-weight: 500;
@@ -606,6 +608,8 @@ section { padding: 5rem 0; }
 @media (max-width: 480px) {
   .container, .container-narrow { padding: 0 1.25rem; }
   .nav-inner { padding: 0.9rem 1.25rem; }
+  .brand-logo { height: 40px; }
+  .brand-text { display: none; }
   section { padding: 3rem 0; }
   .page-header { padding: 2.5rem 0 1.5rem; }
   h1 { font-size: 1.95rem; }
@@ -629,8 +633,11 @@ section { padding: 5rem 0; }
 <nav class="nav">
   <div class="nav-inner">
     <a class="brand" data-page="home">
-      <span class="brand-name">TMJ California</span>
-      <span class="brand-tag">Dwight Jennings, DDS, MICCMO</span>
+      <img class="brand-logo" src="images/tmjca-logo.png" alt="TMJ California logo" />
+      <span class="brand-text">
+        <span class="brand-name">Dr. Dwight Jennings</span>
+        <span class="brand-tag">DDS · MICCMO</span>
+      </span>
     </a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
       <span class="nav-toggle-bar"></span>
@@ -1255,6 +1262,127 @@ section { padding: 5rem 0; }
     </div>
   </section>
 
+  <!-- 5b. Recent textbook reference (Vink 2024) -->
+  <section>
+    <div class="container-narrow">
+      <div class="section-header left">
+        <span class="eyebrow">Current reference text</span>
+        <h2>Every condition Dr. Jennings connects to substance P now has a dedicated chapter in the 2024 Elsevier textbook.</h2>
+        <p>Vink R, ed. <em>Substance P</em>. Elsevier Inc.; 2024. <span style="white-space: nowrap;">ISBN 978-0-443-22194-1</span> · 28 chapters · 685 pp. The current authoritative synthesis of substance P biology and its clinical implications.</p>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 1.5rem 1.75rem; margin-bottom: 1.5rem;">
+        <p style="margin: 0;">Dr. Jennings' framework — that substance P, downstream of jaw misalignment and trigeminal hyperactivation, drives a recognizable constellation of chronic conditions — is not a niche claim. It maps directly onto the chapters of a mainstream reference textbook published in 2024 by Elsevier, edited by Robert Vink. Each row below pairs one of Dr. Jennings' conditions with the chapter(s) in <em>Substance P</em> that cover the same mechanism in the formal literature.</p>
+      </div>
+
+      <ul class="papers-list" style="margin-top: 1rem;">
+        <li>
+          <span class="paper-year">Ch 13</span>
+          <div>
+            <div class="paper-title"><em>Substance P in inflammation</em></div>
+            <div class="paper-meta">SP activates NF-κB, "the master inflammatory regulator," via NK-1R on both immune and tissue cells. Chapter advocates repurposing clinically approved NK-1R antagonists as therapies for inflammatory disorders. · Maps to: chronic pain, headaches, IBS, autoimmune conditions, fibromyalgia.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 15</span>
+          <div>
+            <div class="paper-title"><em>Substance P in pain</em></div>
+            <div class="paper-meta">SP is critical to neuronal sensitization to pain and to cortical processing of pain — including its emotional aspects. The case for SP as a neuromodulator in chronic pain. · Maps to: TMJ pain, chronic headaches & migraines, fibromyalgia.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 24</span>
+          <div>
+            <div class="paper-title"><em>Substance P-neurokinin 1 receptor pathway in musculoskeletal disorders</em></div>
+            <div class="paper-meta">Surveys SP's role in myalgia (muscle pain), tendonitis, tendinosis, bone repair, and fascial hypersensitivity. Discusses NK-1R antagonists as potential musculoskeletal therapeutics. · Maps to: TMJ, fibromyalgia, chronic musculoskeletal pain.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 11</span>
+          <div>
+            <div class="paper-title"><em>Substance P in bone metabolism</em></div>
+            <div class="paper-meta">SP regulates osteoclast and osteoblast activity. SP-expressing osteocytes increase with age and correlate with disc-degeneration pain. SP/NK-1R is now considered a target for fracture healing and age-related bone disease. · Maps to: TMJ joint, jaw bone, intervertebral disc pain.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 20</span>
+          <div>
+            <div class="paper-title"><em>Substance P in Alzheimer's and Parkinson's disease</em></div>
+            <div class="paper-meta">SP is reduced in AD and PD brain regions. SP co-localizes with α-synuclein in PD patients' olfactory bulb, GI tract, and vagus nerve. Identifies SP as a potential prognostic marker and disease-modifying molecule for both diseases. · Maps to: movement disorders, Parkinson's.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 21</span>
+          <div>
+            <div class="paper-title"><em>Substance P receptor antagonists for major depressive disorder</em></div>
+            <div class="paper-meta">Five clinical trials have demonstrated antidepressant efficacy of NK-1R antagonists. The chapter argues the failed Phase III aprepitant program was due to underdosing and proposes strategies to bring this drug class into psychiatric practice. · Maps to: depression in the complex-chronic-illness pattern.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 22</span>
+          <div>
+            <div class="paper-title"><em>From a putative antidepressant to a validated mouse model of ADHD via NK1 receptors</em></div>
+            <div class="paper-meta">Functional ablation of the NK1R gene in mice produces a phenotype matching ADHD better than depression. SP/NK-1R signaling is now considered a candidate mechanism in ADHD. · Maps to: ADD/ADHD in the complex-chronic-illness pattern.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 23</span>
+          <div>
+            <div class="paper-title"><em>Substance P in stress and anxiety</em></div>
+            <div class="paper-meta">Elevated central SP produces anxiogenic responses; NK-1R blockade produces anxiolytic effects in animal and human studies. NK-1R blockade proposed as a therapeutic avenue for stress-related psychiatric conditions. · Maps to: anxiety, stress-driven somatic symptoms.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 18</span>
+          <div>
+            <div class="paper-title"><em>Substance P in neurotrauma</em></div>
+            <div class="paper-meta">SP release after TBI drives blood-brain-barrier permeability, edema, inflammation, and contributes to later tau phosphorylation — a mechanistic link from trauma to neurodegeneration. · Maps to: post-concussion / post-trauma chronic symptoms.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 25</span>
+          <div>
+            <div class="paper-title"><em>Substance P and sudden infant death syndrome (SIDS)</em></div>
+            <div class="paper-meta">SP/NK-1 signaling dysfunction — combined with developmental abnormalities in other neurotransmitter networks — may compromise cardiorespiratory reflexes to hypoxia. Establishes SP's role in the breathing-reflex pathway. · Maps to: sleep apnea, breathing dysregulation.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 27</span>
+          <div>
+            <div class="paper-title"><em>Substance P in viral diseases — especially COVID-19</em></div>
+            <div class="paper-meta">SP dysregulation contributes to the "cytokine storm" in severe COVID-19 via TRPV1 activation and renin-angiotensin-system dysregulation, with downstream BBB penetration. · Maps to: long-COVID, post-viral chronic illness.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 26</span>
+          <div>
+            <div class="paper-title"><em>Immunobiology and pharmacology of neuropeptide substance P</em></div>
+            <div class="paper-meta">Immune cells both secrete SP and respond to it. SP is the hinge between the nervous and immune systems. · Maps to: autoimmune patterns, complex chronic illness.</div>
+          </div>
+        </li>
+        <li>
+          <span class="paper-year">Ch 1, 5</span>
+          <div>
+            <div class="paper-title">Foundational: <em>Synthesis, release, and binding of substance P</em> · <em>Substance P receptor antagonists</em></div>
+            <div class="paper-meta">For clinicians reading the framework for the first time, these chapters give the molecular basics: how SP is made, how it binds NK-1R, what drugs block it, and how those drugs are being repurposed.</div>
+          </div>
+        </li>
+      </ul>
+
+      <p style="margin-top: 1.5rem; font-size: 0.92rem; color: var(--text-muted);">
+        We hold a reference copy of the textbook in the clinic and can supply chapter citations on request for referring physicians and dental colleagues.
+      </p>
+
+      <div style="margin-top: 2rem; padding: 1.4rem 1.6rem; background: var(--accent-soft); border-radius: 6px; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 220px;">
+          <div style="font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--text); margin-bottom: 0.3rem;">For referring clinicians</div>
+          <div style="font-size: 0.95rem; color: var(--text-muted);">A six-page packet mapping each condition Dr. Jennings treats to the relevant 2024 textbook chapters, plus practical referral logistics.</div>
+        </div>
+        <a class="btn" href="documents/TMJ-California-Referral-Packet.pdf" target="_blank" style="white-space: nowrap;">Download referral packet (PDF)</a>
+      </div>
+    </div>
+  </section>
+
   <!-- 6. Dr. Jennings' own work -->
   <section class="section-warm">
     <div class="container-narrow">
@@ -1623,8 +1751,7 @@ section { padding: 5rem 0; }
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" data-page="home">
-          <span class="brand-name">TMJ California</span>
-          <span class="brand-tag">Dwight Jennings, DDS, MICCMO</span>
+          <img class="brand-logo" src="images/tmjca-logo.png" alt="TMJ California logo" style="background: rgba(255,255,255,0.96); padding: 0.4rem 0.6rem; border-radius: 6px;" />
         </a>
         <p>Northern California Cranio-Facial Diagnostic Center. A specialist practice limited to orofacial pain, orthodontics, and dental medicine since 1986.</p>
       </div>

@@ -25,6 +25,10 @@ chat-system/_paper-texts/
 weston price lecture 2 25-djlaptop.pptx
 Jaw slides, condensed.pdf
 
+# Substance P (Vink 2024 / Elsevier) — paid textbook, fair use for citations only
+sp book .epub
+*.epub
+
 # Top-level duplicate of jaw alignment image (already in Mockup-v1/images/cascade-diagram-v3.png)
 jaw_alignment_image.png
 
