@@ -621,13 +621,6 @@ section { padding: 5rem 0; }
   img, svg { max-width: 100%; height: auto; }
 }
 
-/* ============ MOCKUP NOTICE ============ */
-.mockup-banner {
-  background: #FFF8E6; border-bottom: 1px solid #F0E1B5;
-  padding: 0.6rem 2rem; font-size: 0.82rem; text-align: center;
-  color: #6B5520;
-}
-.mockup-banner strong { color: #1A2233; }
 </style>
 </head>
 <body>
@@ -1531,7 +1524,7 @@ section { padding: 5rem 0; }
   <section>
     <div class="container">
       <div class="contact-grid">
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('This is a mockup — form submission is not yet wired up.');">
+        <form class="contact-form" id="contact-form">
           <h3>Tell us about your situation</h3>
           <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">A few details help us route your inquiry to the right place. Everything you share is confidential.</p>
           <div class="form-row">
@@ -1666,7 +1659,6 @@ section { padding: 5rem 0; }
     </div>
     <div class="footer-bottom">
       <span>© 2026 TMJ California · Dwight Jennings, DDS</span>
-      <span>Mockup v1 — site rebuild in progress</span>
     </div>
   </div>
 </footer>
@@ -1743,6 +1735,31 @@ section { padding: 5rem 0; }
   // Initial route
   const initial = (location.hash || '#home').replace('#', '');
   showPage(initial);
+
+  // Contact form — open user's email client prefilled with their inquiry
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const v = (id) => (document.getElementById(id) || {}).value || '';
+      const name = v('f-name').trim();
+      const email = v('f-email').trim();
+      const phone = v('f-phone').trim();
+      const type = v('f-type');
+      const symptoms = v('f-symptoms').trim();
+      const tried = v('f-tried').trim();
+      const subject = encodeURIComponent('New patient inquiry — ' + (name || 'TMJ California website'));
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Phone: ' + phone + '\n' +
+        'Reaching out as: ' + type + '\n\n' +
+        'Symptoms / situation:\n' + (symptoms || '(not provided)') + '\n\n' +
+        'Treatments already tried:\n' + (tried || '(not provided)') + '\n'
+      );
+      window.location.href = 'mailto:dejdds@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  }
 </script>
 
 </body>
