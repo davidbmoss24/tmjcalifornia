@@ -440,14 +440,17 @@ section { padding: 5rem 0; }
 
 /* ============ ABOUT PAGE ============ */
 .about-hero {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 4rem; align-items: center;
-  padding: 4rem 0 5rem;
+  display: grid; grid-template-columns: 0.85fr 1.15fr;
+  gap: 3rem; align-items: center;
+  padding: 0;
 }
+.about-hero-img { display: flex; justify-content: center; }
 .about-hero-img img {
-  width: 100%; max-width: 480px; height: auto;
+  width: 100%; max-width: 320px; max-height: 460px;
+  height: auto; object-fit: cover; object-position: center top;
   border-radius: 4px; box-shadow: var(--shadow-lg);
 }
+.about-page-header { padding: 4rem 0 4rem; }
 .about-section { padding: 3rem 0; }
 .about-section .container-narrow { display: grid; grid-template-columns: 1fr 2.5fr; gap: 3rem; }
 .about-section h3 { font-size: 1.5rem; }
@@ -1066,27 +1069,27 @@ section { padding: 5rem 0; }
 
 <!-- ============ ABOUT PAGE ============ -->
 <div class="page" id="page-about">
-  <header class="page-header">
-    <div class="container-narrow">
-      <span class="eyebrow">About Dr. Jennings</span>
-      <h1>Forty years of asking why dentistry stopped at the teeth.</h1>
-      <p>Dwight Jennings, DDS, MICCMO, has built one of the most specialized practices in the country around a single observation: that the jaw, properly understood, is a window into systemic health.</p>
+  <header class="page-header about-page-header">
+    <div class="container">
+      <div class="about-hero">
+        <div class="about-hero-img">
+          <img src="images/Headshot_1.png" alt="Dr. Dwight Jennings, DDS" />
+        </div>
+        <div>
+          <span class="eyebrow">About Dr. Jennings</span>
+          <h1 style="margin-bottom: 1.25rem;">Forty years of asking why dentistry stopped at the teeth.</h1>
+          <p style="font-size: 1.18rem; max-width: 60ch;">Dwight Jennings, DDS, MICCMO, has built one of the most specialized practices in the country around a single observation: that the jaw, properly understood, is a window into systemic health.</p>
+        </div>
+      </div>
     </div>
   </header>
 
   <section>
-    <div class="container">
-      <div class="about-hero">
-        <div>
-          <span class="eyebrow">A practice limited to</span>
-          <h2 style="margin-bottom: 1.5rem;">Orofacial pain, orthodontics, and dental medicine.</h2>
-          <p style="font-size: 1.1rem; line-height: 1.75; color: var(--text); margin-bottom: 1.2rem;">Dr. Jennings practiced general dentistry for ten years before narrowing his focus to dental orthopedics — the assessment and correction of jaw alignment. The practice he founded in 1986, the Northern California Cranio-Facial Diagnostic Center, operates from Alameda in the San Francisco Bay Area, with a second location in Sutter Creek.</p>
-          <p style="font-size: 1.1rem; line-height: 1.75; color: var(--text);">It functions as a tertiary referral practice. A significant percentage of patients travel more than 50 miles, and many fly into Oakland International Airport — five minutes from the office — from across the country.</p>
-        </div>
-        <div class="about-hero-img">
-          <img src="images/Headshot_1.png" alt="Dr. Dwight Jennings, DDS" />
-        </div>
-      </div>
+    <div class="container-narrow">
+      <span class="eyebrow">A practice limited to</span>
+      <h2 style="margin-bottom: 1.5rem;">Orofacial pain, orthodontics, and dental medicine.</h2>
+      <p style="font-size: 1.1rem; line-height: 1.75; color: var(--text); margin-bottom: 1.2rem;">Dr. Jennings practiced general dentistry for ten years before narrowing his focus to dental orthopedics — the assessment and correction of jaw alignment. The practice he founded in 1986, the Northern California Cranio-Facial Diagnostic Center, operates from Alameda in the San Francisco Bay Area, with a second location in Sutter Creek.</p>
+      <p style="font-size: 1.1rem; line-height: 1.75; color: var(--text);">It functions as a tertiary referral practice. A significant percentage of patients travel more than 50 miles, and many fly into Oakland International Airport — five minutes from the office — from across the country.</p>
     </div>
   </section>
 
