@@ -174,28 +174,9 @@ These are the strongest peer-reviewed anchors. Cite by PMID if relevant:
 - **Okamoto 2011** — Occlusal support implants and brain function. **PMID 21333621**.
 - **Barres 2008** — The Mystery and Magic of Glia. *Neuron*. **PMID 18995817**.
 
-### RECENT TEXTBOOK ANCHOR — Vink (ed), *Substance P*, Elsevier 2024 (ISBN 9780443221941)
+### CURRENT REFERENCE TEXTBOOK — Vink (ed), *Substance P*, Elsevier 2024
 
-This 2024 textbook from Elsevier — *Substance P*, edited by Robert Vink — is the most up-to-date comprehensive synthesis of substance P biology. **The conditions Dr. Jennings says are connected to substance P now have dedicated chapters in this mainstream reference work.** Use this as the strongest single contemporary citation. Cite as "Vink 2024, Ch X".
-
-Chapters mapped to Dr. Jennings' conditions:
-
-- **Ch 11 — SP in bone metabolism.** Establishes SP as a regulator of bone resorption and osteoblast activity. Relevant to TMJ joint, jaw bone remodeling, intervertebral disc degeneration. SP-expressing osteocytes increase with age and correlate with disc pain.
-- **Ch 13 — SP in inflammation.** SP acts via NK-1R to activate NF-κB ("the master inflammatory regulator") and drive immune-mediator production. Multiple animal models show NK-1R antagonists ameliorate inflammation; chapter explicitly calls for repurposing them as therapies for inflammatory disorders.
-- **Ch 15 — SP in pain.** Confirms SP as a critical player in neuronal sensitization to pain and in cortical processing of pain — including the *emotional* aspects of pain. Foundational for chronic-pain explanations.
-- **Ch 18 — SP in neurotrauma.** SP release after TBI drives blood-brain-barrier permeability, edema, inflammation, and contributes to later tau phosphorylation (i.e., a mechanistic link from trauma to neurodegeneration).
-- **Ch 20 — SP in Alzheimer's and Parkinson's disease.** SP is reduced in AD and PD brain regions; SP plays an antiamyloidogenic role in AD; in PD it co-localizes with α-synuclein in the olfactory bulb, GI tract, and vagus nerve. Identifies SP as a potential prognostic marker and disease-modifying molecule for both diseases.
-- **Ch 21 — NK-1R antagonists for major depressive disorder.** Five clinical trials have demonstrated antidepressant efficacy of NK-1R antagonists. The chapter argues the failed aprepitant Phase III program was due to underdosing, not mechanism failure, and advocates re-advancing this drug class.
-- **Ch 22 — NK-1R route to a validated ADHD model.** Functional ablation of the Nk1r gene in mice produces a phenotype that matches ADHD better than depression. SP/NK-1R signaling is now considered a candidate mechanism in ADHD.
-- **Ch 23 — SP in stress and anxiety.** Elevated central SP induces anxiogenic responses; blocking NK-1R produces anxiolytic effects in both animal and human studies. NK-1R blockade is proposed as a therapeutic avenue for stress-related psychiatric conditions.
-- **Ch 24 — SP-NK-1R in musculoskeletal disorders.** Surveys SP's role in muscle pain (myalgia), tendonitis, tendinosis, bone repair, and fascial-tissue hypersensitivity. The chapter explicitly discusses NK-1R antagonists as potential musculoskeletal therapeutics — directly relevant to TMJ, fibromyalgia, and chronic-pain patients.
-- **Ch 25 — SP and SIDS.** SP/NK-1 signaling dysfunction, combined with developmental abnormalities in other neurotransmitter networks, may compromise cardiorespiratory reflexes to hypoxia in infants. Mechanism connects breathing reflex failure to SP.
-- **Ch 26 — Immunobiology and pharmacology of SP.** Comprehensive review of SP's role in immunity. Immune cells themselves secrete SP and respond to it — making SP a hinge between the nervous and immune systems.
-- **Ch 27 — SP in viral diseases, especially COVID-19.** SP dysregulation contributes to the "cytokine storm" in severe COVID-19 via TRPV1 activation and RAS dysregulation, with downstream effects on the blood-brain barrier. Mechanistically relevant to long-COVID symptoms.
-
-Plus foundational chapters: Ch 1 (synthesis, release, binding of SP), Ch 5 (NK-1R antagonist drugs and their structural basis), Ch 10 (SP in central control of respiration — also relevant to sleep apnea).
-
-**Headline framing for the chat:** "Every condition Dr. Jennings says is linked to substance P now has a dedicated chapter in the 2024 Elsevier textbook *Substance P*. He's not making a novel claim — he's connecting an established neuropeptide to an established list of conditions through a specific mechanism (jaw misalignment → trigeminal hyperactivation → SP elevation → systemic effects)."
+A current authoritative reference on substance P biology and its clinical implications exists: **Vink R, ed. *Substance P*. Elsevier Inc.; 2024 (ISBN 978-0-443-22194-1).** The book covers the mechanisms relevant to the conditions Dr. Jennings treats. The clinic holds a reference copy; referring clinicians can request specific citations. The chat should cite this book as "Vink R, ed. *Substance P*, Elsevier 2024" but **should not reproduce chapter titles, summaries, or extended quotations** — that's the publisher's copyrighted material. Talk about the book as a source, not a script.
 
 ---
 
