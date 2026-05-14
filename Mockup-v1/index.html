@@ -354,6 +354,14 @@ section { padding: 5rem 0; }
 .paper-title { color: var(--text); font-weight: 500; line-height: 1.4; margin-bottom: 0.2rem; }
 .paper-meta { font-size: 0.85rem; color: var(--text-soft); }
 .paper-link { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+/* readable papers list on dark sections */
+.section-dark .papers-list { border-top-color: rgba(255,255,255,0.14); }
+.section-dark .papers-list li { border-bottom-color: rgba(255,255,255,0.14); }
+.section-dark .paper-year { color: #87B0AE; }
+.section-dark .paper-title { color: #FFFFFF; }
+.section-dark .paper-meta { color: #C2C7D2; }
+.section-dark .paper-link { color: #5BB8B6; }
+.section-dark .paper-link:hover { color: #FFFFFF; }
 
 /* ============ CTA BANNER ============ */
 .cta-banner {
@@ -919,10 +927,10 @@ section { padding: 5rem 0; }
         <div>
           <ul class="papers-list">
             <li>
-              <span class="paper-year">2025</span>
+              <span class="paper-year">2007</span>
               <div>
                 <div class="paper-title">A New Model of Occlusion</div>
-                <div class="paper-meta">Dr. Jennings — featured 30-page paper</div>
+                <div class="paper-meta">Dr. Jennings — Biomechanical Principles of Occlusion, <em>J Am Acad Gnathological Orthopedics</em></div>
               </div>
               <a href="documents/New-model-of-Occlusion.pdf" class="paper-link" target="_blank">PDF →</a>
             </li>
