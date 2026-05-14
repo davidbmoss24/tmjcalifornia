@@ -75,3 +75,6 @@ podcast_transcripts/_bulletproof-179.txt
 # ============ Misc ============
 *.bak
 *.orig
+
+# ============ PDF originals (backups before brand stamping) ============
+Mockup-v1/documents/papers_original/
