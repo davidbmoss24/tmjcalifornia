@@ -552,6 +552,41 @@ section { padding: 5rem 0; }
 }
 .travel-note h4 { margin-bottom: 0.6rem; }
 
+/* ============ LIGHTBOX (click to enlarge cascade diagram) ============ */
+.cascade-zoomable { cursor: zoom-in; transition: opacity .2s; }
+.cascade-zoomable:hover { opacity: 0.92; }
+.lightbox {
+  display: none; position: fixed; inset: 0; z-index: 10000;
+  background: rgba(10, 14, 19, 0.94);
+  align-items: center; justify-content: center;
+  padding: 2rem;
+  -webkit-tap-highlight-color: transparent;
+}
+.lightbox.is-open { display: flex; }
+.lightbox-img {
+  max-width: min(96vw, 1800px); max-height: 88vh;
+  width: auto; height: auto; object-fit: contain;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+  background: #fff; border-radius: 4px;
+  cursor: zoom-out;
+}
+.lightbox-close {
+  position: absolute; top: 1.25rem; right: 1.25rem;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(255,255,255,0.14); color: #fff;
+  border: none; cursor: pointer;
+  font-size: 1.65rem; line-height: 1; font-weight: 300;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.24); }
+.lightbox-hint {
+  position: absolute; bottom: 1.25rem; left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.7); font-size: 0.82rem; letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
 /* ============ PAGE ROUTING ============ */
 .page { display: none; }
 .page.active { display: block; }
@@ -694,7 +729,7 @@ section { padding: 5rem 0; }
         <p>The mechanism is now well-documented. Jaw misalignment elevates trigeminal nerve activity, which in turn increases substance P — a neuropeptide that, when chronically elevated, sensitizes cell membranes throughout the body and disrupts normal function across multiple systems. The trigeminal nerve has on average <em>100 times more dense pain fibers</em> than any other nerve in the body. When it's chronically activated, the consequences ripple outward.</p>
 
         <figure style="margin: 2.5rem 0; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 1.25rem 1rem; overflow: hidden;">
-          <img src="images/cascade-diagram-v3.png" alt="A four-step cascade diagram showing how a misaligned jaw can drive pain and dysfunction throughout the body: structural jaw retrusion, neural irritation, biochemical inflammation, and systemic effects." style="width: 100%; height: auto; display: block;"/>
+          <img class="cascade-zoomable" src="images/cascade-diagram-v3.png" alt="A four-step cascade diagram showing how a misaligned jaw can drive pain and dysfunction throughout the body: structural jaw retrusion, neural irritation, biochemical inflammation, and systemic effects." style="width: 100%; height: auto; display: block;" title="Click to enlarge"/>
           <figcaption style="margin-top: 0.9rem; font-size: 0.85rem; color: var(--text-soft); text-align: center;">
             The four-step cascade. <a data-page="research" style="cursor: pointer;">See the full neurology &rarr;</a>
           </figcaption>
@@ -1189,7 +1224,7 @@ section { padding: 5rem 0; }
 
       <!-- Diagram -->
       <div style="background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 1.5rem 1rem; margin-bottom: 2.5rem; overflow: hidden;">
-        <img src="images/cascade-diagram-v3.png" alt="A four-step cascade diagram showing how a misaligned jaw can drive pain and dysfunction throughout the body: structural jaw retrusion, neural irritation, biochemical inflammation, and systemic effects." style="width: 100%; height: auto; display: block;"/>
+        <img class="cascade-zoomable" src="images/cascade-diagram-v3.png" alt="A four-step cascade diagram showing how a misaligned jaw can drive pain and dysfunction throughout the body: structural jaw retrusion, neural irritation, biochemical inflammation, and systemic effects." style="width: 100%; height: auto; display: block;" title="Click to enlarge"/>
       </div>
 
       <!-- Expanded explainer (text version of the same content for readers who want detail) -->
@@ -1793,6 +1828,13 @@ section { padding: 5rem 0; }
   </div>
 </footer>
 
+<!-- ============ LIGHTBOX (cascade diagram zoom) ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged diagram" aria-hidden="true">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close enlarged view" type="button">&times;</button>
+  <img class="lightbox-img" id="lightbox-img" alt="" />
+  <div class="lightbox-hint">Click anywhere or press Esc to close</div>
+</div>
+
 <!-- ============ CHAT WIDGET ============ -->
 <!--
   Drop this in after deploying the chat Worker.
@@ -1865,6 +1907,44 @@ section { padding: 5rem 0; }
   // Initial route
   const initial = (location.hash || '#home').replace('#', '');
   showPage(initial);
+
+  // Lightbox — click cascade diagrams to enlarge
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  function openLightbox(src, alt) {
+    if (!lightbox) return;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+  }
+  document.addEventListener('click', function (e) {
+    const trigger = e.target.closest('.cascade-zoomable');
+    if (trigger) {
+      e.preventDefault();
+      openLightbox(trigger.src, trigger.alt);
+      return;
+    }
+    if (lightbox && lightbox.classList.contains('is-open')) {
+      // Click anywhere inside the open lightbox closes it
+      if (e.target === lightbox || e.target.closest('#lightbox')) {
+        closeLightbox();
+      }
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightbox && lightbox.classList.contains('is-open')) {
+      closeLightbox();
+    }
+  });
 
   // Contact form — POST to the same Worker that powers the chat
   const CONTACT_ENDPOINT = 'https://tmjcalifornia-chat.cloudflare-admin-33d.workers.dev/contact';
