@@ -563,6 +563,83 @@ section { padding: 5rem 0; }
 }
 .travel-note h4 { margin-bottom: 0.6rem; }
 
+/* ============ MEDIA / PODCASTS PAGE ============ */
+.media-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem; margin-top: 1rem;
+}
+.media-card {
+  background: var(--card); border: 1px solid var(--border-soft);
+  border-radius: 6px; overflow: hidden;
+  text-decoration: none; color: inherit; display: block;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.media-card:hover {
+  transform: translateY(-3px); box-shadow: var(--shadow-md);
+  border-color: var(--accent-soft); color: inherit;
+}
+.media-thumb {
+  position: relative; aspect-ratio: 16 / 9; background: var(--bg-warm);
+  overflow: hidden;
+}
+.media-thumb img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.media-thumb::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.4));
+  pointer-events: none;
+}
+.media-play {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity .2s; pointer-events: none;
+}
+.media-card:hover .media-play { opacity: 1; }
+.media-play svg {
+  width: 56px; height: 56px; color: #fff;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+}
+.media-duration {
+  position: absolute; bottom: 0.5rem; right: 0.5rem; z-index: 2;
+  background: rgba(0,0,0,0.78); color: #fff;
+  padding: 0.15rem 0.45rem; border-radius: 3px;
+  font-size: 0.74rem; font-weight: 600;
+  font-family: var(--sans); letter-spacing: 0.02em;
+}
+.media-body { padding: 1.1rem 1.2rem 1.25rem; }
+.media-show {
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 0.45rem;
+}
+.media-title {
+  font-family: var(--serif); font-size: 1.08rem;
+  line-height: 1.3; color: var(--text); font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.media-meta {
+  font-size: 0.8rem; color: var(--text-soft);
+}
+.media-section + .media-section { margin-top: 3rem; }
+.media-section-header {
+  display: flex; align-items: baseline; gap: 1rem;
+  margin-bottom: 1rem;
+}
+.media-section-header h3 {
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 500;
+  color: var(--text); margin: 0;
+}
+.media-section-header span {
+  font-size: 0.78rem; color: var(--text-soft);
+  letter-spacing: 0.04em;
+}
+@media (max-width: 980px) {
+  .media-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+}
+@media (max-width: 640px) {
+  .media-grid { grid-template-columns: 1fr; }
+}
+
 /* ============ LIGHTBOX (click to enlarge cascade diagram) ============ */
 .cascade-zoomable { cursor: zoom-in; transition: opacity .2s; }
 .cascade-zoomable:hover { opacity: 0.92; }
@@ -697,6 +774,7 @@ section { padding: 5rem 0; }
       <a data-page="conditions">Conditions</a>
       <a data-page="about">About Dr. Jennings</a>
       <a data-page="research">Research</a>
+      <a data-page="media">Media</a>
       <a data-page="contact" class="btn">New Patients</a>
     </div>
   </div>
@@ -1600,6 +1678,257 @@ section { padding: 5rem 0; }
   </section>
 </div>
 
+<!-- ============ MEDIA / PODCASTS PAGE ============ -->
+<div class="page" id="page-media">
+  <header class="page-header">
+    <div class="container-narrow">
+      <span class="eyebrow">Media appearances</span>
+      <h1>Dr. Jennings in conversation.</h1>
+      <p>Long-form interviews and short clips where Dr. Jennings explains the framework, the trigeminal cascade, and what forty years of clinical practice has taught him about the bite.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <!-- Top-tier long-form -->
+      <div class="media-section">
+        <div class="media-section-header">
+          <h3>Long-form interviews</h3>
+          <span>Full-length podcast episodes and lectures</span>
+        </div>
+        <div class="media-grid">
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=ka7F3dZMbDQ" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/ka7F3dZMbDQ/hqdefault.jpg" alt="Joel Evan — Substance P: The Root of All Illness" loading="lazy"/>
+              <span class="media-duration">1:03:28</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Joel Evan · The Hack Life</div>
+              <div class="media-title">Substance P: The Root of All Illness, Jaw Pain, TMJ</div>
+              <div class="media-meta">49,000+ views · 2023</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=-_CJZi9EEaw" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/-_CJZi9EEaw/hqdefault.jpg" alt="Bulletproof #179 with Dave Asprey — TMJ, Jaw Pain & Substance P" loading="lazy"/>
+              <span class="media-duration">56:31</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Bulletproof #179 · Dave Asprey</div>
+              <div class="media-title">TMJ, Jaw Pain &amp; Substance P</div>
+              <div class="media-meta">26,000+ views · Dr. Jennings' first interview with Dave Asprey</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=F6vX0UlUH_E" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/F6vX0UlUH_E/hqdefault.jpg" alt="Bulletproof #182 — A Live Look at Bite Realignment" loading="lazy"/>
+              <span class="media-duration">59:00</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Bulletproof #182 · Dave Asprey</div>
+              <div class="media-title">A Live Look at Bite Realignment &amp; How TMJ Impedes Performance</div>
+              <div class="media-meta">13,000+ views · hands-on session in the office</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=HJ6c1cuqC3g" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/HJ6c1cuqC3g/hqdefault.jpg" alt="Luke Storey #320 — The Missing Link in Dentistry" loading="lazy"/>
+              <span class="media-duration">1:23:09</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">The Life Stylist · Luke Storey #320</div>
+              <div class="media-title">TMJ, Jaw Pain, Substance P: The Missing Link in Dentistry</div>
+              <div class="media-meta">Deep-dive on the cranio-facial / systemic connection</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=KK7iGyBNROk" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/KK7iGyBNROk/hqdefault.jpg" alt="Silicon Valley Health Institute — Bite Health, full lecture" loading="lazy"/>
+              <span class="media-duration">1:57:59</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Silicon Valley Health Institute</div>
+              <div class="media-title">Bite Health — full lecture</div>
+              <div class="media-meta">Two-hour talk with patient testimonials · 4,600+ views</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=4uzRwmecw-8" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/4uzRwmecw-8/hqdefault.jpg" alt="The Detox Dudes — Is Your Jaw F*cking Your Health Up?" loading="lazy"/>
+              <span class="media-duration">42:25</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">The Detox Dudes</div>
+              <div class="media-title">Is Your Jaw F*cking Your Health Up?</div>
+              <div class="media-meta">Why jaws have shrunk in modern humans</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=07olX9yjDXA" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/07olX9yjDXA/hqdefault.jpg" alt="Upgraded Executive #35 — Orthodontics, TMJ &amp; Substance P" loading="lazy"/>
+              <span class="media-duration">44:40</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Upgraded Executive #35</div>
+              <div class="media-title">Orthodontics, TMJ &amp; Substance P</div>
+              <div class="media-meta">The perils-of-orthodontics framework, in conversation</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=hl1hogR1HW8" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/hl1hogR1HW8/hqdefault.jpg" alt="Lunden Souza — Jaw alignment, Trigeminal nerve, Substance P" loading="lazy"/>
+              <span class="media-duration">54:04</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Lunden Souza</div>
+              <div class="media-title">Jaw Alignment, the Trigeminal Nerve, and Substance P</div>
+              <div class="media-meta">Wellness-podcast walkthrough of the mechanism</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=Ac-Ff1wQ6qE" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/Ac-Ff1wQ6qE/hqdefault.jpg" alt="NeuroFlex RWN #110 — Neuromuscular Dentistry" loading="lazy"/>
+              <span class="media-duration">40:46</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">NeuroFlex RWN #110</div>
+              <div class="media-title">Neuromuscular Dentistry</div>
+              <div class="media-meta">For clinicians: the technical underpinnings</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=1RtOhLltIgI" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/1RtOhLltIgI/hqdefault.jpg" alt="Ross Brannon #80 — Precision Jaw Orthopedics" loading="lazy"/>
+              <span class="media-duration">33:32</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Ross Brannon · Ep 080</div>
+              <div class="media-title">Precision Jaw Orthopedics, Discussed</div>
+              <div class="media-meta">Treatment protocols and case examples</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=uUodJFS-Jug" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/uUodJFS-Jug/hqdefault.jpg" alt="Functional Dental Medicine — Trigeminal Neuralgia, TMJ, Substance P, Seizures" loading="lazy"/>
+              <span class="media-duration">28:01</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Functional Dental Medicine</div>
+              <div class="media-title">Trigeminal Neuralgia, TMJ, Substance P, Seizures</div>
+              <div class="media-meta">Touches on the 1996 epilepsy research</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Short clips -->
+      <div class="media-section">
+        <div class="media-section-header">
+          <h3>Short clips</h3>
+          <span>Five-minute introductions to specific topics</span>
+        </div>
+        <div class="media-grid">
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=jFhxtehAbqw" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/jFhxtehAbqw/hqdefault.jpg" alt="Dr. Jennings — Why TMJ Treatment Often Fails" loading="lazy"/>
+              <span class="media-duration">5:30</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Dr. Jennings · @dentalphysician</div>
+              <div class="media-title">Why TMJ Treatment Often Fails</div>
+              <div class="media-meta">Direct from Dr. Jennings' own channel</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=cXVR423Xlpc" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/cXVR423Xlpc/hqdefault.jpg" alt="Dr. Jennings — Parkinson's TMJ Treatment Rationale" loading="lazy"/>
+              <span class="media-duration">3:55</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Dr. Jennings · @dentalphysician</div>
+              <div class="media-title">Parkinson's TMJ Treatment Rationale</div>
+              <div class="media-meta">The cranio-mandibular Parkinson's hypothesis in 4 min</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=CLZ3ZUBa3M0" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/CLZ3ZUBa3M0/hqdefault.jpg" alt="Joel Evan — The One Exam You Want Your Dentist to Do" loading="lazy"/>
+              <span class="media-duration">6:21</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Joel Evan · Clip</div>
+              <div class="media-title">The One Exam You Want Your Dentist to Do</div>
+              <div class="media-meta">Speech vs. centric occlusion — the simple bedside test</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=4CUrU5tjZyk" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/4CUrU5tjZyk/hqdefault.jpg" alt="Joel Evan — Why Your Jaw Is the Root Cause for All Your Suffering" loading="lazy"/>
+              <span class="media-duration">3:06</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Joel Evan · Clip</div>
+              <div class="media-title">Why Your Jaw Is the Root Cause for All Your Suffering</div>
+              <div class="media-meta">A three-minute introduction to the framework</div>
+            </div>
+          </a>
+
+          <a class="media-card" href="https://www.youtube.com/watch?v=3xLZj1zQf0k" target="_blank" rel="noopener">
+            <div class="media-thumb">
+              <img src="https://img.youtube.com/vi/3xLZj1zQf0k/hqdefault.jpg" alt="Parkinson's Resource Organization — Wellness Village interview" loading="lazy"/>
+              <span class="media-duration">3:54</span>
+              <span class="media-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div class="media-body">
+              <div class="media-show">Parkinson's Resource Organization</div>
+              <div class="media-title">The Wellness Village interview</div>
+              <div class="media-meta">Why some Parkinson's cases may be misdiagnosed CMD</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <p style="margin-top: 3rem; font-size: 0.9rem; color: var(--text-soft); text-align: center;">
+        Looking for more? Dr. Jennings publishes on his own channel at
+        <a href="https://www.youtube.com/@dentalphysician" target="_blank" rel="noopener">@dentalphysician</a>.
+      </p>
+    </div>
+  </section>
+</div>
+
 <!-- ============ CONTACT PAGE ============ -->
 <div class="page" id="page-contact">
   <header class="page-header">
@@ -1724,6 +2053,7 @@ section { padding: 5rem 0; }
           <li><a data-page="conditions">Conditions</a></li>
           <li><a data-page="about">About Dr. Jennings</a></li>
           <li><a data-page="research">Research</a></li>
+          <li><a data-page="media">Media</a></li>
         </ul>
       </div>
       <div>
@@ -1771,7 +2101,7 @@ section { padding: 5rem 0; }
 
 <script>
   // Hash-based page routing — keeps the prototype feeling like a real multi-page site
-  const pages = ['home', 'conditions', 'about', 'research', 'contact'];
+  const pages = ['home', 'conditions', 'about', 'research', 'media', 'contact'];
 
   function showPage(name) {
     if (!pages.includes(name)) name = 'home';
