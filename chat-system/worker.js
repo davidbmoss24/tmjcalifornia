@@ -35,7 +35,7 @@ const DEFAULT_MODEL = 'claude-sonnet-4-5-20250929';
 const DEFAULT_MAX_TOKENS = 1024;
 const DEFAULT_RATE_LIMIT = 10;
 const MAX_MESSAGES_IN_CONVERSATION = 30;
-const MAX_USER_INPUT_LENGTH = 2000;
+const MAX_MESSAGE_CONTENT_LENGTH = 12000;
 
 export default {
   async fetch(request, env, ctx) {
@@ -119,9 +119,9 @@ async function handleChat(request, env, allowedOrigin) {
     if (typeof m.content !== 'string') {
       return jsonError('Message content must be a string', 400, allowedOrigin);
     }
-    if (m.content.length > MAX_USER_INPUT_LENGTH) {
+    if (m.content.length > MAX_MESSAGE_CONTENT_LENGTH) {
       return jsonError(
-        `Message too long. Max ${MAX_USER_INPUT_LENGTH} characters.`,
+        `Message too long. Max ${MAX_MESSAGE_CONTENT_LENGTH} characters.`,
         400,
         allowedOrigin
       );
