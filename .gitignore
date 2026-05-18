@@ -78,3 +78,7 @@ podcast_transcripts/_bulletproof-179.txt
 
 # ============ PDF originals (backups before brand stamping) ============
 Mockup-v1/documents/papers_original/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
